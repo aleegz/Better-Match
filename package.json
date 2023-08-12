@@ -8,8 +8,7 @@
     "build": "vite build",
     "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview",
-    "deploy": "gh-pages -d dist",
-    "start": "webpack serve --mode development"
+    "deploy": "gh-pages -d dist"
   },
   "dependencies": {
     "node-fetch": "^3.3.1",

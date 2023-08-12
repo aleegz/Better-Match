@@ -35,7 +35,7 @@ const ButtonWithSidebar = () => {
                 </button>
             </ScrollLink>
           </li>
-          
+            <img src="https://raw.githubusercontent.com/7AleGz/Better-Match/master/public/better-match-logo-transparent.avif" alt="" />
         </ul>
       </div>
     </div>
