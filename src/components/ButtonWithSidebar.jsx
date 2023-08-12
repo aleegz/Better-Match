@@ -52,8 +52,11 @@ const ButtonWithSidebar = () => {
             </ScrollLink>
           </li>
         </ul>
+          <div className={styles.menuLogo}>
           <img
             src="https://raw.githubusercontent.com/7AleGz/Better-Match/master/public/better-match-logo-white.avif" alt="" />
+          <p>BETTER MATCH</p>
+          </div>
       </div>
     </div>
   );
