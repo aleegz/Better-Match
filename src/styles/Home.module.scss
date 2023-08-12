@@ -1,5 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=REM:ital,wght@1,700&display=swap');
-/*@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap');*/
 
 $primary-color: #5BFF04;
 
@@ -15,24 +14,19 @@ $primary-color: #5BFF04;
     //background-position: center; // Puedes ajustar esto según tus necesidades
     //width: 100%;
     //height: 100vh; // Ajusta esto según tus necesidades
-}
 
-.container h1 {
-    margin: 20px 10px 0 10px;
-    color: #ccc;
-    text-align: center;
-    font-family: 'REM', sans-serif;
-    font-size: 3em;
+    h1 {
+        margin: 20px 10px 0 10px;
+        color: #ccc;
+        text-align: center;
+        font-family: 'REM', sans-serif;
+        font-size: 3em;
+    }
+    a {
+        scroll-behavior: smooth;
+        transition: background-color 1s ease-in-out;
+    }
 }
-
-/*.container p {
-    margin: 10px;
-    font-family: 'Quicksand', sans-serif;
-    color: #ccc;
-    text-align: center;
-    background-color: rgba(31, 31, 31, 0.780);
-    padding: 5px 0;
-}*/
 
 .button {
     display: inline-block;
@@ -44,12 +38,8 @@ $primary-color: #5BFF04;
     border-radius: 8px;
     cursor: pointer;
     padding: 5px 10px;
-}
-.button:hover {
-  background-color: #83cf3b;
-}
 
-.container a {
-    scroll-behavior: smooth;
-    transition: background-color 1s ease-in-out;
+    &:hover {
+        background-color: #83cf3b;
+    }
 }
