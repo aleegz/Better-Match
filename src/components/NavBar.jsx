@@ -7,7 +7,7 @@ const NavBar = () => {
     <div>
         <nav className={styles.navbar}>
           <div className={styles.logo}>
-            <img src="/better-match-logo.avif" alt="Logo" />
+            <img src="dist\better-match-logo.avif" alt="Logo" />
             <span>BETTER MATCH</span>
           </div>
           <ButtonWithSidebar />
