@@ -10,33 +10,50 @@ const ButtonWithSidebar = () => {
   };
 
   return (
-    
     <div className={styles.buttonMenu}>
-      <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,1,0" />
-      <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,1,0" />
+      <link
+        rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,1,0"
+      />
+      <link
+        rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,1,0"
+      />
+      <link
+        rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0"
+      />
       <button
         className={`${styles.toggleButton} ${isMenuOpen ? styles.open : ""}`}
-        onClick={toggleMenu}>
+        onClick={toggleMenu}
+      >
         {isMenuOpen ? "✖" : "☰"}
       </button>
       <div className={`${styles.menu} ${isMenuOpen ? styles.open : ""}`}>
         <ul className={styles.menuList}>
           <li>
             <button onClick={toggleMenu}>
-              Home
-              <span className="material-symbols-outlined">home</span>
-              </button>
+              <div className={styles.btnTxt}>
+                <span className="material-symbols-outlined">home</span>
+                Home
+              </div>
+              <span className="material-symbols-outlined">arrow_forward_ios</span>
+            </button>
           </li>
           <li>
             <ScrollLink to="titleSection" smooth={true} duration={500}>
               <button onClick={toggleMenu}>
-                Live Matches
-                <span className="material-symbols-outlined">live_tv</span>
-                </button>
+                <div className={styles.btnTxt}>
+                  <span className="material-symbols-outlined">live_tv</span>
+                  Live Matches
+                </div>
+                <span className="material-symbols-outlined">arrow_forward_ios</span>
+              </button>
             </ScrollLink>
           </li>
-            <img src="https://raw.githubusercontent.com/7AleGz/Better-Match/master/public/better-match-logo-transparent.avif" alt="" />
         </ul>
+          <img
+            src="https://raw.githubusercontent.com/7AleGz/Better-Match/master/public/better-match-logo-white.avif" alt="" />
       </div>
     </div>
   );
@@ -44,9 +61,8 @@ const ButtonWithSidebar = () => {
 
 export default ButtonWithSidebar;
 
-
-
-{/*import React, { useState } from "react";
+{
+  /*import React, { useState } from "react";
 import styles from "../styles/ButtonWithSidebar.module.scss";
 
 const ButtonWithSidebar = () => {
@@ -94,4 +110,5 @@ export default ButtonWithSidebar;
           ☰
         </button>
       )}
-*/}
+*/
+}

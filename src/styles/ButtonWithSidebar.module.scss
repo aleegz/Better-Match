@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Quicksand&display=swap");
 
 .buttonMenu {
   position: relative;
@@ -17,14 +17,14 @@
     position: relative;
     z-index: 2;
     color: #000;
-    border: .1em #000 solid;
+    border: 0.1em #000 solid;
     display: flex;
     align-items: center;
     justify-content: center;
 
     &.open {
       color: #fff;
-      border: .09em #ccc solid;
+      border: 0.09em #ccc solid;
       font-weight: 300;
     }
   }
@@ -35,7 +35,7 @@
     position: fixed;
     top: 0;
     right: -100vw;
-    background-color: #0F1419;
+    background-color: #0f1419;
     color: #fff;
     transition: right 0.3s ease-in-out;
 
@@ -64,7 +64,7 @@
 
       button {
         display: flex;
-        justify-content: center;
+        justify-content: space-between;
         align-items: center;
         background-color: transparent;
         border: none;
@@ -73,12 +73,19 @@
         width: 100%;
         height: 100%;
         color: #ccc;
-        font-family: 'Quicksand', sans-serif;
+        font-family: "Quicksand", sans-serif;
 
         span {
-          margin-left: 5px;
+          margin-right: 5px;
         }
       }
+      .btnTxt {
+        display: flex;
+        align-items: center;
+      }
     }
+  }
+  img {
+    width: 100%;
   }
 }

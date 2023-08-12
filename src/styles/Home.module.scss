@@ -7,7 +7,7 @@ $primary-color: #5BFF04;
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
-    height: 90vh;
+    height: 100vh;
     background-image: url("https://www.aljazeera.com/wp-content/uploads/2022/11/2022-11-26T195844Z_745320325_UP1EIBQ1JHTRI_RTRMADP_3_SOCCER-WORLDCUP-ARG-MEX-REPORT.jpg?resize=1170%2C780&quality=80");
     //https://www.aljazeera.com/wp-content/uploads/2022/11/AP22330711560268.jpg?fit=1170%2C780&quality=80
     background-size: cover; // Puedes ajustar esto según tus necesidades
@@ -16,7 +16,7 @@ $primary-color: #5BFF04;
     //height: 100vh; // Ajusta esto según tus necesidades
 
     h1 {
-        margin: 20px 10px 0 10px;
+        margin: 1.5em 10px 0 10px;
         color: #ccc;
         text-align: center;
         font-family: 'REM', sans-serif;
