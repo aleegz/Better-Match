@@ -7,7 +7,7 @@ import matches from "../data/matches.json";
 import styles from "../styles/Live.module.scss";
 
 const Live = () => {
-  const { loading, data } = useApi('https://v3.football.api-sports.io/fixtures?live=all');
+  /*const { loading, data } = useApi('https://v3.football.api-sports.io/fixtures?live=all');
 
   if(loading) 
     return (
@@ -22,8 +22,8 @@ const Live = () => {
         return <div>No hay datos disponibles</div>;
     };
 
-  const partidos = data.response;
-  //const partidos = matches.response;
+  const partidos = data.response;*/
+  const partidos = matches.response;
 
   return (
     <div id="titleSection">
