@@ -3,7 +3,7 @@ import useApi from '../services/useApi';
 import LeagueImage from "../components/img/LeagueImg.jsx";
 import TeamImage from "../components/img/TeamImg.jsx";
 import VenueImage from "../components/img/VenueImg.jsx";
-import matches from "../data/matches.json";
+import matches from "../data/matches2.json";
 import styles from "../styles/Live.module.scss";
 
 const Live = () => {
