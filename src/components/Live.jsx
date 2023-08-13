@@ -1,10 +1,11 @@
 import React from "react";
+import styles from "../styles/Live.module.scss";
+import { Link } from 'react-router-dom';
 import useApi from '../services/useApi';
 import LeagueImage from "../components/img/LeagueImg.jsx";
 import TeamImage from "../components/img/TeamImg.jsx";
 import VenueImage from "../components/img/VenueImg.jsx";
 import matches from "../data/matches2.json";
-import styles from "../styles/Live.module.scss";
 
 const Live = () => {
   /*const { loading, data } = useApi('https://v3.football.api-sports.io/fixtures?live=all');
@@ -43,7 +44,6 @@ const Live = () => {
         {partidos.map((partido, index) => (
           <div key={index}>
             <div className={styles.match}>
-              <a href="">
 
             <div className={styles.leagueTime}>
               <h4>{partido.league.name}</h4>
@@ -67,7 +67,6 @@ const Live = () => {
                 {partido.goals.away}
                 {partido.score.penalty.away ? ` (${partido.score.penalty.away})` : ''}
               </div>
-              </a>
             </div>
           </div>
         ))}
@@ -75,15 +74,5 @@ const Live = () => {
     </div>
   );
 };
-
-{
-  /*
-<h2>League: {partido.league.name}</h2>
-<LeagueImage leagueId={partido.league.id} />
-
-<h3>Stadium: {partido.fixture.venue.name}</h3>
-<VenueImage venueId={partido.fixture.venue.id} />
-*/
-}
 
 export default Live;
