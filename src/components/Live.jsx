@@ -35,8 +35,7 @@ const Live = () => {
             height="40"
             viewBox="0 -960 960 960"
             width="48"
-            fill="#fff"
-          >
+            fill="#fff">
             <path d="m383-350 267-170-267-170v340Zm-53 230v-80H140q-24 0-42-18t-18-42v-520q0-24 18-42t42-18h680q24 0 42 18t18 42v520q0 24-18 42t-42 18H630v80H330ZM140-260h680v-520H140v520Zm0 0v-520 520Z" />
           </svg>
         </div>
@@ -44,6 +43,7 @@ const Live = () => {
         {partidos.map((partido, index) => (
           <div key={index}>
             <div className={styles.match}>
+              <a href="">
 
             <div className={styles.leagueTime}>
               <h4>{partido.league.name}</h4>
@@ -56,6 +56,7 @@ const Live = () => {
                   {partido.teams.home.name}
                 </div>
                 {partido.goals.home}
+                {partido.score.penalty.home ? ` (${partido.score.penalty.home})` : ''}
               </div>
 
               <div className={styles.away}>
@@ -64,8 +65,9 @@ const Live = () => {
                   {partido.teams.away.name}
                 </div>
                 {partido.goals.away}
+                {partido.score.penalty.away ? ` (${partido.score.penalty.away})` : ''}
               </div>
-
+              </a>
             </div>
           </div>
         ))}

@@ -32,13 +32,15 @@ const ButtonWithSidebar = () => {
       <div className={`${styles.menu} ${isMenuOpen ? styles.open : ""}`}>
         <ul className={styles.menuList}>
           <li>
-            <button onClick={toggleMenu}>
-              <div className={styles.btnTxt}>
-                <span className="material-symbols-outlined">home</span>
-                Home
-              </div>
-              <span className="material-symbols-outlined">arrow_forward_ios</span>
-            </button>
+            <ScrollLink to="homeSection" smooth={true} duration={500}>
+              <button onClick={toggleMenu}>
+                <div className={styles.btnTxt}>
+                  <span className="material-symbols-outlined">home</span>
+                  Home
+                </div>
+                  <span className="material-symbols-outlined">arrow_forward_ios</span>
+              </button>
+            </ScrollLink>
           </li>
           <li>
             <ScrollLink to="titleSection" smooth={true} duration={500}>
