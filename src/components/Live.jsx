@@ -1,14 +1,26 @@
 import React from "react";
+import { useState } from 'react'
 import styles from "../styles/Live.module.scss";
 import { Link } from 'react-router-dom';
 import useApi from '../services/useApi';
 import LeagueImage from "../components/img/LeagueImg.jsx";
 import TeamImage from "../components/img/TeamImg.jsx";
 import VenueImage from "../components/img/VenueImg.jsx";
-//import matches from "../data/matches2.json";
+import matches from "../data/matches2.json";
+import Modal from '../components/Modal.jsx';
 
 const Live = () => {
-  const { loading, data } = useApi('https://v3.football.api-sports.io/fixtures?live=all');
+  const [selectedPartido, setSelectedPartido] = useState(null);
+
+  const openModal = (partido) => {
+    setSelectedPartido(partido);
+  };
+
+  const closeModal = () => {
+    setSelectedPartido(null);
+  };
+
+  /*const { loading, data } = useApi('https://v3.football.api-sports.io/fixtures?live=all');
 
   if(loading) 
     return (
@@ -23,8 +35,8 @@ const Live = () => {
         return <div>No hay datos disponibles</div>;
     };
 
-  const partidos = data.response;
-  //const partidos = matches.response;
+  const partidos = data.response;*/
+  const partidos = matches.response;
 
   return (
     <div id="titleSection">
@@ -43,7 +55,7 @@ const Live = () => {
 
         {partidos.map((partido, index) => (
           <div key={index}>
-            <div className={styles.match}>
+            <div className={styles.match} onClick={() => openModal(partido)}>
 
             <div className={styles.leagueTime}>
               <h4>{partido.league.name}</h4>
@@ -67,8 +79,20 @@ const Live = () => {
                 {partido.goals.away}
                 {partido.score.penalty.away ? ` (${partido.score.penalty.away})` : ''}
               </div>
+
             </div>
-          </div>
+              {selectedPartido && (
+                <Modal isOpen={true} onClose={closeModal}>
+                  <div className={styles.matchInfo}>
+                    
+                    <h2>Match Details</h2>
+                    <LeagueImage leagueId={partido.league.id} />
+                    <p>{selectedPartido.teams.home.name} vs {selectedPartido.teams.away.name}</p>
+
+                  </div>
+                </Modal>
+              )}
+            </div>
         ))}
       </div>
     </div>
