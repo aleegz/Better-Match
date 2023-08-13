@@ -5,7 +5,7 @@ import useApi from '../services/useApi';
 import LeagueImage from "../components/img/LeagueImg.jsx";
 import TeamImage from "../components/img/TeamImg.jsx";
 import VenueImage from "../components/img/VenueImg.jsx";
-import matches from "../data/matches2.json";
+//import matches from "../data/matches2.json";
 
 const Live = () => {
   const { loading, data } = useApi('https://v3.football.api-sports.io/fixtures?live=all');
