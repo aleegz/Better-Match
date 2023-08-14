@@ -20,6 +20,11 @@ const Live = () => {
     setSelectedPartido(null);
   };
 
+  // const time = (partido)=>{
+  //   (partido.fixture.status.short == "HT") ? partido.fixture.status.long 
+  //   || (partido.fixture.status.short == "ET") ? partido.fixture : partido.fixture.status.elapsed + "'";
+  // }
+
   const { loading, data } = useApi('https://v3.football.api-sports.io/fixtures?live=all');
 
   if(loading) 
@@ -53,7 +58,7 @@ const Live = () => {
 
             <div className={styles.leagueTime}>
               <h4>{partido.league.name}</h4>
-              <span><b>{partido.fixture.status.elapsed + "'"}</b></span>
+              <span><b>{(partido.fixture.status.short == "HT") ? partido.fixture.status.long : partido.fixture.status.elapsed + "'"}</b></span>
             </div>
 
               <div className={styles.home}>

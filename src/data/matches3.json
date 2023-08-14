@@ -1,0 +1,106 @@
+{
+  "get": "fixtures",
+  "parameters": {
+    "date": "2023-02-18"
+  },
+  "errors": [],
+  "results": 4,
+  "paging": {
+    "current": 1,
+    "total": 1
+  },
+  "response": [
+        {
+            "fixture": {
+            "id": 1074246,
+            "referee": "Mohammed Al Hoaish, Saudi Arabia",
+            "timezone": "UTC",
+            "date": "2023-08-14T18:00:00+00:00",
+            "timestamp": 1692036000,
+            "periods": {
+            "first": 1692036000,
+            "second": null
+            },
+            "venue": {
+            "id": 1370,
+            "name": "Prince Mohamed bin Fahd Stadium",
+            "city": "Dammam"
+            },
+            "status": {
+            "long": "Halftime",
+            "short": "HT",
+            "elapsed": 45
+            }
+            },
+            "league": {
+            "id": 307,
+            "name": "Pro League",
+            "country": "Saudi-Arabia",
+            "logo": "https://media-2.api-sports.io/football/leagues/307.png",
+            "flag": "https://media-1.api-sports.io/flags/sa.svg",
+            "season": 2023,
+            "round": "Regular Season - 1"
+            },
+            "teams": {
+            "home": {
+            "id": 2934,
+            "name": "Al-Ettifaq",
+            "logo": "https://media-1.api-sports.io/football/teams/2934.png",
+            "winner": false
+            },
+            "away": {
+            "id": 2939,
+            "name": "Al-Nassr",
+            "logo": "https://media-2.api-sports.io/football/teams/2939.png",
+            "winner": true
+            }
+            },
+            "goals": {
+            "home": 0,
+            "away": 1
+            },
+            "score": {
+            "halftime": {
+            "home": 0,
+            "away": 1
+            },
+            "fulltime": {
+            "home": null,
+            "away": null
+            },
+            "extratime": {
+            "home": null,
+            "away": null
+            },
+            "penalty": {
+            "home": null,
+            "away": null
+            }
+            },
+            "events": [
+            {
+            "time": {
+            "elapsed": 4,
+            "extra": null
+            },
+            "team": {
+            "id": 2939,
+            "name": "Al-Nassr",
+            "logo": "https://media-2.api-sports.io/football/teams/2939.png"
+            },
+            "player": {
+            "id": 304,
+            "name": "S. Mane"
+            },
+            "assist": {
+            "id": 44509,
+            "name": "A. Al Hassan"
+            },
+            "type": "Goal",
+            "detail": "Normal Goal",
+            "comments": null
+            }
+            ]
+        }
+    ]
+}
