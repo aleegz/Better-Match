@@ -1,14 +1,10 @@
 import "./App.css";
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-//import { DataProvider } from "./context/DataContext.jsx";
-//import ArgLive from "./components/ArgLive.jsx";
-//import WorldLive from "./components/WorldLive.jsx";
-import UCLLive from './components/UCLLive.jsx'
-import FriendliesLive from './components/FriendliesLive';
 import NavBar from './components/NavBar'
 import Home from './components/Home'
 import Live from './components/Live';
 import MatchDetails from './components/MatchDetails';
+import Today from './components/Today'
 
 function App() {
 
@@ -17,6 +13,7 @@ function App() {
         <NavBar />
         <Home />
         <Live />
+        <Today />
     </div>
   );
 }

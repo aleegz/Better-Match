@@ -15,19 +15,23 @@ $secondary-color: #1e1e1e;
 .title {
     display: flex;
     flex-wrap: nowrap;
+    flex-direction: column;
     align-items: center;
     justify-content: space-between;
     font-family: 'Lato', sans-serif;
     color: #fff;
     width: 90%;
     h1 {
+        margin: 2.3em 0 0 0;
         display: flex;
         align-items: center;
-        margin: 2.3em 0 .9em 0;
-    }
+    }   
     span {
         font-size: 1em;
         margin-left: .3em;
+    }
+    p {
+        margin: .3em 0 1.5em 0;
     }
 }
 
@@ -61,6 +65,12 @@ $secondary-color: #1e1e1e;
     margin-bottom: 10px;
     width: 90vw;
     padding: 10px;
+    color: #fff;
+
+    img {
+        width: 2.3em;
+        margin-right: 5px;
+    }
 }
 
 .home, .away {
@@ -79,11 +89,6 @@ $secondary-color: #1e1e1e;
     align-items: center;
 }
 
-.match img {
-    width: 2.3em;
-    margin-right: 5px;
-}
-
 .leagueTime {
     display: flex; 
     flex-direction: row;
@@ -99,4 +104,15 @@ $secondary-color: #1e1e1e;
     font-size: .8em;
     background-color: #006e0f;
     padding: 2px 7px 1px 7px;
+}
+
+.matchInfo {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-family: "Lato", sans-serif;
+
+    p {
+        margin-right: .7em;
+    }
 }

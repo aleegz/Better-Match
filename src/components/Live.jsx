@@ -20,7 +20,7 @@ const Live = () => {
     setSelectedPartido(null);
   };
 
-  /*const { loading, data } = useApi('https://v3.football.api-sports.io/fixtures?live=all');
+  const { loading, data } = useApi('https://v3.football.api-sports.io/fixtures?live=all');
 
   if(loading) 
     return (
@@ -35,22 +35,16 @@ const Live = () => {
         return <div>No hay datos disponibles</div>;
     };
 
-  const partidos = data.response;*/
-  const partidos = matches.response;
+  const partidos = data.response;
+  //const partidos = matches.response;
 
   return (
     <div id="titleSection">
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+
       <div className={styles.container}>
         <div className={styles.title}>
-          <h1>Live Matches</h1>
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            height="40"
-            viewBox="0 -960 960 960"
-            width="48"
-            fill="#fff">
-            <path d="m383-350 267-170-267-170v340Zm-53 230v-80H140q-24 0-42-18t-18-42v-520q0-24 18-42t42-18h680q24 0 42 18t18 42v520q0 24-18 42t-42 18H630v80H330ZM140-260h680v-520H140v520Zm0 0v-520 520Z" />
-          </svg>
+          <h1>Live Matches <span className="material-symbols-outlined">live_tv</span></h1>
         </div>
 
         {partidos.map((partido, index) => (

@@ -53,6 +53,17 @@ const ButtonWithSidebar = () => {
               </button>
             </ScrollLink>
           </li>
+          <li>
+            <ScrollLink to="todaySection" smooth={true} duration={500}>
+              <button onClick={toggleMenu}>
+                <div className={styles.btnTxt}>
+                  <span className="material-symbols-outlined">today</span>
+                  Today's Matches
+                </div>
+                <span className="material-symbols-outlined">arrow_forward_ios</span>
+              </button>
+            </ScrollLink>
+          </li>
         </ul>
           <div className={styles.menuLogo}>
           <img
