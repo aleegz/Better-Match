@@ -102,7 +102,7 @@ const Today = () => {
             </div>
 
             </div>
-              {selectedPartido && (
+              {/* {selectedPartido && (
                 <Modal isOpen={true} onClose={closeModal}>
                   <div className={styles.matchInfo}>
                     
@@ -112,7 +112,7 @@ const Today = () => {
 
                   </div>
                 </Modal>
-              )}
+              )} */}
             </div>
         ))}
       </div>

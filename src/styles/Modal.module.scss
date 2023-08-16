@@ -11,18 +11,75 @@
 }
 
 .modalContent {
-  background-color: #fff;
-  padding: 20px;
+  background-color: #1e1e1e;
+  border: 2px #fff solid;
+  color: #fff;
+  width: 90%;
+  height: 70%;
+
   border-radius: 5px;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
   display: flex;
   flex-direction: column;
   align-items: flex-end;
+  
+  .matchDetails {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    .leagueLogo {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+      margin: 0 10px 0 10px;
+      h4 {
+      margin: 0 0 0 .3em;
+      font-size: 1.5em;
+      }
+      img {
+        height: 3em;
+        width: auto;
+      }
+    }
+    
+    .matchDetailsTeams {
+      display: flex;
+      margin-top: 1em;
+      text-align: center;
+    }
+    img {
+      width: 50%;
+    }
+    p {
+      display: flex;
+      align-items: center;
+    }
+    .matchDetailsTeamsHome, .matchDetailsTeamsAway {
+      width: 50%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+  a {
+    text-align: center;
+    width: 100%;
+    margin-top: 1em;
+    text-decoration: none;
+    color: #5BFF04;
+  }
 }
 
 .closeButton {
-  font-size: 18px;
   background: none;
   border: none;
   cursor: pointer;
+
+  span {
+    font-size: 1.8em;
+    color: #fff;
+    padding: .2em 0 0 0;
+  }
 }
