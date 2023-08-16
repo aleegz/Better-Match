@@ -12,9 +12,11 @@ const Modal = ({ isOpen, onClose, children, selectedPartido }) => {
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
     <div className={styles.modalOverlay} onClick={onClose}>
       <div className={styles.modalContent}>
+        <div className={styles.modalButton}>
         <button className={styles.closeButton} onClick={onClose}>
           <span className="material-symbols-outlined">close</span>
         </button>
+        </div>
 
 
           
