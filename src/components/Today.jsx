@@ -70,7 +70,7 @@ const Today = () => {
         <span className={styles.separator}></span>
 
         <div className={styles.title}>
-          <h1>Today's Matches <span className="material-symbols-outlined">today</span></h1>
+          <h1>Today's Matches <span className="material-symbols-outlined" translate="no">today</span></h1>
           <p>{today}</p>
         </div>
 

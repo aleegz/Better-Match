@@ -14,7 +14,7 @@ const Modal = ({ isOpen, onClose, children, selectedPartido }) => {
       <div className={styles.modalContent}>
         <div className={styles.modalButton}>
         <button className={styles.closeButton} onClick={onClose}>
-          <span className="material-symbols-outlined">close</span>
+          <span className="material-symbols-outlined" translate="no">close</span>
         </button>
         </div>
 

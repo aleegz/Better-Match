@@ -54,7 +54,7 @@ const Live = () => {
         <div className={styles.title}>
           <h1>
             Live Matches{" "}
-            <span className="material-symbols-outlined">live_tv</span>
+            <span className="material-symbols-outlined" translate="no">live_tv</span>
           </h1>
         </div>
 
