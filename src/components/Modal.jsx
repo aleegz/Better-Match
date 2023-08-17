@@ -47,7 +47,7 @@ const Modal = ({ isOpen, onClose, children, selectedPartido }) => {
           </div>
           {children}
         </div>
-            <a href="View More">View More</a>
+            <a href="">View More</a>
 
       </div>
     </div>

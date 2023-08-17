@@ -64,12 +64,20 @@ const Live = () => {
               <div className={styles.leagueTime}>
                 <h4>{partido.league.name}</h4>
                 <span>
-                  <b>
+                  <p>
                     {partido.fixture.status.short == "HT"
                       ? partido.fixture.status.long
                       : partido.fixture.status.elapsed + "'"}
-                  </b>
+                  </p>
+                <div className={styles.indeterminateProgressBar}>
+                  <div className={styles.indeterminateProgressBarProgress}></div>
+                </div>
                 </span>
+
+
+               
+
+
               </div>
 
               <div className={styles.home}>
