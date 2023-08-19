@@ -25,14 +25,14 @@ const Modal = ({ isOpen, onClose, children, selectedPartido }) => {
 
         <div className={styles.leagueLogo}>
           <img src={selectedPartido.league.logo} alt="" />
-          <h4>{selectedPartido.league.name}</h4>
+          <h4 translate="no">{selectedPartido.league.name}</h4>
         </div>
 
           <div className={styles.matchDetailsTeams}>
 
             <div className={styles.matchDetailsTeamsHome}>
               <img src={selectedPartido.teams.home.logo} alt="Home Team Logo" />
-              <p>{selectedPartido.teams.home.name}</p>
+              <p translate="no">{selectedPartido.teams.home.name}</p>
               <b>{selectedPartido.goals.home}</b>
             </div>
 
@@ -40,7 +40,7 @@ const Modal = ({ isOpen, onClose, children, selectedPartido }) => {
 
             <div className={styles.matchDetailsTeamsAway}>
               <img src={selectedPartido.teams.away.logo} alt="Away Team Logo" />
-              <p> {selectedPartido.teams.away.name}</p>
+              <p translate="no">{selectedPartido.teams.away.name}</p>
               <b>{selectedPartido.goals.away}</b>
             </div>
 

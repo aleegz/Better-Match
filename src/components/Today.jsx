@@ -79,7 +79,7 @@ const Today = () => {
             <div className={styles.match} onClick={() => openModal(partido)}>
 
             <div className={styles.leagueTime}>
-              <h4>{partido.league.name}</h4>
+              <h4 translate="no">{partido.league.name}</h4>
             </div>
 
             <div className={styles.matchInfo}>
@@ -88,14 +88,14 @@ const Today = () => {
                 <div className={styles.home}>
                     <div className={styles.homeLogo}>
                     <TeamImage teamId={partido.teams.home.id} />
-                    {partido.teams.home.name}
+                    <p translate="no">{partido.teams.home.name}</p>
                     </div>
                 </div>
 
                 <div className={styles.away}>
                     <div className={styles.awayLogo}>
                     <TeamImage teamId={partido.teams.away.id} />
-                    {partido.teams.away.name}
+                    <p translate="no">{partido.teams.away.name}</p>
                     </div>
                 </div>
                 </div>

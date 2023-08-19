@@ -35,10 +35,10 @@ const ButtonWithSidebar = () => {
             <ScrollLink to="homeSection" smooth={true} duration={500}>
               <button onClick={toggleMenu}>
                 <div className={styles.btnTxt}>
-                  <span className="material-symbols-outlined">home</span>
+                  <span className="material-symbols-outlined" translate="no">home</span>
                   Home
                 </div>
-                  <span className="material-symbols-outlined">arrow_forward_ios</span>
+                  <span className="material-symbols-outlined" translate="no">arrow_forward_ios</span>
               </button>
             </ScrollLink>
           </li>
@@ -46,10 +46,10 @@ const ButtonWithSidebar = () => {
             <ScrollLink to="titleSection" smooth={true} duration={500}>
               <button onClick={toggleMenu}>
                 <div className={styles.btnTxt}>
-                  <span className="material-symbols-outlined">live_tv</span>
+                  <span className="material-symbols-outlined" translate="no">live_tv</span>
                   Live Matches
                 </div>
-                <span className="material-symbols-outlined">arrow_forward_ios</span>
+                <span className="material-symbols-outlined" translate="no">arrow_forward_ios</span>
               </button>
             </ScrollLink>
           </li>
@@ -57,10 +57,10 @@ const ButtonWithSidebar = () => {
             <ScrollLink to="todaySection" smooth={true} duration={500}>
               <button onClick={toggleMenu}>
                 <div className={styles.btnTxt}>
-                  <span className="material-symbols-outlined">today</span>
+                  <span className="material-symbols-outlined" translate="no">today</span>
                   Today's Matches
                 </div>
-                <span className="material-symbols-outlined">arrow_forward_ios</span>
+                <span className="material-symbols-outlined" translate="no">arrow_forward_ios</span>
               </button>
             </ScrollLink>
           </li>
