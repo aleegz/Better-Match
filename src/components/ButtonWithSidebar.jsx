@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import styles from "../styles/ButtonWithSidebar.module.scss";
 import { Link as ScrollLink } from "react-scroll";
+import logo from '../assets/images/better-match-logo-transparent.avif';
 
 const ButtonWithSidebar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -67,7 +68,7 @@ const ButtonWithSidebar = () => {
         </ul>
           <div className={styles.menuLogo}>
           <img
-            src="https://raw.githubusercontent.com/7AleGz/Better-Match/master/public/better-match-logo-transparent.avif" alt="" />
+            src={logo} alt="Logo" />
           <p translate="no">BETTER MATCH</p>
           </div>
       </div>

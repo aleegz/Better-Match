@@ -1,12 +1,15 @@
 import React from 'react';
 import styles from '../styles/Modal.module.scss';
+import { useNavigate, Link } from 'react-router-dom';
 
 const Modal = ({ isOpen, onClose, children, selectedPartido }) => {
-
+  
   console.log("Modal is open:", isOpen);
-
+  
   if (!isOpen) return null;
-
+  
+  //const navigate = useNavigate();
+  
   return (
     <>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
@@ -47,8 +50,7 @@ const Modal = ({ isOpen, onClose, children, selectedPartido }) => {
           </div>
           {children}
         </div>
-            <a href="">View More</a>
-
+        {/* <Link to={`/matchdetails/${selectedPartido}`}>View More</Link> */}
       </div>
     </div>
     

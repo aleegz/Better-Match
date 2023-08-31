@@ -8,6 +8,7 @@ import TeamImage from "../components/img/TeamImg.jsx";
 import VenueImage from "../components/img/VenueImg.jsx";
 import matches from "../data/matches2.json";
 import Modal from "../components/Modal.jsx";
+import MatchDetails from './MatchDetails'
 
 const Live = () => {
   const [selectedPartido, setSelectedPartido] = useState(null);
@@ -25,7 +26,7 @@ const Live = () => {
   //   || (partido.fixture.status.short == "ET") ? partido.fixture : partido.fixture.status.elapsed + "'";
   // }
 
-  const { loading, data } = useApi('https://v3.football.api-sports.io/fixtures?live=all');
+  /*const { loading, data } = useApi('https://v3.football.api-sports.io/fixtures?live=all');
 
   if(loading) 
     return (
@@ -40,8 +41,8 @@ const Live = () => {
         return <div>No hay datos disponibles</div>;
     };
 
-  const partidos = data.response;
-  //const partidos = matches.response;
+  const partidos = data.response;*/
+  const partidos = matches.response;
 
   return (
     <div id="titleSection">
@@ -73,9 +74,6 @@ const Live = () => {
                   <div className={styles.indeterminateProgressBarProgress}></div>
                 </div>
                 </span>
-
-
-               
 
 
               </div>
