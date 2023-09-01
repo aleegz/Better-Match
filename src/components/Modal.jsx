@@ -18,14 +18,21 @@ const Modal = ({ isOpen, onClose, children, selectedPartido }) => {
         
       <div className={styles.modalContent}>
         <div className={styles.modalButton}>
-        <button className={styles.closeButton} onClick={onClose}>
-          <span className="material-symbols-outlined" translate="no">close</span>
-        </button>
+          
+          <span className={styles.minute}>
+            <p>{selectedPartido.fixture.status.short == "HT" ? selectedPartido.fixture.status.long : selectedPartido.fixture.status.elapsed + "'"}</p>
+            <div className={styles.indeterminateProgressBar}>
+              <div className={styles.indeterminateProgressBarProgress}></div>
+            </div>
+          </span>
+
+          <button className={styles.closeButton} onClick={onClose}>
+            <span className="material-symbols-outlined" translate="no">close</span>
+          </button>
         </div>
 
           
         <div className={styles.matchDetails}>
-          <h2>Match Details</h2>
 
         <div className={styles.leagueLogo}>
           <img src={selectedPartido.league.logo} alt="" />
