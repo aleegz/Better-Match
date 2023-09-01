@@ -10,6 +10,12 @@
   align-items: center;
 }
 
+.modalContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .modalContent {
   background-color: #1e1e1e;
   border: 2px #fff solid;
@@ -44,22 +50,25 @@
       flex-wrap: wrap;
       margin: 0 10px 0 10px;
       h4 {
-      margin: 0 0 0 .3em;
+      margin: .3em 0 0 .3em;
       font-size: 1.5em;
       text-align: center;
       }
       img {
         height: 3em;
         width: auto;
+        max-width: 80vw;
       }
     }
     
     .matchDetailsTeams {
       display: flex;
       margin-top: 1em;
+      margin-bottom: 1em;
       text-align: center;
+      align-items: flex-start;
     }
-    img {
+    .leagueLogoImg {
       width: 50%;
     }
     p {
@@ -91,5 +100,23 @@
     font-size: 1.8em;
     color: #fff;
     padding: .2em 0 0 0;
+  }
+}
+
+.stadium {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 1em;
+  width: 80%;
+  margin: .7em 0;
+
+  h5 {
+    margin: 0;
+    padding-right: .5em;
+  }
+  img {
+    height: 100%;
+    width: fit-content;
   }
 }
