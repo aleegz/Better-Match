@@ -7,7 +7,6 @@ import Today from '../components/Today'
 const landing = () => {
   return (
     <>
-      <NavBar />
       <Home />
       <Live />
       <Today />

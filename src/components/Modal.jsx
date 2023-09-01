@@ -7,8 +7,8 @@ const Modal = ({ isOpen, onClose, children, selectedPartido }) => {
   console.log("Modal is open:", isOpen);
   
   if (!isOpen) return null;
-  
-  //const navigate = useNavigate();
+
+  const key = selectedPartido.fixture.id;
   
   return (
     <>
@@ -22,7 +22,6 @@ const Modal = ({ isOpen, onClose, children, selectedPartido }) => {
           <span className="material-symbols-outlined" translate="no">close</span>
         </button>
         </div>
-
 
           
         <div className={styles.matchDetails}>
@@ -63,7 +62,7 @@ const Modal = ({ isOpen, onClose, children, selectedPartido }) => {
           </div>
           {children}
         </div>
-        {/* <Link to={`/matchdetails/${selectedPartido}`}>View More</Link> */}
+        <Link to={`/matchdetails/${key}`}>View More</Link>
       </div>
       </div>
     </div>

@@ -8,7 +8,7 @@ import TeamImage from "../components/img/TeamImg.jsx";
 import VenueImage from "../components/img/VenueImg.jsx";
 import matches from "../data/matches2.json";
 import Modal from "../components/Modal.jsx";
-import MatchDetails from './MatchDetails'
+import MatchDetails from '../pages/MatchDetails'
 
 const Live = () => {
   const [selectedPartido, setSelectedPartido] = useState(null);
