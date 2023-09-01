@@ -1,17 +1,27 @@
 import React from "react";
 import { useState } from "react";
 import styles from "../styles/Live.module.scss";
-import { Link } from "react-router-dom";
-import useApi from "../services/useApi";
-import LeagueImage from "../components/img/LeagueImg.jsx";
 import TeamImage from "../components/img/TeamImg.jsx";
-import VenueImage from "../components/img/VenueImg.jsx";
-import matches from "../data/matches2.json";
+import apiData from "../data/matches2.json";
 import Modal from "../components/Modal.jsx";
-import MatchDetails from '../pages/MatchDetails'
+import { useApiContext } from '../context/DataContext'
 
 const Live = () => {
   const [selectedPartido, setSelectedPartido] = useState(null);
+  const { apiData } = useApiContext();
+
+  if(!apiData) 
+  return (
+    <div className={styles.spinContainer}>
+      <div className={styles.spinner}></div>
+    </div>
+      
+  )
+
+  if (!apiData.results || apiData.length === 0) {
+      {console.error(apiData.errors.requests)}
+      return <div>No hay datos disponibles</div>;
+  };
 
   const openModal = (partido) => {
     setSelectedPartido(partido);
@@ -21,28 +31,7 @@ const Live = () => {
     setSelectedPartido(null);
   };
 
-  // const time = (partido)=>{
-  //   (partido.fixture.status.short == "HT") ? partido.fixture.status.long
-  //   || (partido.fixture.status.short == "ET") ? partido.fixture : partido.fixture.status.elapsed + "'";
-  // }
-
-  const { loading, data } = useApi('https://v3.football.api-sports.io/fixtures?live=all');
-
-  if(loading) 
-    return (
-      <div className={styles.spinContainer}>
-        <div className={styles.spinner}></div>
-      </div>
-        
-    )
-
-    if (!data.results || data.length === 0) {
-        {console.error(data.errors.requests)}
-        return <div>No hay datos disponibles</div>;
-    };
-
-  const partidos = data.response;
-  //const partidos = matches.response;
+  const partidos = apiData.response;
 
   return (
     <div id="titleSection">
@@ -115,3 +104,32 @@ const Live = () => {
 };
 
 export default Live;
+
+/* 
+
+  const time = (partido)=>{
+    (partido.fixture.status.short == "HT") ? partido.fixture.status.long || (partido.fixture.status.short == "ET") ?  partido.fixture : partido.fixture.status.elapsed + "'";
+  }
+
+
+
+
+  const { loading, data } = useApi('https://v3.football.api-sports.io/fixtures?live=all');
+
+  if(loading) 
+    return (
+      <div className={styles.spinContainer}>
+        <div className={styles.spinner}></div>
+      </div>
+        
+    )
+
+    if (!data.results || data.length === 0) {
+        {console.error(data.errors.requests)}
+        return <div>No hay datos disponibles</div>;
+    };
+
+  const partidos = data.response;
+
+
+*/

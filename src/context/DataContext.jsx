@@ -1,26 +1,25 @@
-import React, { createContext, useContext, useState, useEffect } from "react";
-import { fetchData } from "../services/api";
+import React, { createContext, useContext, useState, useEffect } from 'react';
+import useApi from '../services/useApi.js';
 
 const DataContext = createContext();
 
-export const useData = () => useContext(DataContext);
+export function useApiContext() {
+  return useContext(DataContext);
+}
 
-export const DataProvider = ({ children }) => {
-  const [data, setData] = useState(null);
+export function DataProvider({ children }) {
+  const { loading, data } = useApi('https://v3.football.api-sports.io/fixtures?live=all');
+  const [apiData, setApiData] = useState(null);
 
   useEffect(() => {
-    fetchData()
-      .then((apiData) => {
-        setData(apiData.response);
-      })
-      .catch((error) => {
-        console.error("Error fetching data:", error);
-      });
-  }, []);
+    if (!loading && data) {
+      setApiData(data);
+    }
+  }, [loading, data]);
 
   return (
-    <DataContext.Provider value={{ data }}>
+    <DataContext.Provider value={{ apiData }}>
       {children}
     </DataContext.Provider>
   );
-};
+}

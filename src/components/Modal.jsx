@@ -1,6 +1,6 @@
 import React from 'react';
 import styles from '../styles/Modal.module.scss';
-import { useNavigate, Link } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 const Modal = ({ isOpen, onClose, children, selectedPartido }) => {
   
