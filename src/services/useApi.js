@@ -4,7 +4,7 @@ const useApi = (url) => {
   const [loading, setLoading] = useState(true)
   const [data, setData] = useState(null)
 
-  const fetchApi = () => {
+  /*const fetchApi = () => {
     fetch(url, {
         headers: {
             "x-apisports-key": "9d9d0f29039d2f857ac61de0bdc4ab3e",
@@ -31,7 +31,7 @@ const useApi = (url) => {
 
   useEffect(() => {
     fetchApi();
-  }, []);
+  }, []);*/
 
   return { loading, data }
 };

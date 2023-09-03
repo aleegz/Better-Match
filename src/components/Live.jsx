@@ -2,14 +2,14 @@ import React from "react";
 import { useState } from "react";
 import styles from "../styles/Live.module.scss";
 import TeamImage from "../components/img/TeamImg.jsx";
-import apiData from "../data/matches4.json";
 import Modal from "../components/Modal.jsx";
 import err from '../assets/images/err.svg'
+import apiData from "../data/matches4.json";
 import { useApiContext } from '../context/DataContext'
 
 const Live = () => {
   const [selectedPartido, setSelectedPartido] = useState(null);
-  const { apiData } = useApiContext();
+  /*const { apiData } = useApiContext();
 
   if(!apiData) 
   return (
@@ -28,7 +28,7 @@ const Live = () => {
         <img src={err} alt="" />
       </div>
       );
-  };
+  };*/
 
   const openModal = (partido) => {
     setSelectedPartido(partido);

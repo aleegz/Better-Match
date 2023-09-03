@@ -14,6 +14,8 @@ function App() {
       <NavBar />
       <Routes>
         <Route path="/" element={<Landing />} />
+        <Route path="/live" element={<Live />} />
+        <Route path="/today" element={<Today />} />
         <Route path="/matchdetails/:id" element={<MatchDetails />} />
       </Routes>
     </div>

@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap');
 
 $primary-color: #006e0f;
+$secondary-color: #1e1e1e;
 
 .container {
     padding-top: 4em;
@@ -12,11 +13,14 @@ $primary-color: #006e0f;
 
     .time {
         color: $primary-color;
-        h3 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        .minute {
             margin: 0;
             padding: .5em 0 0 0;
-            font-family: 'Oswald', sans-serif;
             text-align: center;
+            font-family: 'Oswald', sans-serif;
         }
     }
     .matchScore {
@@ -33,5 +37,61 @@ $primary-color: #006e0f;
         .homeTeam, .awayTeam {
             width: 30%;
         }
+    }
+}
+
+.league {
+    background: #333;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 1em;
+    .leagueLogo {
+        display: flex;
+        align-items: center;
+        img {
+            height: 2em;
+            margin-right: .5em;
+        }
+    }
+}
+    
+
+.stadium {
+    background: #000;
+    color: #fff;
+    img {
+        width: 100vw;
+    }
+}
+
+.indeterminateProgressBar {
+    background-color: #00000000;
+    border-radius: 9999px;
+    position: relative;
+    overflow: hidden;
+    width: 1.5em;
+    height: 2px;
+}
+
+.indeterminateProgressBarProgress {
+    background-color: #006e0f;
+    border-radius: 9999px;
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    width: 50%;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-name: indeterminateProgressBar;
+}
+
+@keyframes indeterminateProgressBar {
+    from {
+        left: -50%;
+    }
+    to {
+        left: 100%;
     }
 }

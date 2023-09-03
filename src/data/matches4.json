@@ -37,7 +37,7 @@
           "name": "UEFA Champions League",
           "country": "World",
           "logo": "https://media-1.api-sports.io/football/leagues/2.png",
-          "flag": null,
+          "flag": "https://media-1.api-sports.io/flags/gb.svg",
           "season": 2022,
           "round": "Quarter-finals"
         },
@@ -173,7 +173,7 @@
             "name": "Premier League",
             "country": "England",
             "logo": "https://media-3.api-sports.io/football/leagues/39.png",
-            "flag": "https://media-3.api-sports.io/flags/en.svg",
+            "flag": "https://media-1.api-sports.io/flags/gb.svg",
             "season": 2022,
             "round": "Regular Season - 22"
           },
@@ -241,7 +241,7 @@
             "name": "World Cup",
             "country": "World",
             "logo": "https://media-1.api-sports.io/football/leagues/1.png",
-            "flag": null,
+            "flag": "https://media-1.api-sports.io/flags/qa.svg",
             "season": 2022,
             "round": "Final"
           },

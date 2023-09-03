@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 import useApi from '../services/useApi';
 import LeagueImage from "../components/img/LeagueImg.jsx";
 import TeamImage from "../components/img/TeamImg.jsx";
-import apiData from "../data/matches3.json";
+import data from "../data/matches3.json";
 
 const Today = () => {
   const [selectedPartido, setSelectedPartido] = useState(null);
@@ -40,7 +40,7 @@ const Today = () => {
     return fechaHoraFormateada;
     }
 
-  const { loading, data } = useApi(`https://v3.football.api-sports.io/fixtures?date=${xdate}&status=NS&timezone=America/Argentina/Buenos_Aires`);
+  /*const { loading, data } = useApi(`https://v3.football.api-sports.io/fixtures?date=${xdate}&status=NS&timezone=America/Argentina/Buenos_Aires`);
   
 
   if(loading) 
@@ -56,7 +56,7 @@ const Today = () => {
         return (
           <div className={styles.error}>No data available</div>
         );
-    };
+    };*/
 
   const partidos = data.response;
 
