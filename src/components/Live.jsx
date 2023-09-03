@@ -2,8 +2,9 @@ import React from "react";
 import { useState } from "react";
 import styles from "../styles/Live.module.scss";
 import TeamImage from "../components/img/TeamImg.jsx";
-import apiData from "../data/matches2.json";
+import apiData from "../data/matches4.json";
 import Modal from "../components/Modal.jsx";
+import err from '../assets/images/err.svg'
 import { useApiContext } from '../context/DataContext'
 
 const Live = () => {
@@ -20,7 +21,13 @@ const Live = () => {
 
   if (!apiData.results || apiData.length === 0) {
       {console.error(apiData.errors.requests)}
-      return <div>No hay datos disponibles</div>;
+      return (
+      <div className={styles.error}>
+        <h1>404 Error</h1>
+        <p>Not found..</p>
+        <img src={err} alt="" />
+      </div>
+      );
   };
 
   const openModal = (partido) => {

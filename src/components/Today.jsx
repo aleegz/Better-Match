@@ -5,9 +5,7 @@ import { Link } from 'react-router-dom';
 import useApi from '../services/useApi';
 import LeagueImage from "../components/img/LeagueImg.jsx";
 import TeamImage from "../components/img/TeamImg.jsx";
-import matches from "../data/matches3.json";
-import Modal from '../components/Modal.jsx';
-import date from '../components/date.js'
+import apiData from "../data/matches3.json";
 
 const Today = () => {
   const [selectedPartido, setSelectedPartido] = useState(null);
@@ -55,11 +53,12 @@ const Today = () => {
 
     if (!data.results || data.length === 0) {
         {console.error(data.errors.requests)}
-        return <div>No hay datos disponibles</div>;
+        return (
+          <div className={styles.error}>No data available</div>
+        );
     };
 
   const partidos = data.response;
-  //const partidos = matches.response;
 
   return (
     <div id="todaySection">
@@ -105,18 +104,7 @@ const Today = () => {
             </div>
 
             </div>
-              {/* {selectedPartido && (
-                <Modal isOpen={true} onClose={closeModal}>
-                  <div className={styles.matchInfo}>
-                    
-                    <h2>Match Details</h2>
-                    <LeagueImage leagueId={partido.league.id} />
-                    <p>{selectedPartido.teams.home.name} vs {selectedPartido.teams.away.name}</p>
-
-                  </div>
-                </Modal>
-              )} */}
-            </div>
+          </div>
         ))}
       </div>
     </div>

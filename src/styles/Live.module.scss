@@ -137,3 +137,17 @@ $secondary-color: #1e1e1e;
         left: 100%;
     }
 }
+
+.error {
+    display: flex;
+    height: 80vh;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: #ccc;
+    font-family: 'Courier New', Courier, monospace;
+    img {
+        width: 50%;
+        height: 50%;
+    }
+}

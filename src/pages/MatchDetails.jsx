@@ -1,6 +1,7 @@
 import React from 'react';
 import styles from '../styles/MatchDetails.module.scss';
 import { useParams } from 'react-router-dom';
+import apiData from "../data/matches4.json";
 import { useApiContext } from '../context/DataContext';
 
 const MatchDetails = () => {

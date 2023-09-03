@@ -78,6 +78,7 @@ $secondary-color: #1e1e1e;
     img {
         width: 2.3em;
         margin-right: 5px;
+        max-height: 2.3em;
     }
 }
 
@@ -123,4 +124,11 @@ $secondary-color: #1e1e1e;
     p {
         margin-right: .7em;
     }
+}
+
+.error {
+    background: #ccc;
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    padding: 1em 0 1em 0;
 }

@@ -1,4 +1,4 @@
-function fetchData() {
+/*function fetchData() {
   //const url = "https://v3.football.api-sports.io/fixtures?live=667-667"; // https://v3.football.api-sports.io/odds/live
   const headers = {
     "x-apisports-key": "9d9d0f29039d2f857ac61de0bdc4ab3e",
@@ -42,4 +42,4 @@ function fetchData() {
     });
   }
 
-export { fetchData };
+export { fetchData };*/

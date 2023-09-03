@@ -1,0 +1,378 @@
+{
+    "get": "fixtures",
+    "parameters": {
+      "date": "2023-XX-XX"
+    },
+    "errors": [],
+    "results": 4,
+    "paging": {
+      "current": 1,
+      "total": 1
+    },
+    "response": [
+      {
+        "fixture": {
+          "id": 1016060,
+          "referee": "D. Orsato",
+          "timezone": "UTC",
+          "date": "2023-04-18T19:00:00+00:00",
+          "timestamp": 1681844400,
+          "periods": {
+            "first": 1681844400,
+            "second": 1681848000
+          },
+          "venue": {
+            "id": 519,
+            "name": "Stamford Bridge",
+            "city": "London"
+          },
+          "status": {
+            "long": "Match Finished",
+            "short": "FT",
+            "elapsed": 90
+          }
+        },
+        "league": {
+          "id": 2,
+          "name": "UEFA Champions League",
+          "country": "World",
+          "logo": "https://media-1.api-sports.io/football/leagues/2.png",
+          "flag": null,
+          "season": 2022,
+          "round": "Quarter-finals"
+        },
+        "teams": {
+          "home": {
+            "id": 49,
+            "name": "Chelsea",
+            "logo": "https://media-2.api-sports.io/football/teams/49.png",
+            "winner": false
+          },
+          "away": {
+            "id": 541,
+            "name": "Real Madrid",
+            "logo": "https://media-3.api-sports.io/football/teams/541.png",
+            "winner": true
+          }
+        },
+        "goals": {
+          "home": 0,
+          "away": 2
+        },
+        "score": {
+          "halftime": {
+            "home": 0,
+            "away": 0
+          },
+          "fulltime": {
+            "home": 0,
+            "away": 2
+          },
+          "extratime": {
+            "home": null,
+            "away": null
+          },
+          "penalty": {
+            "home": null,
+            "away": null
+          }
+        }
+      },
+      {
+          "fixture": {
+            "id": 971440,
+            "referee": "A. Merlos",
+            "timezone": "UTC",
+            "date": "2023-03-20T21:30:00+00:00",
+            "timestamp": 1679347800,
+            "periods": {
+              "first": 1679347800,
+              "second": 1679351400
+            },
+            "venue": {
+              "id": 93,
+              "name": "Estadio Marcelo Alberto Bielsa",
+              "city": "Rosario, Provincia de Santa Fe"
+            },
+            "status": {
+              "long": "Match Finished",
+              "short": "FT",
+              "elapsed": 90
+            }
+          },
+          "league": {
+            "id": 128,
+            "name": "Liga Profesional Argentina",
+            "country": "Argentina",
+            "logo": "https://media-1.api-sports.io/football/leagues/128.png",
+            "flag": "https://media-3.api-sports.io/flags/ar.svg",
+            "season": 2023,
+            "round": "Round - 8"
+          },
+          "teams": {
+            "home": {
+              "id": 457,
+              "name": "Newell's Old Boys",
+              "logo": "https://media-3.api-sports.io/football/teams/457.png",
+              "winner": true
+            },
+            "away": {
+              "id": 460,
+              "name": "San Lorenzo",
+              "logo": "https://media-3.api-sports.io/football/teams/460.png",
+              "winner": false
+            }
+          },
+          "goals": {
+            "home": 1,
+            "away": 0
+          },
+          "score": {
+            "halftime": {
+              "home": 0,
+              "away": 0
+            },
+            "fulltime": {
+              "home": 1,
+              "away": 0
+            },
+            "extratime": {
+              "home": null,
+              "away": null
+            },
+            "penalty": {
+              "home": null,
+              "away": null
+            }
+          }
+        },
+        {
+          "fixture": {
+            "id": 878157,
+            "referee": "José Munuera",
+            "timezone": "UTC",
+            "date": "2023-02-18T20:00:00+00:00",
+            "timestamp": 1676750400,
+            "periods": {
+              "first": 1676750400,
+              "second": 1676754000
+            },
+            "venue": {
+              "id": 1486,
+              "name": "Old Trafford",
+              "city": "Manchester"
+            },
+            "status": {
+              "long": "First Hall",
+              "short": "1H",
+              "elapsed": 13
+            }
+          },
+          "league": {
+            "id": 39,
+            "name": "Premier League",
+            "country": "England",
+            "logo": "https://media-3.api-sports.io/football/leagues/39.png",
+            "flag": "https://media-3.api-sports.io/flags/en.svg",
+            "season": 2022,
+            "round": "Regular Season - 22"
+          },
+          "teams": {
+            "home": {
+              "id": 33,
+              "name": "Manchester United",
+              "logo": "https://media-3.api-sports.io/football/teams/33.png",
+              "winner": true
+            },
+            "away": {
+              "id": 49,
+              "name": "Chelsea",
+              "logo": "https://media-3.api-sports.io/football/teams/49.png",
+              "winner": false
+            }
+          },
+          "goals": {
+            "home": 1,
+            "away": 0
+          },
+          "score": {
+            "halftime": {
+              "home": 1,
+              "away": 0
+            },
+            "fulltime": {
+              "home": null,
+              "away": null
+            },
+            "extratime": {
+              "home": null,
+              "away": null
+            },
+            "penalty": {
+              "home": null,
+              "away": null
+            }
+          }
+        },
+        {
+          "fixture": {
+            "id": 979139,
+            "referee": "S. Marciniak",
+            "timezone": "UTC",
+            "date": "2022-12-18T15:00:00+00:00",
+            "timestamp": 1671375600,
+            "periods": {
+              "first": 1671375600,
+              "second": 1671379200
+            },
+            "venue": {
+              "id": null,
+              "name": "Lusail Iconic Stadium",
+              "city": "Lusail"
+            },
+            "status": {
+              "long": "Match Finished",
+              "short": "PEN",
+              "elapsed": 120
+            }
+          },
+          "league": {
+            "id": 1,
+            "name": "World Cup",
+            "country": "World",
+            "logo": "https://media-1.api-sports.io/football/leagues/1.png",
+            "flag": null,
+            "season": 2022,
+            "round": "Final"
+          },
+          "teams": {
+            "home": {
+              "id": 26,
+              "name": "Argentina",
+              "logo": "https://media-1.api-sports.io/football/teams/26.png",
+              "winner": true
+            },
+            "away": {
+              "id": 2,
+              "name": "France",
+              "logo": "https://media-3.api-sports.io/football/teams/2.png",
+              "winner": false
+            }
+          },
+          "goals": {
+            "home": 3,
+            "away": 3
+          },
+          "score": {
+            "halftime": {
+              "home": 2,
+              "away": 0
+            },
+            "fulltime": {
+              "home": 2,
+              "away": 2
+            },
+            "extratime": {
+              "home": 1,
+              "away": 1
+            },
+            "penalty": {
+              "home": 4,
+              "away": 2
+            }
+          }
+        },
+        {
+          "fixture": {
+          "id": 1074246,
+          "referee": "Mohammed Al Hoaish, Saudi Arabia",
+          "timezone": "UTC",
+          "date": "2023-08-14T18:00:00+00:00",
+          "timestamp": 1692036000,
+          "periods": {
+          "first": 1692036000,
+          "second": null
+          },
+          "venue": {
+          "id": 1370,
+          "name": "Prince Mohamed bin Fahd Stadium",
+          "city": "Dammam"
+          },
+          "status": {
+          "long": "Halftime",
+          "short": "HT",
+          "elapsed": 45
+          }
+          },
+          "league": {
+          "id": 307,
+          "name": "Pro League",
+          "country": "Saudi-Arabia",
+          "logo": "https://media-2.api-sports.io/football/leagues/307.png",
+          "flag": "https://media-1.api-sports.io/flags/sa.svg",
+          "season": 2023,
+          "round": "Regular Season - 1"
+          },
+          "teams": {
+          "home": {
+          "id": 2934,
+          "name": "Al-Ettifaq",
+          "logo": "https://media-1.api-sports.io/football/teams/2934.png",
+          "winner": false
+          },
+          "away": {
+          "id": 2939,
+          "name": "Al-Nassr",
+          "logo": "https://media-2.api-sports.io/football/teams/2939.png",
+          "winner": true
+          }
+          },
+          "goals": {
+          "home": 0,
+          "away": 1
+          },
+          "score": {
+          "halftime": {
+          "home": 0,
+          "away": 1
+          },
+          "fulltime": {
+          "home": null,
+          "away": null
+          },
+          "extratime": {
+          "home": null,
+          "away": null
+          },
+          "penalty": {
+          "home": null,
+          "away": null
+          }
+          },
+          "events": [
+          {
+          "time": {
+          "elapsed": 4,
+          "extra": null
+          },
+          "team": {
+          "id": 2939,
+          "name": "Al-Nassr",
+          "logo": "https://media-2.api-sports.io/football/teams/2939.png"
+          },
+          "player": {
+          "id": 304,
+          "name": "S. Mane"
+          },
+          "assist": {
+          "id": 44509,
+          "name": "A. Al Hassan"
+          },
+          "type": "Goal",
+          "detail": "Normal Goal",
+          "comments": null
+          }
+          ]
+      }
+    ]
+  }
