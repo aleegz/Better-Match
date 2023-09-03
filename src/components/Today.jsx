@@ -42,7 +42,7 @@ const Today = () => {
     return fechaHoraFormateada;
     }
 
-  /*const { loading, data } = useApi(`https://v3.football.api-sports.io/fixtures?date=${xdate}&status=NS&timezone=America/Argentina/Buenos_Aires`);
+  const { loading, data } = useApi(`https://v3.football.api-sports.io/fixtures?date=${xdate}&status=NS&timezone=America/Argentina/Buenos_Aires`);
   
 
   if(loading) 
@@ -58,8 +58,8 @@ const Today = () => {
         return <div>No hay datos disponibles</div>;
     };
 
-  const partidos = data.response;*/
-  const partidos = matches.response;
+  const partidos = data.response;
+  //const partidos = matches.response;
 
   return (
     <div id="todaySection">
