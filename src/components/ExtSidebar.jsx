@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import styles from "../styles/ButtonWithSidebar.module.scss";
 import { Link } from "react-router-dom";
-import { useLocation } from "react-router-dom";
 import logo from "../assets/images/better-match-logo-transparent.avif";
 
 const ButtonWithSidebar = () => {
@@ -92,53 +91,3 @@ const ButtonWithSidebar = () => {
 };
 
 export default ButtonWithSidebar;
-
-/* 
-<li>
-                <ScrollLink to="homeSection" smooth={true} duration={500}>
-                  <button onClick={toggleMenu}>
-                    <div className={styles.btnTxt}>
-                      <span className="material-symbols-outlined" translate="no">
-                        home
-                      </span>
-                      Home
-                    </div>
-                    <span className="material-symbols-outlined" translate="no">
-                      arrow_forward_ios
-                    </span>
-                  </button>
-                </ScrollLink>
-              </li>
-
-              <li>
-                <ScrollLink to="titleSection" smooth={true} duration={500}>
-                  <button onClick={toggleMenu}>
-                    <div className={styles.btnTxt}>
-                      <span className="material-symbols-outlined" translate="no">
-                        live_tv
-                      </span>
-                      Live Matches
-                    </div>
-                    <span className="material-symbols-outlined" translate="no">
-                      arrow_forward_ios
-                    </span>
-                  </button>
-                </ScrollLink>
-              </li>
-            
-              <li>
-                <ScrollLink to={"todaySection"} smooth={true} duration={500}>
-                  <button onClick={toggleMenu}>
-                    <div className={styles.btnTxt}>
-                      <span className="material-symbols-outlined" translate="no">
-                        today
-                      </span>
-                      Today's Matches
-                    </div>
-                    <span className="material-symbols-outlined" translate="no">
-                      arrow_forward_ios
-                    </span>
-                  </button>
-                </ScrollLink>
-              </li> 
-*/

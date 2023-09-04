@@ -7,7 +7,7 @@ import { useApiContext } from '../context/DataContext';
 
 const MatchDetails = () => {
   const { id } = useParams();
-  /*const { apiData } = useApiContext();
+  const { apiData } = useApiContext();
 
   if(!apiData) 
   return (
@@ -20,7 +20,7 @@ const MatchDetails = () => {
   if (!apiData.results || apiData.length === 0) {
       {console.error(apiData.errors.requests)}
       return <div>No hay datos disponibles</div>;
-  };*/
+  };
 
   const matches = apiData.response;
 

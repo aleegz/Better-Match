@@ -3,42 +3,43 @@ import { useState } from "react";
 import styles from "../styles/Live.module.scss";
 import TeamImage from "../components/img/TeamImg.jsx";
 import Modal from "../components/Modal.jsx";
-import err from '../assets/images/err.svg'
+import err from "../assets/images/err.svg";
 import apiData from "../data/matches4.json";
-import { useApiContext } from '../context/DataContext'
+import { useApiContext } from "../context/DataContext";
 
 const Live = () => {
-  const [selectedPartido, setSelectedPartido] = useState(null);
-  /*const { apiData } = useApiContext();
+  const [selectedMatch, setSelectedMatch] = useState(null);
+  const { apiData } = useApiContext();
 
-  if(!apiData) 
-  return (
-    <div className={styles.spinContainer}>
-      <div className={styles.spinner}></div>
-    </div>
-      
-  )
+  if (!apiData)
+    return (
+      <div className={styles.spinContainer}>
+        <div className={styles.spinner}></div>
+      </div>
+    );
 
   if (!apiData.results || apiData.length === 0) {
-      {console.error(apiData.errors.requests)}
-      return (
+    {
+      console.error(apiData.errors.requests);
+    }
+    return (
       <div className={styles.error}>
         <h1>404 Error</h1>
         <p>Not found..</p>
         <img src={err} alt="" />
       </div>
-      );
-  };*/
+    );
+  }
 
-  const openModal = (partido) => {
-    setSelectedPartido(partido);
+  const openModal = (match) => {
+    setSelectedMatch(match);
   };
 
   const closeModal = () => {
-    setSelectedPartido(null);
+    setSelectedMatch(null);
   };
 
-  const partidos = apiData.response;
+  const matches = apiData.response;
 
   return (
     <div id="titleSection">
@@ -51,58 +52,60 @@ const Live = () => {
         <div className={styles.title}>
           <h1>
             Live Matches{" "}
-            <span className="material-symbols-outlined" translate="no">live_tv</span>
+            <span className="material-symbols-outlined" translate="no">
+              live_tv
+            </span>
           </h1>
         </div>
 
-        {partidos.map((partido, index) => (
+        {matches.map((match, index) => (
           <div key={index}>
-            <div className={styles.match} onClick={() => openModal(partido)}>
+            <div className={styles.match} onClick={() => openModal(match)}>
               <div className={styles.leagueTime}>
-                <h4 translate="no">{partido.league.name}</h4>
+                <h4 translate="no">{match.league.name}</h4>
                 <span>
                   <p>
-                    {partido.fixture.status.short == "HT"
-                      ? partido.fixture.status.long
-                      : partido.fixture.status.elapsed + "'"}
+                    {match.fixture.status.short == "HT"
+                      ? match.fixture.status.long
+                      : match.fixture.status.elapsed + "'"}
                   </p>
-                <div className={styles.indeterminateProgressBar}>
-                  <div className={styles.indeterminateProgressBarProgress}></div>
-                </div>
+                  <div className={styles.indeterminateProgressBar}>
+                    <div
+                      className={styles.indeterminateProgressBarProgress}
+                    ></div>
+                  </div>
                 </span>
-
-
               </div>
 
               <div className={styles.home}>
                 <div className={styles.homeLogo}>
-                  <TeamImage teamId={partido.teams.home.id} />
-                  <p translate="no">{partido.teams.home.name}</p>
+                  <TeamImage teamId={match.teams.home.id} />
+                  <p translate="no">{match.teams.home.name}</p>
                 </div>
-                {partido.goals.home}
-                {partido.score.penalty.home
-                  ? ` (${partido.score.penalty.home})`
+                {match.goals.home}
+                {match.score.penalty.home
+                  ? ` (${match.score.penalty.home})`
                   : ""}
               </div>
 
               <div className={styles.away}>
                 <div className={styles.awayLogo}>
-                  <TeamImage teamId={partido.teams.away.id} />
-                  <p translate="no">{partido.teams.away.name}</p>
+                  <TeamImage teamId={match.teams.away.id} />
+                  <p translate="no">{match.teams.away.name}</p>
                 </div>
-                {partido.goals.away}
-                {partido.score.penalty.away
-                  ? ` (${partido.score.penalty.away})`
+                {match.goals.away}
+                {match.score.penalty.away
+                  ? ` (${match.score.penalty.away})`
                   : ""}
               </div>
             </div>
           </div>
         ))}
-        {selectedPartido && (
+        {selectedMatch && (
           <Modal
             isOpen={true}
             onClose={closeModal}
-            selectedPartido={selectedPartido}
+            selectedMatch={selectedMatch}
           />
         )}
       </div>
@@ -111,32 +114,3 @@ const Live = () => {
 };
 
 export default Live;
-
-/* 
-
-  const time = (partido)=>{
-    (partido.fixture.status.short == "HT") ? partido.fixture.status.long || (partido.fixture.status.short == "ET") ?  partido.fixture : partido.fixture.status.elapsed + "'";
-  }
-
-
-
-
-  const { loading, data } = useApi('https://v3.football.api-sports.io/fixtures?live=all');
-
-  if(loading) 
-    return (
-      <div className={styles.spinContainer}>
-        <div className={styles.spinner}></div>
-      </div>
-        
-    )
-
-    if (!data.results || data.length === 0) {
-        {console.error(data.errors.requests)}
-        return <div>No hay datos disponibles</div>;
-    };
-
-  const partidos = data.response;
-
-
-*/

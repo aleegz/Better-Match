@@ -1,21 +1,19 @@
 import React from "react";
 import { useState } from 'react'
 import styles from "../styles/Today.module.scss";
-import { Link } from 'react-router-dom';
 import useApi from '../services/useApi';
-import LeagueImage from "../components/img/LeagueImg.jsx";
 import TeamImage from "../components/img/TeamImg.jsx";
 import data from "../data/matches3.json";
 
 const Today = () => {
-  const [selectedPartido, setSelectedPartido] = useState(null);
+  const [selectedMatch, setSelectedMatch] = useState(null);
 
-  const openModal = (partido) => {
-    setSelectedPartido(partido);
+  const openModal = (match) => {
+    setSelectedMatch(match);
   };
 
   const closeModal = () => {
-    setSelectedPartido(null);
+    setSelectedMatch(null);
   };
 
     const date = new Date();
@@ -31,8 +29,8 @@ const Today = () => {
     let m = dateyymmdd.getMonth() + 1;
     const xdate = [dateyymmdd.getFullYear(), (m < 10) ? '0' + m : m, (d < 10) ? '0' + d : d].join('-');
 
-    const dateHour = (partido)=> {
-    const fechaHoraUtc = new Date(partido.fixture.date);
+    const dateHour = (match)=> {
+    const fechaHoraUtc = new Date(match.fixture.date);
 
     const options = { timeZone: 'America/Argentina/Buenos_Aires', hour: '2-digit', minute: '2-digit' };
     const formatter = new Intl.DateTimeFormat('es-AR', options);
@@ -40,7 +38,7 @@ const Today = () => {
     return fechaHoraFormateada;
     }
 
-  /*const { loading, data } = useApi(`https://v3.football.api-sports.io/fixtures?date=${xdate}&status=NS&timezone=America/Argentina/Buenos_Aires`);
+  const { loading, data } = useApi(`https://v3.football.api-sports.io/fixtures?date=${xdate}&status=NS&timezone=America/Argentina/Buenos_Aires`);
   
 
   if(loading) 
@@ -56,9 +54,9 @@ const Today = () => {
         return (
           <div className={styles.error}>No data available</div>
         );
-    };*/
+    };
 
-  const partidos = data.response;
+  const matches = data.response;
 
   return (
     <div id="todaySection">
@@ -73,12 +71,12 @@ const Today = () => {
           <p>{today}</p>
         </div>
 
-        {partidos.map((partido, index) => (
+        {matches.map((match, index) => (
           <div key={index}>
-            <div className={styles.match} onClick={() => openModal(partido)}>
+            <div className={styles.match} onClick={() => openModal(match)}>
 
             <div className={styles.leagueTime}>
-              <h4 translate="no">{partido.league.name}</h4>
+              <h4 translate="no">{match.league.name}</h4>
             </div>
 
             <div className={styles.matchInfo}>
@@ -86,20 +84,20 @@ const Today = () => {
                 <div className={styles.dateMatch}>
                 <div className={styles.home}>
                     <div className={styles.homeLogo}>
-                    <TeamImage teamId={partido.teams.home.id} />
-                    <p translate="no">{partido.teams.home.name}</p>
+                    <TeamImage teamId={match.teams.home.id} />
+                    <p translate="no">{match.teams.home.name}</p>
                     </div>
                 </div>
 
                 <div className={styles.away}>
                     <div className={styles.awayLogo}>
-                    <TeamImage teamId={partido.teams.away.id} />
-                    <p translate="no">{partido.teams.away.name}</p>
+                    <TeamImage teamId={match.teams.away.id} />
+                    <p translate="no">{match.teams.away.name}</p>
                     </div>
                 </div>
                 </div>
 
-                <p>{dateHour(partido)}</p>
+                <p>{dateHour(match)}</p>
 
             </div>
 

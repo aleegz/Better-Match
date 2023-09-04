@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import styles from "../styles/ButtonWithSidebar.module.scss";
 import { Link as ScrollLink } from "react-scroll";
-import { Link } from "react-router-dom";
 import logo from "../assets/images/better-match-logo-transparent.avif";
 
 const ButtonWithSidebar = () => {

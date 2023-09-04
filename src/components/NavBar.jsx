@@ -1,10 +1,9 @@
 import React from 'react';
 import styles from '../styles/NavBar.module.scss';
 import ButtonWithSidebar from '../components/ButtonWithSidebar';
+import ExtSidebar from '../components/ExtSidebar'
 import logo from '../assets/images/better-match-logo-black.avif';
 import { useLocation } from "react-router-dom";
-import { Link } from "react-router-dom";
-import ExtSidebar from '../components/ExtSidebar'
 
 const NavBar = () => {
 
