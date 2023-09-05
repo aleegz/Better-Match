@@ -66,6 +66,69 @@ $secondary-color: #1e1e1e;
     }
 }
 
+.events {
+    color: #fff;
+    background-color: #000;
+    /*.line {
+        height: 100%;
+        width: .5%;
+        background: #fff;
+        position: absolute;
+        right: 49.5%;
+    }*/
+    .left {
+        background-color: blue;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        min-width: 50%;
+        max-width: 70%;
+    }
+    .right {
+        background-color: red;
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+        justify-content: space-between;
+        min-width: 50%;
+        margin-left: 35%;
+    }
+    .minutePlayer {
+        display: flex;
+    }
+
+    .eventType {
+        background-color: #fff; 
+        width: 3em;
+        height: 3em;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+       .yellowCard {
+            background-color: #fced1c;
+            width: 1.5em;
+            height: 2em;
+            border-radius: .3em;
+            border: .1em solid #fff;
+        }
+        .redCard {
+            background-color: #970000;
+            width: 1.5em;
+            height: 2em;
+            border-radius: .3em;
+            border: .1em solid #fff;
+        } 
+        img {
+            height: 2em;
+            width: 2em;
+        }
+    }
+    
+}
+
+
 .indeterminateProgressBar {
     background-color: #00000000;
     border-radius: 9999px;
