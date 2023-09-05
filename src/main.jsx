@@ -7,10 +7,10 @@ import { DataProvider } from './context/DataContext';
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <DataProvider>
-      <BrowserRouter basename="/Better-Match">
+    <BrowserRouter basename="/Better-Match">
+      <DataProvider>
         <App />
-      </BrowserRouter>
-    </DataProvider>
+      </DataProvider>
+    </BrowserRouter>
   </React.StrictMode>,
 )

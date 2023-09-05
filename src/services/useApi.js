@@ -15,9 +15,9 @@ const useApi = (url) => {
       return response.json();
     })
     .then(json => {
-      console.log(json);
       setLoading(false);
       setData(json);
+      console.log(json);
     })
   };
 

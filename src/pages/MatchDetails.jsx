@@ -56,7 +56,7 @@ const MatchDetails = () => {
   return (
     <>
       <div className={styles.container}>
-        <p>Match details with ID: {id}</p>
+        {/* <p>Match details with ID: {id}</p> */}
 
         <div className={styles.principalDetails}>
           <div className={styles.time}>
@@ -125,12 +125,12 @@ const MatchDetails = () => {
         </div>
 
         <div className={styles.stadium}>
-          <VenueImg venueId={selectedMatch.fixture.venue.id} />
+          {selectedMatch.fixture.venue.id ? <VenueImg venueId={selectedMatch.fixture.venue.id} /> : null}
           <p translate="no">
-            {selectedMatch.fixture.venue.name},{" "}
-            {selectedMatch.fixture.venue.city}
+            {selectedMatch.fixture.venue.name ? selectedMatch.fixture.venue.name + ", " : null}
+            {selectedMatch.fixture.venue.city ? selectedMatch.fixture.venue.city : null}
           </p>
-          <p translate="no">Referee {selectedMatch.fixture.referee}</p>
+          <p translate="no">{selectedMatch.fixture.referee ? "Referee " + selectedMatch.fixture.referee : null}</p>
         </div>
       </div>
     </>

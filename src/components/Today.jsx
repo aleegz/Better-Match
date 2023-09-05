@@ -1,12 +1,13 @@
 import React from "react";
 import { useState } from 'react'
 import styles from "../styles/Today.module.scss";
-import useApi from '../services/useApi';
 import TeamImage from "../components/img/TeamImg.jsx";
-import data from "../data/matches3.json";
+import apiData from "../data/matches3.json";
+import { useApiContext } from '../context/DataContext.jsx'
 
 const Today = () => {
   const [selectedMatch, setSelectedMatch] = useState(null);
+  const { apiData, loading } = useApiContext();
 
   const openModal = (match) => {
     setSelectedMatch(match);
@@ -29,6 +30,8 @@ const Today = () => {
     let m = dateyymmdd.getMonth() + 1;
     const xdate = [dateyymmdd.getFullYear(), (m < 10) ? '0' + m : m, (d < 10) ? '0' + d : d].join('-');
 
+    console.log(xdate)
+
     const dateHour = (match)=> {
     const fechaHoraUtc = new Date(match.fixture.date);
 
@@ -38,7 +41,7 @@ const Today = () => {
     return fechaHoraFormateada;
     }
 
-  const { loading, data } = useApi(`https://v3.football.api-sports.io/fixtures?date=${xdate}&status=NS&timezone=America/Argentina/Buenos_Aires`);
+  //const { loading, data } = useApi(`https://v3.football.api-sports.io/fixtures?date=${xdate}&status=NS&timezone=America/Argentina/Buenos_Aires`);
   
 
   if(loading) 
@@ -49,14 +52,14 @@ const Today = () => {
         
     )
 
-    if (!data.results || data.length === 0) {
-        {console.error(data.errors.requests)}
+    if (!apiData.results || apiData.length === 0) {
+        {console.error(apiData.errors.requests)}
         return (
           <div className={styles.error}>No data available</div>
         );
     };
 
-  const matches = data.response;
+  const matches = apiData.response;
 
   return (
     <div id="todaySection">

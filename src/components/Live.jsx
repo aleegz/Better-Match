@@ -18,7 +18,7 @@ const Live = () => {
       </div>
     );
 
-  if (!apiData.results || apiData.length === 0) {
+  if (!urlSelect) {
     {
       console.error(apiData.errors.requests);
     }
@@ -114,3 +114,18 @@ const Live = () => {
 };
 
 export default Live;
+
+/*
+  if (!apiData.results || apiData.length === 0) {
+    {
+      console.error(apiData.errors.requests);
+    }
+    return (
+      <div className={styles.error}>
+        <h1>404 Error</h1>
+        <p>Not found..</p>
+        <img src={err} alt="" />
+      </div>
+    );
+  }
+*/
