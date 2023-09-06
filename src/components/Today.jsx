@@ -3,11 +3,10 @@ import { useState } from 'react'
 import styles from "../styles/Today.module.scss";
 import TeamImage from "../components/img/TeamImg.jsx";
 import apiData from "../data/matches3.json";
-import { useApiContext } from '../context/DataContext.jsx'
+import useApi from '../services/useApi.js'
 
 const Today = () => {
   const [selectedMatch, setSelectedMatch] = useState(null);
-  const { apiData, loading } = useApiContext();
 
   const openModal = (match) => {
     setSelectedMatch(match);
@@ -41,8 +40,7 @@ const Today = () => {
     return fechaHoraFormateada;
     }
 
-  //const { loading, data } = useApi(`https://v3.football.api-sports.io/fixtures?date=${xdate}&status=NS&timezone=America/Argentina/Buenos_Aires`);
-  
+  const { loading, data } = useApi(`https://v3.football.api-sports.io/fixtures?date=${xdate}&status=NS&timezone=America/Argentina/Buenos_Aires`);
 
   if(loading) 
     return (
@@ -52,14 +50,14 @@ const Today = () => {
         
     )
 
-    if (!apiData.results || apiData.length === 0) {
-        {console.error(apiData.errors.requests)}
-        return (
-          <div className={styles.error}>No data available</div>
-        );
-    };
+  if (!data) {
+      {console.error(data.errors.requests)}
+      return (
+        <div className={styles.error}>No data available</div>
+      );
+  };
 
-  const matches = apiData.response;
+  const matches = data.response;
 
   return (
     <div id="todaySection">

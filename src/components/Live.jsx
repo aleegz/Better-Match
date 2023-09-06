@@ -18,18 +18,18 @@ const Live = () => {
       </div>
     );
 
-  if (!urlSelect) {
-    {
-      console.error(apiData.errors.requests);
+    if (!apiData.results || apiData.length === 0) {
+      {
+        console.error(apiData.errors.requests);
+      }
+      return (
+        <div className={styles.error}>
+          <h1>404 Error</h1>
+          <p>Not found..</p>
+          <img src={err} alt="" />
+        </div>
+      );
     }
-    return (
-      <div className={styles.error}>
-        <h1>404 Error</h1>
-        <p>Not found..</p>
-        <img src={err} alt="" />
-      </div>
-    );
-  }
 
   const openModal = (match) => {
     setSelectedMatch(match);
@@ -114,18 +114,3 @@ const Live = () => {
 };
 
 export default Live;
-
-/*
-  if (!apiData.results || apiData.length === 0) {
-    {
-      console.error(apiData.errors.requests);
-    }
-    return (
-      <div className={styles.error}>
-        <h1>404 Error</h1>
-        <p>Not found..</p>
-        <img src={err} alt="" />
-      </div>
-    );
-  }
-*/
