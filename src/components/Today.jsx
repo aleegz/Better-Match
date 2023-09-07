@@ -2,6 +2,7 @@ import React from "react";
 import { useState } from 'react'
 import styles from "../styles/Today.module.scss";
 import TeamImage from "../components/img/TeamImg.jsx";
+import xdate from '../components/date.js'
 import apiData from "../data/matches3.json";
 import useApi from '../services/useApi.js'
 
@@ -58,6 +59,7 @@ const Today = () => {
   };
 
   const matches = data.response;
+  //const matches = apiData.response;
 
   return (
     <div id="todaySection">

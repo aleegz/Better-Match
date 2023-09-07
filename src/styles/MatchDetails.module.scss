@@ -5,6 +5,7 @@ $secondary-color: #1e1e1e;
 
 .container {
     padding-top: 4em;
+    background-color: #333;
 }
 
 .principalDetails {
@@ -32,8 +33,11 @@ $secondary-color: #1e1e1e;
         height: 7em;
         img {
             height: 3.5em;
+            max-width: 100%;
         }
-
+        .scoreDate {
+            font-size: 2em;
+        }
         .homeTeam, .awayTeam {
             width: 30%;
         }
@@ -41,7 +45,8 @@ $secondary-color: #1e1e1e;
 }
 
 .league {
-    background: #333;
+    background: url('../assets/images/banner.svg');
+    background-size: cover;
     color: #fff;
     display: flex;
     flex-direction: column;
@@ -59,16 +64,48 @@ $secondary-color: #1e1e1e;
     
 
 .stadium {
-    background: #000;
+    background: url('../assets/images/banner.svg');
+    background-size: cover;
     color: #fff;
     img {
         width: 100vw;
+    }
+    div {
+        padding: .5em 0 .5em 0;
+    }
+    .stadiumIcon {
+        display: flex;
+        align-items: center;
+        img {
+            height: 1em;
+            max-width: fit-content;
+            margin: 0 .3em 0 .2em;
+        }
+    }
+    .stadiumLocation {
+        display: flex;
+        align-items: center;
+        img {
+            height: 1em;
+            max-width: fit-content;
+            margin: 0 .4em 0 .4em;
+        }
+    }
+    .stadiumReferee {
+        display: flex;
+        align-items: center;
+        img {
+            height: 1em;
+            max-width: fit-content;
+            margin: 0 .4em 0 .4em;
+        }
     }
 }
 
 .events {
     color: #fff;
     background-color: #000;
+    padding-top: 1em;
     /*.line {
         height: 100%;
         width: .5%;
@@ -98,10 +135,21 @@ $secondary-color: #1e1e1e;
         margin-left: 45%;
         padding-bottom: 0.5em;
     }
-    .minutePlayer {
+    .minutePlayerL {
         display: flex;
+        align-items: center;
         p {
             margin: 0 .3em 0 .3em;
+            text-align: center;
+        }
+    }
+    .minutePlayerR {
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+        p {
+            margin: 0 .3em 0 .3em;
+            text-align: center;
         }
     }
 
@@ -136,6 +184,15 @@ $secondary-color: #1e1e1e;
     
 }
 
+.matchPrediction {
+    background-color: #000;
+    color: #fff;
+    padding: 1em 0 1em 0;
+    margin-top: .3em;
+    h3 {
+        margin: 0;
+    }
+}
 
 .indeterminateProgressBar {
     background-color: #00000000;

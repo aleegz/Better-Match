@@ -2,9 +2,12 @@ import React from "react";
 import styles from "../styles/MatchDetails.module.scss";
 import { useParams } from "react-router-dom";
 import VenueImg from "../components/img/VenueImg";
-import ball from '../assets/images/ball.svg';
-import redBall from '../assets/images/redBall.svg';
-import substitution from '../assets/images/substitution.svg';
+import ball from "../assets/images/ball.svg";
+import redBall from "../assets/images/redBall.svg";
+import substitution from "../assets/images/substitution.svg";
+import stadium from "../assets/images/stadium.svg";
+import map from '../assets/images/map.svg';
+import referee from '../assets/images/referee.svg';
 import apiData from "../data/matches5.json";
 import { useApiContext } from "../context/DataContext";
 
@@ -41,15 +44,19 @@ const MatchDetails = () => {
 
   const eventClass = (event) => {
     if (event.type === "Card") {
-      return event.detail === "Yellow Card" 
-      ? <span className={styles.yellowCard}></span>
-      : <span className={styles.redCard}></span>
+      return event.detail === "Yellow Card" ? (
+        <span className={styles.yellowCard}></span>
+      ) : (
+        <span className={styles.redCard}></span>
+      );
     } else if (event.type === "Goal") {
-      return event.detail === "Own Goal" 
-      ? <img src={redBall} className={styles.ball} />
-      : <img src={ball} className={styles.ball} />
+      return event.detail === "Own Goal" ? (
+        <img src={redBall} className={styles.ball} />
+      ) : (
+        <img src={ball} className={styles.ball} />
+      );
     } else {
-      return <img src={substitution} />
+      return <img src={substitution} />;
     }
   };
 
@@ -79,11 +86,11 @@ const MatchDetails = () => {
               <p translate="no">{selectedMatch.teams.home.name}</p>
             </div>
 
-            <p>{selectedMatch.goals.home}</p>
+            <p className={styles.scoreDate}>{selectedMatch.goals.home}</p>
 
-            <span>:</span>
+            <span className={styles.scoreDate}>:</span>
 
-            <p>{selectedMatch.goals.away}</p>
+            <p className={styles.scoreDate}>{selectedMatch.goals.away}</p>
 
             <div className={styles.awayTeam}>
               <img
@@ -100,17 +107,25 @@ const MatchDetails = () => {
           {/* <span className={styles.line}></span> */}
           {events.map((event, index) => (
             <div key={index}>
-              <div className={selectedMatch.teams.away.name === event.team.name ? styles.right : styles.left}>
-            
-                <div className={styles.minutePlayer}>
+              <div
+                className={
+                  selectedMatch.teams.away.name === event.team.name
+                    ? styles.right
+                    : styles.left
+                }
+              >
+                <div
+                  className={
+                    selectedMatch.teams.away.name === event.team.name
+                      ? styles.minutePlayerR
+                      : styles.minutePlayerL
+                  }
+                >
                   <p>{event.time.elapsed + event.time.extra + "'"}</p>
                   <p>{event.player.name}</p>
                 </div>
-                  
-                <div className={styles.eventType}>
-                  {eventClass(event)}
-                </div>
-                  
+
+                <div className={styles.eventType}>{eventClass(event)}</div>
               </div>
             </div>
           ))}
@@ -126,11 +141,36 @@ const MatchDetails = () => {
 
         <div className={styles.stadium}>
           {selectedMatch.fixture.venue.id ? <VenueImg venueId={selectedMatch.fixture.venue.id} /> : null}
-          <p translate="no">
-            {selectedMatch.fixture.venue.name ? selectedMatch.fixture.venue.name + ", " : null}
-            {selectedMatch.fixture.venue.city ? selectedMatch.fixture.venue.city : null}
-          </p>
-          <p translate="no">{selectedMatch.fixture.referee ? "Referee " + selectedMatch.fixture.referee : null}</p>
+          <div translate='no'>
+            {selectedMatch.fixture.venue.name ? (
+              <div className={styles.stadiumIcon}>
+                <img src={stadium} alt="Stadium icon" />
+                <p>{selectedMatch.fixture.venue.name}</p>
+              </div>)
+              : null}
+            {selectedMatch.fixture.venue.city ? (
+              <div className={styles.stadiumLocation}>
+                <img src={map} alt="Map icon" />
+                <p>{selectedMatch.fixture.venue.city}</p>
+              </div>
+              )
+              : null}
+
+            {selectedMatch.fixture.referee ? (
+              <div className={styles.stadiumReferee}>
+                <img src={referee} alt="Referee icon" />
+                <p>{selectedMatch.fixture.referee}</p>
+              </div>
+              )
+              : null}
+          </div>
+        </div>
+
+        <div className={styles.matchPrediction}>
+          <h3>¿Who will win?</h3>
+          <button>{selectedMatch.teams.home.name}</button>
+          <button>Tie</button>
+          <button>{selectedMatch.teams.away.name}</button>
         </div>
       </div>
     </>
