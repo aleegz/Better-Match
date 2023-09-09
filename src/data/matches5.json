@@ -1,38 +1,38 @@
 {
-    "get": "fixtures",
-    "parameters": {
-        "live": "all"
-    },
-    "errors": [],
-    "results": 14,
-    "paging": {
+  "get": "fixtures",
+  "parameters": {
+    "live": "all"
+  },
+  "errors": [],
+  "results": 14,
+  "paging": {
     "current": 1,
     "total": 1
-    },
-    "response": [
+  },
+  "response": [
     {
-        "fixture": {
-          "id": 1027850,
-          "referee": "R. Rivero",
-          "timezone": "UTC",
-          "date": "2023-09-03T22:00:00+00:00",
-          "timestamp": 1693778400,
-          "periods": {
+      "fixture": {
+        "id": 1027850,
+        "referee": "R. Rivero",
+        "timezone": "UTC",
+        "date": "2023-09-03T22:00:00+00:00",
+        "timestamp": 1693778400,
+        "periods": {
           "first": 1693778400,
           "second": 1693782000
-          },
-          "venue": {
+        },
+        "venue": {
           "id": 104,
           "name": "Estadio Ingeniero Hilario Sánchez",
           "city": "San Juan, Provincia de San Juan"
-          },
-          "status": {
+        },
+        "status": {
           "long": "Second Half",
           "short": "2H",
           "elapsed": 90
-          }
-        },
-        "league": {
+        }
+      },
+      "league": {
         "id": 129,
         "name": "Primera Nacional",
         "country": "Argentina",
@@ -40,419 +40,753 @@
         "flag": "https://media-3.api-sports.io/flags/ar.svg",
         "season": 2023,
         "round": "Group A - 32"
-        },
-        "teams": {
-          "home": {
+      },
+      "teams": {
+        "home": {
           "id": 461,
           "name": "San Martin S.J.",
           "logo": "https://media-3.api-sports.io/football/teams/461.png",
           "winner": false
         },
-          "away": {
+        "away": {
           "id": 1932,
           "name": "San Telmo",
           "logo": "https://media-2.api-sports.io/football/teams/1932.png",
           "winner": true
-          }
-        },
-        "goals": {
+        }
+      },
+      "goals": {
         "home": 1,
         "away": 2
-        },
-        "score": {
+      },
+      "score": {
         "halftime": {
-        "home": 0,
-        "away": 1
+          "home": 0,
+          "away": 1
         },
         "fulltime": {
-        "home": null,
-        "away": null
+          "home": null,
+          "away": null
         },
         "extratime": {
-        "home": null,
-        "away": null
+          "home": null,
+          "away": null
         },
         "penalty": {
-        "home": null,
-        "away": null
+          "home": null,
+          "away": null
         }
-        },
-        "events": [
+      },
+      "events": [
         {
-        "time": {
-        "elapsed": 5,
-        "extra": null
-        },
-        "team": {
-        "id": 1932,
-        "name": "San Telmo",
-        "logo": "https://media-3.api-sports.io/football/teams/1932.png"
-        },
-        "player": {
-        "id": 307552,
-        "name": "A. Stancato"
-        },
-        "assist": {
-        "id": null,
-        "name": null
-        },
-        "type": "Card",
-        "detail": "Yellow Card",
-        "comments": null
-        },
-        {
-        "time": {
-        "elapsed": 8,
-        "extra": null
-        },
-        "team": {
-        "id": 1932,
-        "name": "San Telmo",
-        "logo": "https://media-2.api-sports.io/football/teams/1932.png"
-        },
-        "player": {
-        "id": 59314,
-        "name": "L. Bontempo"
-        },
-        "assist": {
-        "id": null,
-        "name": null
-        },
-        "type": "Goal",
-        "detail": "Own Goal",
-        "comments": null
+          "time": {
+            "elapsed": 5,
+            "extra": null
+          },
+          "team": {
+            "id": 1932,
+            "name": "San Telmo",
+            "logo": "https://media-3.api-sports.io/football/teams/1932.png"
+          },
+          "player": {
+            "id": 307552,
+            "name": "A. Stancato"
+          },
+          "assist": {
+            "id": null,
+            "name": null
+          },
+          "type": "Card",
+          "detail": "Yellow Card",
+          "comments": null
         },
         {
-        "time": {
-        "elapsed": 45,
-        "extra": 1
-        },
-        "team": {
-        "id": 461,
-        "name": "San Martin S.J.",
-        "logo": "https://media-3.api-sports.io/football/teams/461.png"
-        },
-        "player": {
-        "id": 59314,
-        "name": "L. Bontempo"
-        },
-        "assist": {
-        "id": null,
-        "name": null
-        },
-        "type": "Card",
-        "detail": "Yellow Card",
-        "comments": null
-        },
-        {
-        "time": {
-        "elapsed": 46,
-        "extra": null
-        },
-        "team": {
-        "id": 461,
-        "name": "San Martin S.J.",
-        "logo": "https://media-2.api-sports.io/football/teams/461.png"
-        },
-        "player": {
-        "id": 199924,
-        "name": "M. T. Llano Massa"
-        },
-        "assist": {
-        "id": 6603,
-        "name": "A. Molina"
-        },
-        "type": "subst",
-        "detail": "Substitution 1",
-        "comments": null
+          "time": {
+            "elapsed": 8,
+            "extra": null
+          },
+          "team": {
+            "id": 1932,
+            "name": "San Telmo",
+            "logo": "https://media-2.api-sports.io/football/teams/1932.png"
+          },
+          "player": {
+            "id": 59314,
+            "name": "L. Bontempo"
+          },
+          "assist": {
+            "id": null,
+            "name": null
+          },
+          "type": "Goal",
+          "detail": "Own Goal",
+          "comments": null
         },
         {
-        "time": {
-        "elapsed": 46,
-        "extra": null
-        },
-        "team": {
-        "id": 461,
-        "name": "San Martin S.J.",
-        "logo": "https://media-2.api-sports.io/football/teams/461.png"
-        },
-        "player": {
-        "id": 302995,
-        "name": "C. Luduena"
-        },
-        "assist": {
-        "id": 6553,
-        "name": "N. Pelaitay"
-        },
-        "type": "subst",
-        "detail": "Substitution 2",
-        "comments": null
-        },
-        {
-        "time": {
-        "elapsed": 46,
-        "extra": null
-        },
-        "team": {
-        "id": 1932,
-        "name": "San Telmo",
-        "logo": "https://media-2.api-sports.io/football/teams/1932.png"
-        },
-        "player": {
-        "id": 76086,
-        "name": "G. Gimenez"
-        },
-        "assist": {
-        "id": 76084,
-        "name": "E. D'Angelo"
-        },
-        "type": "subst",
-        "detail": "Substitution 1",
-        "comments": null
+          "time": {
+            "elapsed": 45,
+            "extra": 1
+          },
+          "team": {
+            "id": 461,
+            "name": "San Martin S.J.",
+            "logo": "https://media-3.api-sports.io/football/teams/461.png"
+          },
+          "player": {
+            "id": 59314,
+            "name": "L. Bontempo"
+          },
+          "assist": {
+            "id": null,
+            "name": null
+          },
+          "type": "Card",
+          "detail": "Yellow Card",
+          "comments": null
         },
         {
-        "time": {
-        "elapsed": 57,
-        "extra": null
-        },
-        "team": {
-        "id": 1932,
-        "name": "San Telmo",
-        "logo": "https://media-3.api-sports.io/football/teams/1932.png"
-        },
-        "player": {
-        "id": null,
-        "name": "E. Diaz"
-        },
-        "assist": {
-        "id": null,
-        "name": null
-        },
-        "type": "Card",
-        "detail": "Yellow Card",
-        "comments": null
-        },
-        {
-        "time": {
-        "elapsed": 63,
-        "extra": null
-        },
-        "team": {
-        "id": 461,
-        "name": "San Martin S.J.",
-        "logo": "https://media-3.api-sports.io/football/teams/461.png"
-        },
-        "player": {
-        "id": 6210,
-        "name": "M. Donato"
-        },
-        "assist": {
-        "id": 5256,
-        "name": "N. Franco"
-        },
-        "type": "subst",
-        "detail": "Substitution 3",
-        "comments": null
+          "time": {
+            "elapsed": 46,
+            "extra": null
+          },
+          "team": {
+            "id": 461,
+            "name": "San Martin S.J.",
+            "logo": "https://media-2.api-sports.io/football/teams/461.png"
+          },
+          "player": {
+            "id": 199924,
+            "name": "M. T. Llano Massa"
+          },
+          "assist": {
+            "id": 6603,
+            "name": "A. Molina"
+          },
+          "type": "subst",
+          "detail": "Substitution 1",
+          "comments": null
         },
         {
-        "time": {
-        "elapsed": 68,
-        "extra": null
-        },
-        "team": {
-        "id": 461,
-        "name": "San Martin S.J.",
-        "logo": "https://media-2.api-sports.io/football/teams/461.png"
-        },
-        "player": {
-        "id": 58915,
-        "name": "S. Gonzalez"
-        },
-        "assist": {
-        "id": null,
-        "name": null
-        },
-        "type": "Goal",
-        "detail": "Normal Goal",
-        "comments": null
-        },
-        {
-        "time": {
-        "elapsed": 75,
-        "extra": null
-        },
-        "team": {
-        "id": 1932,
-        "name": "San Telmo",
-        "logo": "https://media-2.api-sports.io/football/teams/1932.png"
-        },
-        "player": {
-        "id": 169928,
-        "name": "A. Fernandez"
-        },
-        "assist": {
-        "id": 74806,
-        "name": "R. Luna"
-        },
-        "type": "subst",
-        "detail": "Substitution 2",
-        "comments": null
+          "time": {
+            "elapsed": 46,
+            "extra": null
+          },
+          "team": {
+            "id": 461,
+            "name": "San Martin S.J.",
+            "logo": "https://media-2.api-sports.io/football/teams/461.png"
+          },
+          "player": {
+            "id": 302995,
+            "name": "C. Luduena"
+          },
+          "assist": {
+            "id": 6553,
+            "name": "N. Pelaitay"
+          },
+          "type": "subst",
+          "detail": "Substitution 2",
+          "comments": null
         },
         {
-        "time": {
-        "elapsed": 81,
-        "extra": null
-        },
-        "team": {
-        "id": 461,
-        "name": "San Martin S.J.",
-        "logo": "https://media-1.api-sports.io/football/teams/461.png"
-        },
-        "player": {
-        "id": null,
-        "name": "L. Acosta"
-        },
-        "assist": {
-        "id": 5414,
-        "name": "A. Vega"
-        },
-        "type": "subst",
-        "detail": "Substitution 4",
-        "comments": null
-        },
-        {
-        "time": {
-        "elapsed": 83,
-        "extra": null
-        },
-        "team": {
-        "id": 1932,
-        "name": "San Telmo",
-        "logo": "https://media-2.api-sports.io/football/teams/1932.png"
-        },
-        "player": {
-        "id": null,
-        "name": "B. Gimenez"
-        },
-        "assist": {
-        "id": 323778,
-        "name": "E. Bodencer"
-        },
-        "type": "subst",
-        "detail": "Substitution 3",
-        "comments": null
+          "time": {
+            "elapsed": 46,
+            "extra": null
+          },
+          "team": {
+            "id": 1932,
+            "name": "San Telmo",
+            "logo": "https://media-2.api-sports.io/football/teams/1932.png"
+          },
+          "player": {
+            "id": 76086,
+            "name": "G. Gimenez"
+          },
+          "assist": {
+            "id": 76084,
+            "name": "E. D'Angelo"
+          },
+          "type": "subst",
+          "detail": "Substitution 1",
+          "comments": null
         },
         {
-        "time": {
-        "elapsed": 85,
-        "extra": null
-        },
-        "team": {
-        "id": 1932,
-        "name": "San Telmo",
-        "logo": "https://media-3.api-sports.io/football/teams/1932.png"
-        },
-        "player": {
-        "id": 74802,
-        "name": "D. Toledo"
-        },
-        "assist": {
-        "id": null,
-        "name": "L. Pollacchi"
-        },
-        "type": "subst",
-        "detail": "Substitution 4",
-        "comments": null
-        },
-        {
-        "time": {
-        "elapsed": 89,
-        "extra": null
-        },
-        "team": {
-        "id": 1932,
-        "name": "San Telmo",
-        "logo": "https://media-2.api-sports.io/football/teams/1932.png"
-        },
-        "player": {
-        "id": 76086,
-        "name": "G. Gimenez"
-        },
-        "assist": {
-        "id": null,
-        "name": null
-        },
-        "type": "Goal",
-        "detail": "Normal Goal",
-        "comments": null
+          "time": {
+            "elapsed": 57,
+            "extra": null
+          },
+          "team": {
+            "id": 1932,
+            "name": "San Telmo",
+            "logo": "https://media-3.api-sports.io/football/teams/1932.png"
+          },
+          "player": {
+            "id": null,
+            "name": "E. Diaz"
+          },
+          "assist": {
+            "id": null,
+            "name": null
+          },
+          "type": "Card",
+          "detail": "Yellow Card",
+          "comments": null
         },
         {
-        "time": {
-        "elapsed": 89,
-        "extra": null
-        },
-        "team": {
-        "id": 461,
-        "name": "San Martin S.J.",
-        "logo": "https://media-2.api-sports.io/football/teams/461.png"
-        },
-        "player": {
-        "id": 59313,
-        "name": "M. Monllor"
-        },
-        "assist": {
-        "id": null,
-        "name": null
-        },
-        "type": "Card",
-        "detail": "Yellow Card",
-        "comments": null
-        },
-        {
-        "time": {
-        "elapsed": 90,
-        "extra": null
-        },
-        "team": {
-        "id": 1932,
-        "name": "San Telmo",
-        "logo": "https://media-1.api-sports.io/football/teams/1932.png"
-        },
-        "player": {
-        "id": 6055,
-        "name": "G. Diaz"
-        },
-        "assist": {
-        "id": 76086,
-        "name": "G. Gimenez"
-        },
-        "type": "subst",
-        "detail": "Substitution 5",
-        "comments": null
+          "time": {
+            "elapsed": 63,
+            "extra": null
+          },
+          "team": {
+            "id": 461,
+            "name": "San Martin S.J.",
+            "logo": "https://media-3.api-sports.io/football/teams/461.png"
+          },
+          "player": {
+            "id": 6210,
+            "name": "M. Donato"
+          },
+          "assist": {
+            "id": 5256,
+            "name": "N. Franco"
+          },
+          "type": "subst",
+          "detail": "Substitution 3",
+          "comments": null
         },
         {
-        "time": {
-        "elapsed": 90,
-        "extra": 3
+          "time": {
+            "elapsed": 68,
+            "extra": null
+          },
+          "team": {
+            "id": 461,
+            "name": "San Martin S.J.",
+            "logo": "https://media-2.api-sports.io/football/teams/461.png"
+          },
+          "player": {
+            "id": 58915,
+            "name": "S. Gonzalez"
+          },
+          "assist": {
+            "id": null,
+            "name": null
+          },
+          "type": "Goal",
+          "detail": "Normal Goal",
+          "comments": null
         },
-        "team": {
-        "id": 461,
-        "name": "San Martin S.J.",
-        "logo": "https://media-2.api-sports.io/football/teams/461.png"
+        {
+          "time": {
+            "elapsed": 75,
+            "extra": null
+          },
+          "team": {
+            "id": 1932,
+            "name": "San Telmo",
+            "logo": "https://media-2.api-sports.io/football/teams/1932.png"
+          },
+          "player": {
+            "id": 169928,
+            "name": "A. Fernandez"
+          },
+          "assist": {
+            "id": 74806,
+            "name": "R. Luna"
+          },
+          "type": "subst",
+          "detail": "Substitution 2",
+          "comments": null
         },
-        "player": {
-        "id": null,
-        "name": "L. Regalado"
+        {
+          "time": {
+            "elapsed": 81,
+            "extra": null
+          },
+          "team": {
+            "id": 461,
+            "name": "San Martin S.J.",
+            "logo": "https://media-1.api-sports.io/football/teams/461.png"
+          },
+          "player": {
+            "id": null,
+            "name": "L. Acosta"
+          },
+          "assist": {
+            "id": 5414,
+            "name": "A. Vega"
+          },
+          "type": "subst",
+          "detail": "Substitution 4",
+          "comments": null
         },
-        "assist": {
-        "id": 59314,
-        "name": "L. Bontempo"
+        {
+          "time": {
+            "elapsed": 83,
+            "extra": null
+          },
+          "team": {
+            "id": 1932,
+            "name": "San Telmo",
+            "logo": "https://media-2.api-sports.io/football/teams/1932.png"
+          },
+          "player": {
+            "id": null,
+            "name": "B. Gimenez"
+          },
+          "assist": {
+            "id": 323778,
+            "name": "E. Bodencer"
+          },
+          "type": "subst",
+          "detail": "Substitution 3",
+          "comments": null
         },
-        "type": "subst",
-        "detail": "Substitution 5",
-        "comments": null
+        {
+          "time": {
+            "elapsed": 85,
+            "extra": null
+          },
+          "team": {
+            "id": 1932,
+            "name": "San Telmo",
+            "logo": "https://media-3.api-sports.io/football/teams/1932.png"
+          },
+          "player": {
+            "id": 74802,
+            "name": "D. Toledo"
+          },
+          "assist": {
+            "id": null,
+            "name": "L. Pollacchi"
+          },
+          "type": "subst",
+          "detail": "Substitution 4",
+          "comments": null
+        },
+        {
+          "time": {
+            "elapsed": 89,
+            "extra": null
+          },
+          "team": {
+            "id": 1932,
+            "name": "San Telmo",
+            "logo": "https://media-2.api-sports.io/football/teams/1932.png"
+          },
+          "player": {
+            "id": 76086,
+            "name": "G. Gimenez"
+          },
+          "assist": {
+            "id": null,
+            "name": null
+          },
+          "type": "Goal",
+          "detail": "Normal Goal",
+          "comments": null
+        },
+        {
+          "time": {
+            "elapsed": 89,
+            "extra": null
+          },
+          "team": {
+            "id": 461,
+            "name": "San Martin S.J.",
+            "logo": "https://media-2.api-sports.io/football/teams/461.png"
+          },
+          "player": {
+            "id": 59313,
+            "name": "M. Monllor"
+          },
+          "assist": {
+            "id": null,
+            "name": null
+          },
+          "type": "Card",
+          "detail": "Yellow Card",
+          "comments": null
+        },
+        {
+          "time": {
+            "elapsed": 90,
+            "extra": null
+          },
+          "team": {
+            "id": 1932,
+            "name": "San Telmo",
+            "logo": "https://media-1.api-sports.io/football/teams/1932.png"
+          },
+          "player": {
+            "id": 6055,
+            "name": "G. Diaz"
+          },
+          "assist": {
+            "id": 76086,
+            "name": "G. Gimenez"
+          },
+          "type": "subst",
+          "detail": "Substitution 5",
+          "comments": null
+        },
+        {
+          "time": {
+            "elapsed": 90,
+            "extra": 3
+          },
+          "team": {
+            "id": 461,
+            "name": "San Martin S.J.",
+            "logo": "https://media-2.api-sports.io/football/teams/461.png"
+          },
+          "player": {
+            "id": null,
+            "name": "L. Regalado"
+          },
+          "assist": {
+            "id": 59314,
+            "name": "L. Bontempo"
+          },
+          "type": "subst",
+          "detail": "Substitution 5",
+          "comments": null
         }
-        ]
-      }
-    ]
+      ]
+    },
+    {
+      "fixture": {
+        "id": 1100235,
+        "referee": "Andres Matonte, Uruguay",
+        "timezone": "UTC",
+        "date": "2023-09-07T22:30:00+00:00",
+        "timestamp": 1694125800,
+        "periods": {
+          "first": 1694125800,
+          "second": 1694129400
+        },
+        "venue": {
+          "id": 1213,
+          "name": "Estadio Antonio Aranda",
+          "city": "Ciudad del Este"
+        },
+        "status": {
+          "long": "Second Half",
+          "short": "2H",
+          "elapsed": 89
+        }
+      },
+      "league": {
+        "id": 34,
+        "name": "World Cup - Qualification South America",
+        "country": "World",
+        "logo": "https://media-1.api-sports.io/football/leagues/34.png",
+        "flag": null,
+        "season": 2026,
+        "round": "Group Stage - 1"
+      },
+      "teams": {
+        "home": {
+          "id": 2380,
+          "name": "Paraguay",
+          "logo": "https://media-3.api-sports.io/football/teams/2380.png",
+          "winner": null
+        },
+        "away": {
+          "id": 30,
+          "name": "Peru",
+          "logo": "https://media-2.api-sports.io/football/teams/30.png",
+          "winner": null
+        }
+      },
+      "goals": {
+        "home": 0,
+        "away": 0
+      },
+      "score": {
+        "halftime": {
+          "home": 0,
+          "away": 0
+        },
+        "fulltime": {
+          "home": null,
+          "away": null
+        },
+        "extratime": {
+          "home": null,
+          "away": null
+        },
+        "penalty": {
+          "home": null,
+          "away": null
+        }
+      },
+      "events": [
+        {
+          "time": {
+            "elapsed": 15,
+            "extra": null
+          },
+          "team": {
+            "id": 30,
+            "name": "Peru",
+            "logo": "https://media-3.api-sports.io/football/teams/30.png"
+          },
+          "player": {
+            "id": 2419,
+            "name": "L. Advincula"
+          },
+          "assist": {
+            "id": null,
+            "name": null
+          },
+          "type": "Card",
+          "detail": "Yellow Card",
+          "comments": "Tripping"
+        },
+        {
+          "time": {
+            "elapsed": 26,
+            "extra": null
+          },
+          "team": {
+            "id": 30,
+            "name": "Peru",
+            "logo": "https://media-3.api-sports.io/football/teams/30.png"
+          },
+          "player": {
+            "id": 2420,
+            "name": "M. Araujo"
+          },
+          "assist": {
+            "id": null,
+            "name": null
+          },
+          "type": "Card",
+          "detail": "Yellow Card",
+          "comments": "Foul"
+        },
+        {
+          "time": {
+            "elapsed": 45,
+            "extra": null
+          },
+          "team": {
+            "id": 30,
+            "name": "Peru",
+            "logo": "https://media-3.api-sports.io/football/teams/30.png"
+          },
+          "player": {
+            "id": 2419,
+            "name": "L. Advincula"
+          },
+          "assist": {
+            "id": null,
+            "name": null
+          },
+          "type": "Card",
+          "detail": "Red Card",
+          "comments": "Tripping"
+        },
+        {
+          "time": {
+            "elapsed": 45,
+            "extra": null
+          },
+          "team": {
+            "id": 30,
+            "name": "Peru",
+            "logo": "https://media-2.api-sports.io/football/teams/30.png"
+          },
+          "player": {
+            "id": 2419,
+            "name": "L. Advincula"
+          },
+          "assist": {
+            "id": null,
+            "name": null
+          },
+          "type": "Card",
+          "detail": "Yellow Card",
+          "comments": "Tripping"
+        },
+        {
+          "time": {
+            "elapsed": 46,
+            "extra": null
+          },
+          "team": {
+            "id": 30,
+            "name": "Peru",
+            "logo": "https://media-2.api-sports.io/football/teams/30.png"
+          },
+          "player": {
+            "id": 2427,
+            "name": "W. Cartagena"
+          },
+          "assist": {
+            "id": 2430,
+            "name": "C. Gonzales"
+          },
+          "type": "subst",
+          "detail": "Substitution 1",
+          "comments": null
+        },
+        {
+          "time": {
+            "elapsed": 46,
+            "extra": null
+          },
+          "team": {
+            "id": 30,
+            "name": "Peru",
+            "logo": "https://media-1.api-sports.io/football/teams/30.png"
+          },
+          "player": {
+            "id": 2431,
+            "name": "M. Lopez"
+          },
+          "assist": {
+            "id": 2426,
+            "name": "A. Carrillo"
+          },
+          "type": "subst",
+          "detail": "Substitution 2",
+          "comments": null
+        },
+        {
+          "time": {
+            "elapsed": 46,
+            "extra": null
+          },
+          "team": {
+            "id": 30,
+            "name": "Peru",
+            "logo": "https://media-2.api-sports.io/football/teams/30.png"
+          },
+          "player": {
+            "id": 2422,
+            "name": "A. Corzo"
+          },
+          "assist": {
+            "id": 2420,
+            "name": "M. Araujo"
+          },
+          "type": "subst",
+          "detail": "Substitution 3",
+          "comments": null
+        },
+        {
+          "time": {
+            "elapsed": 66,
+            "extra": null
+          },
+          "team": {
+            "id": 2380,
+            "name": "Paraguay",
+            "logo": "https://media-3.api-sports.io/football/teams/2380.png"
+          },
+          "player": {
+            "id": 2514,
+            "name": "Kaku"
+          },
+          "assist": {
+            "id": 278370,
+            "name": "D. Gomez"
+          },
+          "type": "subst",
+          "detail": "Substitution 1",
+          "comments": null
+        },
+        {
+          "time": {
+            "elapsed": 71,
+            "extra": null
+          },
+          "team": {
+            "id": 30,
+            "name": "Peru",
+            "logo": "https://media-3.api-sports.io/football/teams/30.png"
+          },
+          "player": {
+            "id": 39792,
+            "name": "J. Castillo"
+          },
+          "assist": {
+            "id": 2424,
+            "name": "M. Trauco"
+          },
+          "type": "subst",
+          "detail": "Substitution 4",
+          "comments": null
+        },
+        {
+          "time": {
+            "elapsed": 78,
+            "extra": null
+          },
+          "team": {
+            "id": 2380,
+            "name": "Paraguay",
+            "logo": "https://media-2.api-sports.io/football/teams/2380.png"
+          },
+          "player": {
+            "id": 2503,
+            "name": "I. Piris"
+          },
+          "assist": {
+            "id": 2504,
+            "name": "R. Rojas"
+          },
+          "type": "subst",
+          "detail": "Substitution 2",
+          "comments": null
+        },
+        {
+          "time": {
+            "elapsed": 78,
+            "extra": null
+          },
+          "team": {
+            "id": 2380,
+            "name": "Paraguay",
+            "logo": "https://media-2.api-sports.io/football/teams/2380.png"
+          },
+          "player": {
+            "id": 2518,
+            "name": "C. Gonzalez"
+          },
+          "assist": {
+            "id": 6483,
+            "name": "G. Avalos"
+          },
+          "type": "subst",
+          "detail": "Substitution 3",
+          "comments": null
+        },
+        {
+          "time": {
+            "elapsed": 88,
+            "extra": null
+          },
+          "team": {
+            "id": 2380,
+            "name": "Paraguay",
+            "logo": "https://media-2.api-sports.io/football/teams/2380.png"
+          },
+          "player": {
+            "id": 2513,
+            "name": "M. Rojas"
+          },
+          "assist": {
+            "id": 196298,
+            "name": "R. Sosa"
+          },
+          "type": "subst",
+          "detail": "Substitution 4",
+          "comments": null
+        }
+      ]
+    }
+  ]
 }

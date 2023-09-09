@@ -168,9 +168,12 @@ const MatchDetails = () => {
 
         <div className={styles.matchPrediction}>
           <h3>¿Who will win?</h3>
-          <button>{selectedMatch.teams.home.name}</button>
-          <button>Tie</button>
-          <button>{selectedMatch.teams.away.name}</button>
+          <div className={styles.options}>
+            <button>{selectedMatch.teams.home.name}</button>
+            <button>Tie</button>
+            <button>{selectedMatch.teams.away.name}</button>
+          </div>
+          
         </div>
       </div>
     </>
