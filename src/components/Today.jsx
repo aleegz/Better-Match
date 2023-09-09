@@ -1,5 +1,4 @@
-import React from "react";
-import { useState } from 'react'
+import React, { useEffect, useState } from 'react';
 import styles from "../styles/Today.module.scss";
 import TeamImage from "../components/img/TeamImg.jsx";
 import xdate from '../components/date.js'
@@ -8,6 +7,10 @@ import useApi from '../services/useApi.js'
 
 const Today = () => {
   const [selectedMatch, setSelectedMatch] = useState(null);
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
 
   const openModal = (match) => {
     setSelectedMatch(match);

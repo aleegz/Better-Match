@@ -75,9 +75,12 @@ $secondary-color: #006e0f;
       margin-bottom: 1em;
       text-align: center;
       align-items: center;
+      width: 100%;
     }
     .leagueLogoImg {
-      width: 50%;
+      height: 5em;
+      width: auto;
+      margin-bottom: 0.5em;
     }
     p {
       display: flex;
@@ -118,7 +121,7 @@ $secondary-color: #006e0f;
   justify-content: center;
   align-items: center;
   height: 1em;
-  width: 80%;
+  width: 95%;
   margin: 1em 0;
   h5 {
     margin: 0;

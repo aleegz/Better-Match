@@ -1,5 +1,4 @@
-import React from "react";
-import { useState } from "react";
+import React, { useEffect, useState } from 'react';
 import styles from "../styles/Live.module.scss";
 import TeamImage from "../components/img/TeamImg.jsx";
 import Modal from "../components/Modal.jsx";
@@ -10,6 +9,10 @@ import { useApiContext } from "../context/DataContext";
 const Live = () => {
   const [selectedMatch, setSelectedMatch] = useState(null);
   const { apiData } = useApiContext();
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
 
   if (!apiData)
     return (
@@ -79,7 +82,10 @@ const Live = () => {
 
               <div className={styles.home}>
                 <div className={styles.homeLogo}>
-                  <TeamImage teamId={match.teams.home.id} />
+                  <div>
+                    <TeamImage teamId={match.teams.home.id} />
+                  </div>
+                  
                   <p translate="no">{match.teams.home.name}</p>
                 </div>
                 {match.goals.home}
@@ -90,7 +96,9 @@ const Live = () => {
 
               <div className={styles.away}>
                 <div className={styles.awayLogo}>
-                  <TeamImage teamId={match.teams.away.id} />
+                  <div>
+                    <TeamImage teamId={match.teams.away.id} />
+                  </div>
                   <p translate="no">{match.teams.away.name}</p>
                 </div>
                 {match.goals.away}

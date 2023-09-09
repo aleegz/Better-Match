@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from 'react';
 import styles from "../styles/MatchDetails.module.scss";
 import { useParams } from "react-router-dom";
 import VenueImg from "../components/img/VenueImg";
@@ -14,6 +14,22 @@ import { useApiContext } from "../context/DataContext";
 const MatchDetails = () => {
   const { id } = useParams();
   const { apiData } = useApiContext();
+  const [showSpinner, setShowSpinner] = useState(true);
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+    setTimeout(() => {
+      setShowSpinner(false);
+    }, 2000);
+  }, []);
+
+  if (showSpinner) {
+    return (
+      <div className={styles.spinContainer}>
+        <div className={styles.spinner}></div>
+      </div>
+    )
+  }
 
   if (!apiData)
     return (
