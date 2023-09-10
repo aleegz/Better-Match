@@ -41,7 +41,9 @@ const Modal = ({ isOpen, onClose, children, selectedMatch }) => {
 
         <div className={styles.stadium}>
           <h5 translate="no">{selectedMatch.fixture.venue.name}</h5>
-          <img src={selectedMatch.league.flag ? selectedMatch.league.flag : selectedMatch.teams.home.logo} alt="country flag" />
+          {selectedMatch.league.flag 
+          ? <img src={selectedMatch.league.flag} />
+          : null }
         </div>
 
           <div className={styles.matchDetailsTeams}>
