@@ -138,7 +138,16 @@ const MatchDetails = () => {
                   }
                 >
                   <p>{event.time.elapsed + event.time.extra + "'"}</p>
-                  <p>{event.player.name}</p>
+                  <div>
+                    <p>{event.player.name}</p>
+
+                    <p>
+                      {event.type === "subst" 
+                      ? event.assist.name
+                      : null}
+                    </p>
+                  </div>
+                  
                 </div>
 
                 <div className={styles.eventType}>{eventClass(event)}</div>

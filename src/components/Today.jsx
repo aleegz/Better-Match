@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import styles from "../styles/Today.module.scss";
 import TeamImage from "../components/img/TeamImg.jsx";
-import xdate from '../components/date.js'
+import dateHour from './dateHour.js';
 import apiData from "../data/matches3.json";
 import useApi from '../services/useApi.js'
 
@@ -33,16 +33,8 @@ const Today = () => {
     let m = dateyymmdd.getMonth() + 1;
     const xdate = [dateyymmdd.getFullYear(), (m < 10) ? '0' + m : m, (d < 10) ? '0' + d : d].join('-');
 
-    console.log(xdate)
-
-    const dateHour = (match)=> {
-    const fechaHoraUtc = new Date(match.fixture.date);
-
-    const options = { timeZone: 'America/Argentina/Buenos_Aires', hour: '2-digit', minute: '2-digit' };
-    const formatter = new Intl.DateTimeFormat('es-AR', options);
-    const fechaHoraFormateada = formatter.format(fechaHoraUtc);
-    return fechaHoraFormateada;
-    }
+    console.log(xdate);
+    console.log(dateyymmdd.getHours());
 
   const { loading, data } = useApi(`https://v3.football.api-sports.io/fixtures?date=${xdate}&status=NS&timezone=America/Argentina/Buenos_Aires`);
 
@@ -79,6 +71,10 @@ const Today = () => {
 
         {matches.map((match, index) => (
           <div key={index}>
+            { dateHour(match) < dateyymmdd.getHours().toString() 
+            ? null
+            :
+            
             <div className={styles.match} onClick={() => openModal(match)}>
 
             <div className={styles.leagueTime}>
@@ -108,6 +104,7 @@ const Today = () => {
             </div>
 
             </div>
+            }
           </div>
         ))}
       </div>
