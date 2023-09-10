@@ -2,23 +2,14 @@ import React, { useEffect, useState } from 'react';
 import styles from "../styles/Today.module.scss";
 import TeamImage from "../components/img/TeamImg.jsx";
 import dateHour from './dateHour.js';
-import apiData from "../data/matches3.json";
+import xdate from './xdate.js';
+import data from "../data/matches3.json";
 import useApi from '../services/useApi.js'
 
 const Today = () => {
-  const [selectedMatch, setSelectedMatch] = useState(null);
-
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
-
-  const openModal = (match) => {
-    setSelectedMatch(match);
-  };
-
-  const closeModal = () => {
-    setSelectedMatch(null);
-  };
 
     const date = new Date();
     const months = new Array ("January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December");
@@ -28,15 +19,10 @@ const Today = () => {
     const today = (days[date.getDay()] + ", " + date.getDate() + " " + months[date.getMonth()] + " " + date.getFullYear());
     const today2 = (days[date.getDay()] + ", " + date.getDate() + " de " + months[date.getMonth()] + " de " + date.getFullYear());
 
-    let dateyymmdd = new Date();
-    let d = dateyymmdd.getDate();
-    let m = dateyymmdd.getMonth() + 1;
-    const xdate = [dateyymmdd.getFullYear(), (m < 10) ? '0' + m : m, (d < 10) ? '0' + d : d].join('-');
+    console.log(xdate().date);
+    console.log(xdate().hour);
 
-    console.log(xdate);
-    console.log(dateyymmdd.getHours());
-
-  const { loading, data } = useApi(`https://v3.football.api-sports.io/fixtures?date=${xdate}&status=NS&timezone=America/Argentina/Buenos_Aires`);
+  const { loading, data } = useApi(`https://v3.football.api-sports.io/fixtures?date=${xdate().date}&status=NS&timezone=America/Argentina/Buenos_Aires`);
 
   if(loading) 
     return (
@@ -54,7 +40,6 @@ const Today = () => {
   };
 
   const matches = data.response;
-  //const matches = apiData.response;
 
   return (
     <div id="todaySection">
@@ -71,37 +56,33 @@ const Today = () => {
 
         {matches.map((match, index) => (
           <div key={index}>
-            { dateHour(match) < dateyymmdd.getHours().toString() 
+            { dateHour(match) < xdate().hour.toString()
             ? null
             :
-            
-            <div className={styles.match} onClick={() => openModal(match)}>
+            <div className={styles.match}>
 
-            <div className={styles.leagueTime}>
-              <h4 translate="no">{match.league.name}</h4>
-            </div>
+              <div className={styles.leagueTime}>
+                <h4 translate="no">{match.league.name}</h4>
+              </div>
 
-            <div className={styles.matchInfo}>
-
-                <div className={styles.dateMatch}>
-                <div className={styles.home}>
-                    <div className={styles.homeLogo}>
-                    <TeamImage teamId={match.teams.home.id} />
-                    <p translate="no">{match.teams.home.name}</p>
+              <div className={styles.matchInfo}>
+                  <div className={styles.dateMatch}>
+                    <div className={styles.home}>
+                        <div className={styles.homeLogo}>
+                        <TeamImage teamId={match.teams.home.id} />
+                        <p translate="no">{match.teams.home.name}</p>
+                        </div>
                     </div>
-                </div>
 
-                <div className={styles.away}>
-                    <div className={styles.awayLogo}>
-                    <TeamImage teamId={match.teams.away.id} />
-                    <p translate="no">{match.teams.away.name}</p>
+                    <div className={styles.away}>
+                        <div className={styles.awayLogo}>
+                        <TeamImage teamId={match.teams.away.id} />
+                        <p translate="no">{match.teams.away.name}</p>
+                        </div>
                     </div>
-                </div>
-                </div>
-
-                <p>{dateHour(match)}</p>
-
-            </div>
+                  </div>
+                  <p>{dateHour(match)}</p>
+              </div>
 
             </div>
             }
