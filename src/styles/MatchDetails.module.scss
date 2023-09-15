@@ -105,6 +105,23 @@ $secondary-color: #1e1e1e;
     }
 }
 
+.noEvents {
+    background: #333;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 1em;
+    h3 {
+        text-align: center;
+        font-family: 'Poppins', sans-serif;
+        margin: 1em 0 .5em 0;
+    }
+    img {
+        width: 50%;
+        height: 50%;
+    }
+}
+
 .events {
     color: #fff;
     background-color: #000;

@@ -36,7 +36,10 @@
     position: fixed;
     top: 0;
     right: -100vw;
-    background-color: #0f1419;
+    //background-color: #0f1419;
+    background: url('../assets/images/banner-2.svg');
+    background-size: cover;
+    background-position-x: 1%;
     color: #fff;
     transition: right 0.3s ease-in-out;
     
@@ -99,6 +102,7 @@
       font-family: 'Righteous', cursive;
       font-size: 1.3em;
       color: #5BFF04;
+      margin-bottom: 1em;
     }
   }
   img {

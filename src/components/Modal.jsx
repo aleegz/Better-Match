@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 const Modal = ({ isOpen, onClose, children, selectedMatch }) => {
   
   //console.log("Modal is open:", isOpen);
-  
+
   if (!isOpen) return null;
 
   const key = selectedMatch.fixture.id;

@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useState } from "react";
 import styles from "../styles/MatchDetails.module.scss";
 import { useParams } from "react-router-dom";
 import VenueImg from "../components/img/VenueImg";
@@ -6,8 +6,9 @@ import ball from "../assets/images/ball.svg";
 import redBall from "../assets/images/redBall.svg";
 import substitution from "../assets/images/substitution.svg";
 import stadium from "../assets/images/stadium.svg";
-import map from '../assets/images/map.svg';
-import referee from '../assets/images/referee.svg';
+import map from "../assets/images/map.svg";
+import referee from "../assets/images/referee.svg";
+import err from '../assets/images/err.svg';
 import apiData from "../data/matches5.json";
 import { useApiContext } from "../context/DataContext";
 
@@ -28,7 +29,7 @@ const MatchDetails = () => {
       <div className={styles.spinContainer}>
         <div className={styles.spinner}></div>
       </div>
-    )
+    );
   }
 
   if (!apiData)
@@ -119,6 +120,13 @@ const MatchDetails = () => {
           </div>
         </div>
 
+        {events.length === 0 ?
+        <div className={styles.noEvents}>
+          <h3>No event data available yet..</h3>
+          <img src={err} />
+        </div>
+        
+        :
         <div className={styles.events}>
           {/* <span className={styles.line}></span> */}
           {events.map((event, index) => (
@@ -141,13 +149,8 @@ const MatchDetails = () => {
                   <div>
                     <p>{event.player.name}</p>
 
-                    <p>
-                      {event.type === "subst" 
-                      ? event.assist.name
-                      : null}
-                    </p>
+                    <p>{event.type === "subst" ? event.assist.name : null}</p>
                   </div>
-                  
                 </div>
 
                 <div className={styles.eventType}>{eventClass(event)}</div>
@@ -155,6 +158,7 @@ const MatchDetails = () => {
             </div>
           ))}
         </div>
+        }
 
         <div className={styles.league}>
           <div className={styles.leagueLogo}>
@@ -165,29 +169,29 @@ const MatchDetails = () => {
         </div>
 
         <div className={styles.stadium}>
-          {selectedMatch.fixture.venue.id ? <VenueImg venueId={selectedMatch.fixture.venue.id} /> : null}
-          <div translate='no'>
+          {selectedMatch.fixture.venue.id ? (
+            <VenueImg venueId={selectedMatch.fixture.venue.id} />
+          ) : null}
+          <div translate="no">
             {selectedMatch.fixture.venue.name ? (
               <div className={styles.stadiumIcon}>
                 <img src={stadium} alt="Stadium icon" />
                 <p>{selectedMatch.fixture.venue.name}</p>
-              </div>)
-              : null}
+              </div>
+            ) : null}
             {selectedMatch.fixture.venue.city ? (
               <div className={styles.stadiumLocation}>
                 <img src={map} alt="Map icon" />
                 <p>{selectedMatch.fixture.venue.city}</p>
               </div>
-              )
-              : null}
+            ) : null}
 
             {selectedMatch.fixture.referee ? (
               <div className={styles.stadiumReferee}>
                 <img src={referee} alt="Referee icon" />
                 <p>{selectedMatch.fixture.referee}</p>
               </div>
-              )
-              : null}
+            ) : null}
           </div>
         </div>
 
@@ -198,7 +202,6 @@ const MatchDetails = () => {
             <button>Tie</button>
             <button>{selectedMatch.teams.away.name}</button>
           </div>
-          
         </div>
       </div>
     </>

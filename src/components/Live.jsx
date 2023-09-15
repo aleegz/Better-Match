@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useState } from "react";
 import styles from "../styles/Live.module.scss";
 import TeamImage from "../components/img/TeamImg.jsx";
 import Modal from "../components/Modal.jsx";
@@ -21,18 +21,18 @@ const Live = () => {
       </div>
     );
 
-    if (!apiData.results || apiData.length === 0) {
-      {
-        console.error(apiData.errors.requests);
-      }
-      return (
-        <div className={styles.error}>
-          <h1>404 Error</h1>
-          <p>Not found..</p>
-          <img src={err} alt="" />
-        </div>
-      );
+  if (!apiData.results || apiData.length === 0) {
+    {
+      console.error(apiData.errors.requests);
     }
+    return (
+      <div className={styles.error}>
+        <h1>404 Error</h1>
+        <p>Not found..</p>
+        <img src={err} alt="" />
+      </div>
+    );
+  }
 
   const openModal = (match) => {
     setSelectedMatch(match);
@@ -85,7 +85,7 @@ const Live = () => {
                   <div>
                     <TeamImage teamId={match.teams.home.id} />
                   </div>
-                  
+
                   <p translate="no">{match.teams.home.name}</p>
                 </div>
                 {match.goals.home}
