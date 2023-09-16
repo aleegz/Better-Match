@@ -1,97 +1,160 @@
 import React from 'react';
 import styles from '../styles/Lineups.module.scss';
-import apiData from '../data/matches6.json';
-
-const players = apiData.response[0].startXI.player;
-console.log(players)
+import { useParams } from "react-router-dom";
+//import apiData from '../data/matches6.json';
+import field from '../assets/images/soccer-field.svg';
+import useApi from '../services/useApi.js';
 
 export const Lineups = () => {
+    const { id } = useParams();
+    const { loading, data } = useApi(`https://v3.football.api-sports.io/fixtures/lineups?fixture=${id}`);
+
+    if(loading) 
+    return (
+    <div className={styles.spinContainer}>
+        <div className={styles.spinner}></div>
+    </div>
+    );
+
+  if (!data) {
+      {console.error(data.errors.requests)}
+      return (
+        <div className={styles.error}>No data available</div>
+      );
+  };
+
+    const homePlayers = data.response[0].startXI;
+    const awayPlayers = data.response[1].startXI;
+    const homePlyColors = data.response[0].team.colors.player // add .primary or .number
+    const awayPlyColors = data.response[1].team.colors.player
+    const homeGkColors = data.response[0].team.colors.goalkeeper
+    const awayGkColors = data.response[1].team.colors.goalkeeper
+    const homeNumColors = '#' + data.response[0].team.colors.player.number
+    const awayNumColors = '#' + data.response[1].team.colors.player.number
+    //console.log(data);
+
   return (
     <>
-    {players.map((player, index)=> (
-        <div key={index}>
-        <p>{player.name}</p>
-        </div>
-    ))}
     <div className={styles.homeHeader}>
-        <h3>PSG</h3> 
-        <p>4-3-3</p>
+        <h3>{data.response[0].team.name}</h3> 
+        <p>{data.response[0].formation}</p>
     </div>
+
+    <div className={styles.lineup}>
+        <img src={field} className={styles.homeFieldImg} />
 
     <div className={styles.homeLineup}>
         <div className={styles.gk}>
-            <div className={styles.point}>99</div>
-            <span>Donnarumma</span>
+            <div className={styles.point} style={{background: '#' + homeGkColors.primary, color: homeNumColors}}>{homePlayers[0].player.number}</div>
+            <span>{homePlayers[0].player.name}</span>
         </div>
 
         <div className={styles.def}>
-            <div className={styles.ply}>
-                <div className={styles.point}>2</div>
-                <span>A. Hakimi</span>
+            {homePlayers.map((player, index)=> (
+            player.player.pos === 'D' ?
+            <div key={index} className={styles.ply}>
+                <div className={styles.point} style={{background: '#' + homePlyColors.primary, color: homeNumColors}}>{player.player.number}</div>
+                <span>{player.player.name}</span>
             </div>
-
-            <div className={styles.ply}>
-                <div className={styles.point}>15</div>
-                <span>D. Pereira</span>
-            </div>
-
-            <div className={styles.ply}>
-                <div className={styles.point}>37</div>
-                <span>M. Škriniar</span>
-            </div>
-
-            <div className={styles.ply}>
-                <div className={styles.point}>21</div>
-                <span>Lucas</span>
-            </div>
-        </div>
+            : null
+            ))}
+        </div> 
 
         <div className={styles.mid}>
-            <div className={styles.ply}>
-                <div className={styles.point}>28</div>
-                <span>C. Soler</span>
+            {homePlayers.map((player, index)=> (
+            player.player.pos === 'M' ?
+            <div key={index} className={styles.ply}>
+                <div className={styles.point} style={{background: '#' + homePlyColors.primary, color: homeNumColors}}>{player.player.number}</div>
+                <span>{player.player.name}</span>
             </div>
-
-            <div className={styles.ply}>
-                <div className={styles.point}>33</div>
-                <span>W. Zaire Emery</span>
-            </div>
-
-            <div className={styles.ply}>
-                <div className={styles.point}>17</div>
-                <span>Vitinha</span>
-            </div>
-        </div>
+            : null
+            ))}
+        </div> 
 
         <div className={styles.for}>
-
-            <div className={styles.ply}>
-                <div className={styles.point}>10</div>
-                <span>Dembélé</span>
+            {homePlayers.map((player, index)=> (
+            player.player.pos === 'F' ?
+            <div key={index} className={styles.ply}>
+                <div className={styles.point} style={{background: '#' + homePlyColors.primary, color: homeNumColors}}>{player.player.number}</div>
+                <span>{player.player.name}</span>
             </div>
+            : null
+            ))}
+        </div> 
+    </div> 
 
-            <div className={styles.ply}>
-                <div className={styles.point}>9</div>
-                <span>Goncalo Ramos</span>
-            </div>
+    
 
-            <div className={styles.ply}>
-                <div className={styles.point}>7</div>
-                <span>K. Mbappé</span>
+    <div className={styles.awayLineup}>
+
+        <div className={styles.for}>
+            {awayPlayers.map((player, index)=> (
+            player.player.pos === 'F' ?
+            <div key={index} className={styles.ply}>
+                <div className={styles.point} style={{background: '#' + awayPlyColors.primary, color: awayNumColors}}>{player.player.number}</div>
+                <span>{player.player.name}</span>
             </div>
+            : null
+            ))}
+        </div> 
+
+        <div className={styles.mid}>
+            {awayPlayers.map((player, index)=> (
+            player.player.pos === 'M' ?
+            <div key={index} className={styles.ply}>
+                <div className={styles.point} style={{background: '#' + awayPlyColors.primary, color: awayNumColors}}>{player.player.number}</div>
+                <span>{player.player.name}</span>
+            </div>
+            : null
+            ))}
+        </div> 
+
+        <div className={styles.def}>
+            {awayPlayers.map((player, index)=> (
+            player.player.pos === 'D' ?
+            <div key={index} className={styles.ply}>
+                <div className={styles.point} style={{background: '#' + awayPlyColors.primary, color: awayNumColors}}>{player.player.number}</div>
+                <span>{player.player.name}</span>
+            </div>
+            : null
+            ))}
+        </div> 
+
+        <div className={styles.gk}>
+            <div className={styles.point} style={{background: '#' + awayGkColors.primary, color: awayNumColors}}>{awayPlayers[1].player.number}</div>
+            <span>{awayPlayers[1].player.name}</span>
         </div>
-    </div>
 
-    {/*<div className={styles.awayLineup}>
-        
     </div>
+        <div className={styles.awayHeader}>
+            <h3>{data.response[1].team.name}</h3> 
+            <p>{data.response[1].formation}</p>
+        </div>
+    </div> 
 
-    <div className={styles.awayHeader}>
-        <h3>Niza</h3> 
-        <p>4-3-3</p>
-  </div>*/}
     </>
   )
 }
 
 export default Lineups;
+
+    {/*players.map((player, index)=> (
+        <div key={index} style={{background: colors}}>
+        <p>{player.player.number}</p>
+        <p>{player.player.name}</p>
+        </div>
+    ))
+
+        : player.player.pos === 'M' ?
+        <div key={index} className={styles.mid}>
+            <div className={styles.point} style={{background: '#' + plyColors.primary, color: numColors}}>{player.player.number}</div>
+            <span>{player.player.name}</span>
+        </div> 
+        : null
+
+
+
+
+
+
+*/}
