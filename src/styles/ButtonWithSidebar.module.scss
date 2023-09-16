@@ -91,8 +91,8 @@
       .btnTxt {
         display: flex;
         align-items: center;
-        text-decoration: underline;
         text-underline-position: under;
+        text-decoration-line: none;
       }
     }
     .menuLogo {
