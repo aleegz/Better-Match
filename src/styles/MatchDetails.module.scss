@@ -106,14 +106,14 @@ $secondary-color: #1e1e1e;
 }
 
 .noEvents {
-    background: #333;
+    background: #ccc;
     display: flex;
     flex-direction: column;
     align-items: center;
     margin-bottom: 1em;
     h3 {
         text-align: center;
-        font-family: 'Poppins', sans-serif;
+        font-family: "Courier New", Courier, monospace;
         margin: 1em 0 .5em 0;
     }
     img {

@@ -1,0 +1,432 @@
+{
+  "get": "fixtures/lineups",
+  "parameters": {
+    "fixture": "1044917"
+  },
+  "errors": [],
+  "results": 2,
+  "paging": {
+    "current": 1,
+    "total": 1
+  },
+  "response": [
+    {
+      "team": {
+        "id": 85,
+        "name": "Paris Saint Germain",
+        "logo": "https://media-4.api-sports.io/football/teams/85.png",
+        "colors": {
+          "player": {
+            "primary": "000066",
+            "number": "ffffff",
+            "border": "000066"
+          },
+          "goalkeeper": {
+            "primary": "66cc00",
+            "number": "ffffff",
+            "border": "66cc00"
+          }
+        }
+      },
+      "formation": "4-3-3",
+      "startXI": [
+        {
+          "player": {
+            "id": 1622,
+            "name": "Gianluigi Donnarumma",
+            "number": 99,
+            "pos": "G",
+            "grid": "1:1"
+          }
+        },
+        {
+          "player": {
+            "id": 9,
+            "name": "Achraf Hakimi",
+            "number": 2,
+            "pos": "D",
+            "grid": "2:4"
+          }
+        },
+        {
+          "player": {
+            "id": 381,
+            "name": "Danilo Pereira",
+            "number": 15,
+            "pos": "D",
+            "grid": "2:3"
+          }
+        },
+        {
+          "player": {
+            "id": 198,
+            "name": "Milan Škriniar",
+            "number": 37,
+            "pos": "D",
+            "grid": "2:2"
+          }
+        },
+        {
+          "player": {
+            "id": 33,
+            "name": "Lucas Hernández",
+            "number": 21,
+            "pos": "D",
+            "grid": "2:1"
+          }
+        },
+        {
+          "player": {
+            "id": 930,
+            "name": "Carlos Soler",
+            "number": 28,
+            "pos": "M",
+            "grid": "3:3"
+          }
+        },
+        {
+          "player": {
+            "id": 336657,
+            "name": "Warren Zaïre-Emery",
+            "number": 33,
+            "pos": "M",
+            "grid": "3:2"
+          }
+        },
+        {
+          "player": {
+            "id": 128384,
+            "name": "Vitinha",
+            "number": 17,
+            "pos": "M",
+            "grid": "3:1"
+          }
+        },
+        {
+          "player": {
+            "id": 153,
+            "name": "Ousmane Dembélé",
+            "number": 10,
+            "pos": "F",
+            "grid": "4:3"
+          }
+        },
+        {
+          "player": {
+            "id": 41585,
+            "name": "Gonçalo Ramos",
+            "number": 9,
+            "pos": "F",
+            "grid": "4:2"
+          }
+        },
+        {
+          "player": {
+            "id": 278,
+            "name": "Kylian Mbappé",
+            "number": 7,
+            "pos": "F",
+            "grid": "4:1"
+          }
+        }
+      ],
+      "substitutes": [
+        {
+          "player": {
+            "id": 51494,
+            "name": "Manuel Ugarte",
+            "number": 4,
+            "pos": "M",
+            "grid": null
+          }
+        },
+        {
+          "player": {
+            "id": 21104,
+            "name": "Randal Kolo Muani",
+            "number": 23,
+            "pos": "F",
+            "grid": null
+          }
+        },
+        {
+          "player": {
+            "id": 161904,
+            "name": "Bradley Barcola",
+            "number": 29,
+            "pos": "F",
+            "grid": null
+          }
+        },
+        {
+          "player": {
+            "id": 162473,
+            "name": "Arnau Tenas",
+            "number": 80,
+            "pos": "G",
+            "grid": null
+          }
+        },
+        {
+          "player": {
+            "id": 731,
+            "name": "Keylor Navas",
+            "number": 1,
+            "pos": "G",
+            "grid": null
+          }
+        },
+        {
+          "player": {
+            "id": 257,
+            "name": "Marquinhos",
+            "number": 5,
+            "pos": "D",
+            "grid": null
+          }
+        },
+        {
+          "player": {
+            "id": 263,
+            "name": "Layvin Kurzawa",
+            "number": 97,
+            "pos": "D",
+            "grid": null
+          }
+        },
+        {
+          "player": {
+            "id": 386287,
+            "name": "Ethan Mbappé",
+            "number": 38,
+            "pos": "M",
+            "grid": null
+          }
+        },
+        {
+          "player": {
+            "id": 311083,
+            "name": "Cher Ndour",
+            "number": 27,
+            "pos": "M",
+            "grid": null
+          }
+        }
+      ],
+      "coach": {
+        "id": 193,
+        "name": "Luis Enrique",
+        "photo": "https://media-4.api-sports.io/football/coachs/193.png"
+      }
+    },
+    {
+      "team": {
+        "id": 84,
+        "name": "Nice",
+        "logo": "https://media-4.api-sports.io/football/teams/84.png",
+        "colors": {
+          "player": {
+            "primary": "ffffff",
+            "number": "000000",
+            "border": "ffffff"
+          },
+          "goalkeeper": {
+            "primary": "cccccc",
+            "number": "000000",
+            "border": "cccccc"
+          }
+        }
+      },
+      "formation": "4-3-3",
+      "startXI": [
+        {
+          "player": {
+            "id": 2274,
+            "name": "Marcin Bułka",
+            "number": 1,
+            "pos": "G",
+            "grid": "1:1"
+          }
+        },
+        {
+          "player": {
+            "id": 945,
+            "name": "Jordan Lotomba",
+            "number": 23,
+            "pos": "D",
+            "grid": "2:4"
+          }
+        },
+        {
+          "player": {
+            "id": 138,
+            "name": "Jean-Clair Todibo",
+            "number": 6,
+            "pos": "D",
+            "grid": "2:3"
+          }
+        },
+        {
+          "player": {
+            "id": 22163,
+            "name": "Dante",
+            "number": 4,
+            "pos": "D",
+            "grid": "2:2"
+          }
+        },
+        {
+          "player": {
+            "id": 162465,
+            "name": "Melvin Bard",
+            "number": 26,
+            "pos": "D",
+            "grid": "2:1"
+          }
+        },
+        {
+          "player": {
+            "id": 1914,
+            "name": "Morgan Sanson",
+            "number": 11,
+            "pos": "M",
+            "grid": "3:3"
+          }
+        },
+        {
+          "player": {
+            "id": 3099,
+            "name": "Youssouf Ndayishimiye",
+            "number": 55,
+            "pos": "M",
+            "grid": "3:2"
+          }
+        },
+        {
+          "player": {
+            "id": 116,
+            "name": "Khéphren Thuram",
+            "number": 19,
+            "pos": "M",
+            "grid": "3:1"
+          }
+        },
+        {
+          "player": {
+            "id": 21592,
+            "name": "Gaëtan Laborde",
+            "number": 24,
+            "pos": "F",
+            "grid": "4:3"
+          }
+        },
+        {
+          "player": {
+            "id": 69971,
+            "name": "Terem Moffi",
+            "number": 9,
+            "pos": "F",
+            "grid": "4:2"
+          }
+        },
+        {
+          "player": {
+            "id": 107,
+            "name": "Sofiane Diop",
+            "number": 10,
+            "pos": "F",
+            "grid": "4:1"
+          }
+        }
+      ],
+      "substitutes": [
+        {
+          "player": {
+            "id": 4399,
+            "name": "Hicham Boudaoui",
+            "number": 28,
+            "pos": "M",
+            "grid": null
+          }
+        },
+        {
+          "player": {
+            "id": 137303,
+            "name": "Evann Guessand",
+            "number": 29,
+            "pos": "F",
+            "grid": null
+          }
+        },
+        {
+          "player": {
+            "id": 20600,
+            "name": "Romain Perraud",
+            "number": 15,
+            "pos": "D",
+            "grid": null
+          }
+        },
+        {
+          "player": {
+            "id": 30531,
+            "name": "Jérémie Boga",
+            "number": 7,
+            "pos": "F",
+            "grid": null
+          }
+        },
+        {
+          "player": {
+            "id": 240,
+            "name": "Pablo Rosario",
+            "number": 8,
+            "pos": "M",
+            "grid": null
+          }
+        },
+        {
+          "player": {
+            "id": 175171,
+            "name": "Teddy Boulhendi",
+            "number": 77,
+            "pos": "G",
+            "grid": null
+          }
+        },
+        {
+          "player": {
+            "id": 3165,
+            "name": "Youcef Atal",
+            "number": 20,
+            "pos": "D",
+            "grid": null
+          }
+        },
+        {
+          "player": {
+            "id": 237068,
+            "name": "Aliou Balde",
+            "number": 27,
+            "pos": "F",
+            "grid": null
+          }
+        },
+        {
+          "player": {
+            "id": 334879,
+            "name": "Badredine Bouanani",
+            "number": 22,
+            "pos": "M",
+            "grid": null
+          }
+        }
+      ],
+      "coach": {
+        "id": 17873,
+        "name": "F. Farioli",
+        "photo": "https://media-4.api-sports.io/football/coachs/17873.png"
+      }
+    }
+  ]
+}
