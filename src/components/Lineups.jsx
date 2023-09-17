@@ -1,9 +1,11 @@
 import React from 'react';
 import styles from '../styles/Lineups.module.scss';
 import { useParams } from "react-router-dom";
-//import apiData from '../data/matches6.json';
+import data from '../data/matches6.json';
 //import field from '../assets/images/soccer-field.svg';
 import field from '../assets/images/soccer-field-img.png';
+import homeField from '../assets/images/home-soccer-field-img.png';
+import awayField from '../assets/images/away-soccer-field-img.png';
 import useApi from '../services/useApi.js';
 
 export const Lineups = () => {
@@ -17,12 +19,12 @@ export const Lineups = () => {
     </div>
     );
 
-  if (!data) {
-      {console.error(data.errors.requests)}
-      return (
-        <div className={styles.error}>No data available</div>
-      );
-  };
+    if (!data) {
+        {console.error(data.errors.requests)}
+        return (
+            <div className={styles.error}>No data available</div>
+        );
+    };
 
     const homePlayers = data.response[0].startXI;
     const awayPlayers = data.response[1].startXI;
@@ -45,6 +47,7 @@ export const Lineups = () => {
         <img src={field} className={styles.homeFieldImg} />
 
     <div className={styles.homeLineup}>
+
         <div className={styles.gk}>
             <div className={styles.point} style={{background: '#' + homeGkColors.primary, color: homeNumColors}}>{homePlayers[0].player.number}</div>
             <span>{homePlayers[0].player.name}</span>

@@ -91,11 +91,8 @@
       .btnTxt {
         display: flex;
         align-items: center;
-        text-decoration: none;
-        text-decoration-line: none;
-        text-decoration-skip: none;
-        text-decoration-skip-ink: none;
-        text-decoration-thickness: none;
+        text-decoration-line: underline;
+        text-decoration-color: #000000;
       }
     }
     .menuLogo {
