@@ -2,7 +2,8 @@ import React from 'react';
 import styles from '../styles/Lineups.module.scss';
 import { useParams } from "react-router-dom";
 //import apiData from '../data/matches6.json';
-import field from '../assets/images/soccer-field.svg';
+//import field from '../assets/images/soccer-field.svg';
+import field from '../assets/images/soccer-field-img.png';
 import useApi from '../services/useApi.js';
 
 export const Lineups = () => {

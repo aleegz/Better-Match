@@ -123,7 +123,7 @@ const MatchDetails = () => {
 
         {events.length === 0 ?
         <div className={styles.noEvents}>
-          <h3>No event data available yet..</h3>
+          <h3><b>No event data available yet..</b></h3>
           <img src={err} />
         </div>
         
