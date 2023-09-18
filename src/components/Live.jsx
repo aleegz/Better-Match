@@ -26,7 +26,7 @@ const Live = () => {
       console.error(apiData.errors.requests);
     }
     return (
-      <div className={styles.error}>
+      <div className={styles.error} id="titleSection">
         <h1>404 Error</h1>
         <p>Not found..</p>
         <img src={err} alt="" />

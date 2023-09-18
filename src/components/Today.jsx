@@ -19,9 +19,6 @@ const Today = () => {
     const today = (days[date.getDay()] + ", " + date.getDate() + " " + months[date.getMonth()] + " " + date.getFullYear());
     const today2 = (days[date.getDay()] + ", " + date.getDate() + " de " + months[date.getMonth()] + " de " + date.getFullYear());
 
-    console.log(xdate().date);
-    console.log(xdate().hour);
-
   const { loading, data } = useApi(`https://v3.football.api-sports.io/fixtures?date=${xdate().date}&status=NS&timezone=America/Argentina/Buenos_Aires`);
 
   if(loading) 
@@ -32,10 +29,10 @@ const Today = () => {
         
     )
 
-  if (!data) {
+  if (data.response.length === 0) {
       {console.error(data.errors.requests)}
       return (
-        <div className={styles.error}>No data available</div>
+        <div className={styles.error} id="todaySection">No data available</div>
       );
   };
 

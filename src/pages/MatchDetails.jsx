@@ -11,7 +11,7 @@ import referee from "../assets/images/referee.svg";
 import err from '../assets/images/err.svg';
 import apiData from "../data/matches5.json";
 import { useApiContext } from "../context/DataContext";
-import Lineups from '../components/Lineups.jsx'
+import Lineups from '../components/Lineups.jsx';
 
 const MatchDetails = () => {
   const { id } = useParams();
@@ -44,7 +44,13 @@ const MatchDetails = () => {
     {
       console.error(apiData.errors.requests);
     }
-    return <div>No hay datos disponibles</div>;
+    return (
+      <div className={styles.error}>
+        <h1>404 Error</h1>
+        <span>No data available..</span>
+        <img src={err} alt="" />
+      </div>
+    );
   }
 
   const matches = apiData.response;

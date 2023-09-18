@@ -9,7 +9,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
     <BrowserRouter basename="/Better-Match">
       <DataProvider>
-        <App />
+        <App translate='no' />
       </DataProvider>
     </BrowserRouter>
   </React.StrictMode>,
