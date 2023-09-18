@@ -10,12 +10,12 @@ import map from "../assets/images/map.svg";
 import referee from "../assets/images/referee.svg";
 import err from '../assets/images/err.svg';
 import apiData from "../data/matches5.json";
-import { useApiContext } from "../context/DataContext";
+//import { useApiContext } from "../context/DataContext";
 import Lineups from '../components/Lineups.jsx';
 
 const MatchDetails = () => {
   const { id } = useParams();
-  const { apiData } = useApiContext();
+  //const { apiData } = useApiContext();
   const [showSpinner, setShowSpinner] = useState(true);
 
   useEffect(() => {

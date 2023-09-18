@@ -17,10 +17,17 @@
     z-index: 1;
 }
 
+/*.lineups {
+    //position: relative;
+}*/
+
 .lineup {
     //background: url('../assets/images/soccer-field.svg');
     background-color: #30d667;
     height: 100vh;
+    span {
+        font-family: 'Segoe UI', Tahoma;
+    }
 }
 
 .line {
@@ -70,7 +77,8 @@
     align-items: center;
     flex-direction: column;
     span {
-        display: none;
+        //display: none;
+        z-index: 1;
     }
 }
 
@@ -80,13 +88,21 @@
     align-items: center;
     text-align: center;
     span {
-        display: none;
+        //display: none;
+        position: absolute;
+        margin-top: 2.2em;
+        z-index: 1;
     }
 }
 
 .def, .mid, .for {
     display: flex;
     justify-content: space-around;
+}
+
+.substitutesPlys {
+    display: flex;
+    flex-direction: row;
 }
 
 .error {
@@ -100,5 +116,8 @@
     img {
         width: 50%;
         height: 50%;
+    }
+    span {
+        font-weight: 700;
     }
 }
