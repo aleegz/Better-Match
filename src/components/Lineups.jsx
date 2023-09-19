@@ -2,11 +2,8 @@ import React from "react";
 import styles from "../styles/Lineups.module.scss";
 import { useParams } from "react-router-dom";
 import data from "../data/matches6.json";
-//import field from '../assets/images/soccer-field.svg';
 import err from "../assets/images/err.svg";
 import field from "../assets/images/soccer-field-img.png";
-import homeField from "../assets/images/home-soccer-field-img.png";
-import awayField from "../assets/images/away-soccer-field-img.png";
 import useApi from "../services/useApi.js";
 
 export const Lineups = () => {
@@ -69,8 +66,7 @@ export const Lineups = () => {
         </div>
 
         <div className={styles.lineup}>
-          <img src={field} className={styles.homeFieldImg} />
-
+          <img src={field} className={styles.fieldImg} />
           <div className={styles.homeLineup}>
 
             <div className={styles.gk}>
@@ -236,12 +232,18 @@ export const Lineups = () => {
         <div className={styles.substitutesPlys}>
           <div className={styles.substitutesPlysHome}>
             {substitutesPlysHome.map((player, index) => (
-              <p key={index}>{player.player.number} {player.player.name}</p>
+              <div key={index}>
+              <p className={styles.substitutesPlysNum}>{player.player.number}</p>
+              <p className={styles.substitutesPlysHomeName}>{player.player.name}</p>
+              </div>
             ))}
           </div>
           <div className={styles.substitutesPlysAway}>
             {substitutesPlysAway.map((player, index) => (
-              <p key={index}>{player.player.name} {player.player.number}</p>
+              <div key={index}>
+              <p className={styles.substitutesPlysAwayName}>{player.player.name}</p>
+              <p className={styles.substitutesPlysNum}>{player.player.number}</p>
+              </div>
             ))}
           </div>
         </div>
