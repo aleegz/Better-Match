@@ -8,9 +8,9 @@ import { DataProvider } from './context/DataContext';
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
     <BrowserRouter basename="/Better-Match">
-      {/* <DataProvider> */}
+      <DataProvider>
         <App translate='no' />
-      {/* </DataProvider> */}
+      </DataProvider>
     </BrowserRouter>
   </React.StrictMode>,
 )

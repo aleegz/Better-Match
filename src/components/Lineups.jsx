@@ -11,7 +11,7 @@ import useApi from "../services/useApi.js";
 
 export const Lineups = () => {
   const { id } = useParams();
-  /*const { loading, data } = useApi(
+  const { loading, data } = useApi(
     `https://v3.football.api-sports.io/fixtures/lineups?fixture=${id}`
   );
 
@@ -20,7 +20,7 @@ export const Lineups = () => {
       <div className={styles.spinContainer}>
         <div className={styles.spinner}></div>
       </div>
-    );*/
+    );
 
   if (data.results === 0) {
     {
@@ -50,15 +50,6 @@ export const Lineups = () => {
   const awayNumColors = "#" + data.response[1].team.colors.player.number;
   const homeLogo = data.response[0].team.logo;
   const awayLogo = data.response[1].team.logo;
-  //const [homeFirstName, homeLastName] = homePlayers[0].player.name.split(" ");
-  //const [awayFirstName, awayLastName] = awayPlayers[1].player.name.split(" ");
-  //console.log(homePlayers[i].player.name.split(" ")[1] ? homePlayers[i].player.name.split(" ")[1] : homePlayers[i].player.name.split(" ")[0]);
-
-  for (let i = 0; i < data.response[0].startXI.length; i++) {
-    const [homeFirstName, homeLastName] = homePlayers[i].player.name.split(" ");
-  }
-
-  //{homePlayers.map((player, index) => )}
   
   console.log(data);
 
