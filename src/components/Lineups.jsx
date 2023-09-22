@@ -1,10 +1,12 @@
 import React from "react";
 import styles from "../styles/Lineups.module.scss";
 import { useParams } from "react-router-dom";
-import data from "../data/matches6.json";
+import data from "../data/matches7.json";
 import err from "../assets/images/err.svg";
 import field from "../assets/images/soccer-field-img.png";
+import field2 from "../assets/images/soccer-field.svg";
 import useApi from "../services/useApi.js";
+import LineupGrid from "../components/LineupGrid.jsx";
 
 export const Lineups = () => {
   const { id } = useParams();
@@ -32,8 +34,12 @@ export const Lineups = () => {
     );
   }
 
+  /*const matches = apiData.response;
+  const selectedMatch = matches.find((match) => match.fixture.id == id);
+  const events = selectedMatch.events;*/
+
   const homeFormation = data.response[0].formation;
-  console.log(+homeFormation[0])
+  console.log(+homeFormation[0]);
   const homePlayers = data.response[0].startXI;
   const homePlayersName = data.response[0].substitutes;
   const awayPlayers = data.response[1].startXI;
@@ -47,8 +53,6 @@ export const Lineups = () => {
   const awayNumColors = "#" + data.response[1].team.colors.player.number;
   const homeLogo = data.response[0].team.logo;
   const awayLogo = data.response[1].team.logo;
-  
-  console.log(data);
 
   return (
     <>
@@ -67,7 +71,17 @@ export const Lineups = () => {
 
         <div className={styles.lineup}>
           <img src={field} className={styles.fieldImg} />
+          
+
           <div className={styles.homeLineup}>
+            <LineupGrid n={0} data={data} />
+          </div>
+          
+          <div className={styles.awayLineup}>
+            <LineupGrid n={1} data={data} />
+          </div>
+
+          {/* <div className={styles.homeLineup}>
 
             <div className={styles.gk}>
               <div
@@ -212,7 +226,7 @@ export const Lineups = () => {
               </div>
               <span>{awayPlayers[0].player.name.split(" ")[1]}</span>
             </div>
-          </div>
+          </div> */}
         </div>
 
         <div className={styles.awayHeader}>
@@ -229,20 +243,40 @@ export const Lineups = () => {
       </div>
 
       <div className={styles.substitutes}>
+        <div>
+          <img
+            src={homeLogo}
+            style={{ width: "auto", height: "1.5em", marginRight: ".3em" }}
+          />
+          <h2>Substitutes</h2>
+          <img
+            src={awayLogo}
+            style={{ width: "auto", height: "1.5em", marginRight: ".3em" }}
+          />
+        </div>
+
         <div className={styles.substitutesPlys}>
           <div className={styles.substitutesPlysHome}>
             {substitutesPlysHome.map((player, index) => (
               <div key={index}>
-              <p className={styles.substitutesPlysNum}>{player.player.number}</p>
-              <p className={styles.substitutesPlysHomeName}>{player.player.name}</p>
+                <p className={styles.substitutesPlysNum}>
+                  {player.player.number}
+                </p>
+                <p className={styles.substitutesPlysHomeName}>
+                  {player.player.name}
+                </p>
               </div>
             ))}
           </div>
           <div className={styles.substitutesPlysAway}>
             {substitutesPlysAway.map((player, index) => (
               <div key={index}>
-              <p className={styles.substitutesPlysAwayName}>{player.player.name}</p>
-              <p className={styles.substitutesPlysNum}>{player.player.number}</p>
+                <p className={styles.substitutesPlysAwayName}>
+                  {player.player.name}
+                </p>
+                <p className={styles.substitutesPlysNum}>
+                  {player.player.number}
+                </p>
               </div>
             ))}
           </div>

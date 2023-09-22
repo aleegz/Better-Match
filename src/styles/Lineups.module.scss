@@ -14,12 +14,16 @@
   position: absolute;
   width: 100%;
   height: 100%;
-  z-index: 1;
+  min-height: 100%;
+  display: block;
 }
 
 .lineup {
   background-color: #30d667;
-  height: 100vh;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   span {
     font-family: "Segoe UI", Tahoma;
   }
@@ -27,14 +31,14 @@
 
 .homeLineup {
   width: 100%;
-  height: 50vh;
+  height: 50%;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
 }
 .awayLineup {
   width: 100%;
-  height: 50vh;
+  height: 50%;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -49,7 +53,6 @@
   justify-content: center;
   font-weight: 600;
   margin-bottom: 0.3em;
-  z-index: 1;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
 
@@ -58,10 +61,6 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  span {
-    //display: none;
-    z-index: 1;
-  }
 }
 
 .ply {
@@ -73,7 +72,6 @@
     //display: none;
     position: absolute;
     margin-top: 2.2em;
-    z-index: 1;
   }
 }
 
@@ -86,10 +84,18 @@
   background: #0F1419;
   color: #fff;
   padding: 1em 0.3em;
-  /*background: #507a00;
+  background: #507a00;
   background: url('../assets/images/banner-3.svg');
   background-size: cover;
-  background-position: center;*/
+  background-position: center;
+  div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  h2 {
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  }
   .substitutesPlys {
     display: flex;
     flex-direction: row;
@@ -106,6 +112,7 @@
         display: flex;
         flex-direction: row;
         justify-content: space-between;
+        margin-bottom: 0.3em;
         .substitutesPlysHomeName {
           margin-left: 0.5em;
           font-family: 'Poppins', sans-serif;
@@ -121,6 +128,7 @@
         display: flex;
         flex-direction: row;
         justify-content: space-between;
+        margin-bottom: 0.3em;
         .substitutesPlysAwayName {
           margin-right: .5em;
           font-family: 'Poppins', sans-serif;

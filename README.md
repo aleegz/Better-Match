@@ -1,10 +1,26 @@
-# React + Vite
+# Better Match
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+App that allows you to visualize match results, team information, players, leagues, and more related to soccer.
 
-Currently, two official plugins are available:
+![Badge Developing](https://img.shields.io/badge/STATUS-%20DEVELOPING-green?style=flat-square)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+![Badge License](https://img.shields.io/badge/LICENSE-%20MIT-violet?style=flat-square)
+## Tech Stack
 
-- https://codebeautify.org/string-to-json-online
+**Client:** 
+
+![Badge Javascript](https://img.shields.io/badge/JavaScript-F7DF1E.svg?style=for-the-badge&logo=JavaScript&logoColor=black)
+
+![Badge React](https://img.shields.io/badge/React-1974d2.svg?style=for-the-badge&logo=React&logoColor=white)
+
+![Badge React Router](https://img.shields.io/badge/React%20Router-CA4245.svg?style=for-the-badge&logo=React-Router&logoColor=white)
+
+![Badge Vite](https://img.shields.io/badge/Vite-6a329f.svg?style=for-the-badge&logo=Vite&logoColor=white)
+
+![Badge Sass](https://img.shields.io/badge/Sass-CC6699.svg?style=for-the-badge&logo=Sass&logoColor=white)
+
+![Badge NPM](https://img.shields.io/badge/npm-CB3837.svg?style=for-the-badge&logo=npm&logoColor=white)
+
+**Server:** (Developing) Node, Express
+
+**Tools:** https://codebeautify.org/string-to-json-online
