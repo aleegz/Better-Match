@@ -1,4 +1,4 @@
-# Better Match
+## ![project_logo_3](https://github.com/7AleGz/Better-Match/assets/92764868/5bdb3979-367f-40a2-8d7c-e4dacab2d4b4)
 
 App that allows you to visualize match results, team information, players, leagues, and more related to soccer.
 

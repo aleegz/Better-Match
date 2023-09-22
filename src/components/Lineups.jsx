@@ -39,7 +39,7 @@ export const Lineups = () => {
   const events = selectedMatch.events;*/
 
   const homeFormation = data.response[0].formation;
-  console.log(+homeFormation[0]);
+  //console.log(+homeFormation[0]);
   const homePlayers = data.response[0].startXI;
   const homePlayersName = data.response[0].substitutes;
   const awayPlayers = data.response[1].startXI;
