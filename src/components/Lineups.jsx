@@ -7,12 +7,12 @@ import field from "../assets/images/soccer-field-img.png";
 import field2 from "../assets/images/soccer-field.svg";
 import entry from "../assets/images/substitutes/in.svg";
 import out from "../assets/images/substitutes/out.svg";
-//import useApi from "../services/useApi.js";
+import useApi from "../services/useApi.js";
 import LineupGrid from "../components/LineupGrid.jsx";
 
 export const Lineups = ({ events }) => {
   const { id } = useParams();
-  /*const { loading, data } = useApi(
+  const { loading, data } = useApi(
     `https://v3.football.api-sports.io/fixtures/lineups?fixture=${id}`
   );
 
@@ -21,7 +21,7 @@ export const Lineups = ({ events }) => {
       <div className={styles.spinContainer}>
         <div className={styles.spinner}></div>
       </div>
-    );*/
+    );
 
   if (data.results === 0) {
     {
