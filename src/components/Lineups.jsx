@@ -1,16 +1,18 @@
 import React from "react";
 import styles from "../styles/Lineups.module.scss";
 import { useParams } from "react-router-dom";
-import data from "../data/matches7.json";
+import data from "../data/matches9.json";
 import err from "../assets/images/err.svg";
 import field from "../assets/images/soccer-field-img.png";
 import field2 from "../assets/images/soccer-field.svg";
-import useApi from "../services/useApi.js";
+import entry from "../assets/images/substitutes/in.svg";
+import out from "../assets/images/substitutes/out.svg";
+//import useApi from "../services/useApi.js";
 import LineupGrid from "../components/LineupGrid.jsx";
 
-export const Lineups = () => {
+export const Lineups = ({ events }) => {
   const { id } = useParams();
-  const { loading, data } = useApi(
+  /*const { loading, data } = useApi(
     `https://v3.football.api-sports.io/fixtures/lineups?fixture=${id}`
   );
 
@@ -19,7 +21,7 @@ export const Lineups = () => {
       <div className={styles.spinContainer}>
         <div className={styles.spinner}></div>
       </div>
-    );
+    );*/
 
   if (data.results === 0) {
     {
@@ -34,25 +36,24 @@ export const Lineups = () => {
     );
   }
 
-  /*const matches = apiData.response;
-  const selectedMatch = matches.find((match) => match.fixture.id == id);
-  const events = selectedMatch.events;*/
+  function getSubstituteIds(events) {
+    const substituteIDs = [];
+
+    for (const event of events) {
+      if (event.type === "subst" && event.player.id) {
+        substituteIDs.push(event.player.id);
+      }
+    }
+
+    return substituteIDs;
+  }
+
+  const substituteIDs = getSubstituteIds(events);
 
   const homeFormation = data.response[0].formation;
   //console.log(+homeFormation[0]);
-  const homePlayers = data.response[0].startXI;
-  const homePlayersName = data.response[0].substitutes;
-  const awayPlayers = data.response[1].startXI;
   const substitutesPlysHome = data.response[0].substitutes;
   const substitutesPlysAway = data.response[1].substitutes;
-  const homePlyColors = data.response[0].team.colors.player; // add .primary or .number
-  const awayPlyColors = data.response[1].team.colors.player;
-  const homeGkColors = data.response[0].team.colors.goalkeeper;
-  const awayGkColors = data.response[1].team.colors.goalkeeper;
-  const homeNumColors = "#" + data.response[0].team.colors.player.number;
-  const awayNumColors = "#" + data.response[1].team.colors.player.number;
-  const homeLogo = data.response[0].team.logo;
-  const awayLogo = data.response[1].team.logo;
 
   return (
     <>
@@ -60,7 +61,7 @@ export const Lineups = () => {
         <div className={styles.homeHeader}>
           <div style={{ display: "flex", alignItems: "center" }}>
             <img
-              src={homeLogo}
+              src={data.response[0].team.logo}
               style={{ width: "auto", height: "1.5em", marginRight: ".3em" }}
             />
             <h3 translate="no">{data.response[0].team.name}</h3>
@@ -71,14 +72,13 @@ export const Lineups = () => {
 
         <div className={styles.lineup}>
           <img src={field} className={styles.fieldImg} />
-          
 
           <div className={styles.homeLineup}>
-            <LineupGrid n={0} data={data} />
+            <LineupGrid n={0} data={data} events={events} />
           </div>
-          
+
           <div className={styles.awayLineup}>
-            <LineupGrid n={1} data={data} />
+            <LineupGrid n={1} data={data} events={events} />
           </div>
 
           {/* <div className={styles.homeLineup}>
@@ -232,7 +232,7 @@ export const Lineups = () => {
         <div className={styles.awayHeader}>
           <div style={{ display: "flex", alignItems: "center" }}>
             <img
-              src={awayLogo}
+              src={data.response[1].team.logo}
               style={{ width: "auto", height: "1.5em", marginRight: ".3em" }}
             />
             <h3 translate="no">{data.response[1].team.name}</h3>
@@ -245,12 +245,12 @@ export const Lineups = () => {
       <div className={styles.substitutes}>
         <div>
           <img
-            src={homeLogo}
+            src={data.response[0].team.logo}
             style={{ width: "auto", height: "1.5em", marginRight: ".3em" }}
           />
           <h2>Substitutes</h2>
           <img
-            src={awayLogo}
+            src={data.response[1].team.logo}
             style={{ width: "auto", height: "1.5em", marginRight: ".3em" }}
           />
         </div>
@@ -263,16 +263,30 @@ export const Lineups = () => {
                   {player.player.number}
                 </p>
                 <p className={styles.substitutesPlysHomeName}>
-                  {player.player.name}
+                  {player.player.name.split(" ")[0][0] +
+                    ". " +
+                    player.player.name.split(" ")[1]}
                 </p>
+                {substituteIDs.includes(player.player.id) ? (
+                  <span>
+                    <img src={entry} style={{ height: "1em" }} />
+                  </span>
+                ) : null}
               </div>
             ))}
           </div>
           <div className={styles.substitutesPlysAway}>
             {substitutesPlysAway.map((player, index) => (
               <div key={index}>
+                {substituteIDs.includes(player.player.id) ? (
+                  <span>
+                    <img src={entry} style={{ height: "1em" }} />
+                  </span>
+                ) : null}
                 <p className={styles.substitutesPlysAwayName}>
-                  {player.player.name}
+                  {player.player.name.split(" ")[0][0] +
+                    ". " +
+                    player.player.name.split(" ")[1]}
                 </p>
                 <p className={styles.substitutesPlysNum}>
                   {player.player.number}

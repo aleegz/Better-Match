@@ -8,14 +8,14 @@ import substitution from "../assets/images/substitution.svg";
 import stadium from "../assets/images/stadium.svg";
 import map from "../assets/images/map.svg";
 import referee from "../assets/images/referee.svg";
-import err from '../assets/images/err.svg';
-import apiData from "../data/matches5.json";
-import { useApiContext } from "../context/DataContext";
-import Lineups from '../components/Lineups.jsx';
+import err from "../assets/images/err.svg";
+import apiData from "../data/matches8.json";
+//import { useApiContext } from "../context/DataContext";
+import Lineups from "../components/Lineups.jsx";
 
 const MatchDetails = () => {
   const { id } = useParams();
-  const { apiData } = useApiContext();
+  //const { apiData } = useApiContext();
   const [showSpinner, setShowSpinner] = useState(true);
 
   useEffect(() => {
@@ -54,7 +54,8 @@ const MatchDetails = () => {
   }
 
   const matches = apiData.response;
-  const selectedMatch = matches.find((match) => match.fixture.id == id);
+  //const selectedMatch = matches.find((match) => match.fixture.id == id);
+  const selectedMatch = matches.find((match) => match.fixture.id == 1052300);
   const events = selectedMatch.events;
   console.log(events);
 
@@ -127,44 +128,49 @@ const MatchDetails = () => {
           </div>
         </div>
 
-        {events.length === 0 ?
-        <div className={styles.noEvents}>
-          <h3><b>No event data available yet..</b></h3>
-          <img src={err} />
-        </div>
-        
-        :
-        <div className={styles.events}>
-          {/* <span className={styles.line}></span> */}
-          {events.map((event, index) => (
-            <div key={index}>
-              <div
-                className={
-                  selectedMatch.teams.away.name === event.team.name
-                    ? styles.right
-                    : styles.left
-                }
-              >
-                <div
-                  className={
-                    selectedMatch.teams.away.name === event.team.name
-                      ? styles.minutePlayerR
-                      : styles.minutePlayerL
-                  }
-                >
-                  <p>{event.time.elapsed + event.time.extra + "'"}</p>
-                  <div>
-                    <p>{event.player.name}</p>
+        {
+          /*events.length === 0 ?*/ !events ? (
+            <div className={styles.noEvents}>
+              <h3>
+                <b>No event data available yet..</b>
+              </h3>
+              <img src={err} />
+            </div>
+          ) : (
+            <div className={styles.events}>
+              {/* <span className={styles.line}></span> */}
+              {events.map((event, index) => (
+                <div key={index}>
+                  <div
+                    className={
+                      selectedMatch.teams.away.name === event.team.name
+                        ? styles.right
+                        : styles.left
+                    }
+                  >
+                    <div
+                      className={
+                        selectedMatch.teams.away.name === event.team.name
+                          ? styles.minutePlayerR
+                          : styles.minutePlayerL
+                      }
+                    >
+                      <p>{event.time.elapsed + event.time.extra + "'"}</p>
+                      <div>
+                        <p>{event.player.name}</p>
 
-                    <p>{event.type === "subst" ? event.assist.name : null}</p>
+                        <p>
+                          {event.type === "subst" ? event.assist.name : null}
+                        </p>
+                      </div>
+                    </div>
+
+                    <div className={styles.eventType}>{eventClass(event)}</div>
                   </div>
                 </div>
-
-                <div className={styles.eventType}>{eventClass(event)}</div>
-              </div>
+              ))}
             </div>
-          ))}
-        </div>
+          )
         }
 
         <div className={styles.league}>
@@ -211,8 +217,7 @@ const MatchDetails = () => {
           </div>
         </div>
 
-        <Lineups id={id} />
-
+        <Lineups id={id} events={events} />
       </div>
     </>
   );

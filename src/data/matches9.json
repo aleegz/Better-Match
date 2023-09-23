@@ -1,0 +1,495 @@
+{
+  "get": "fixtures/lineups",
+  "parameters": {
+    "fixture": "1052300"
+  },
+  "errors": [],
+  "results": 2,
+  "paging": {
+    "current": 1,
+    "total": 1
+  },
+  "response": [
+    {
+      "team": {
+        "id": 488,
+        "name": "Sassuolo",
+        "logo": "https://media-4.api-sports.io/football/teams/488.png",
+        "colors": {
+          "player": {
+            "primary": "eeea1b",
+            "number": "ffffff",
+            "border": "eeea1b"
+          },
+          "goalkeeper": {
+            "primary": "ff0000",
+            "number": "ffffff",
+            "border": "ff0000"
+          }
+        }
+      },
+      "formation": "4-2-3-1",
+      "startXI": [
+        {
+          "player": {
+            "id": 30546,
+            "name": "Alessio Cragno",
+            "number": 28,
+            "pos": "G",
+            "grid": "1:1"
+          }
+        },
+        {
+          "player": {
+            "id": 1118,
+            "name": "Jeremy Toljan",
+            "number": 22,
+            "pos": "D",
+            "grid": "2:4"
+          }
+        },
+        {
+          "player": {
+            "id": 30827,
+            "name": "Martin Erlić",
+            "number": 5,
+            "pos": "D",
+            "grid": "2:3"
+          }
+        },
+        {
+          "player": {
+            "id": 152857,
+            "name": "Ruan",
+            "number": 44,
+            "pos": "D",
+            "grid": "2:2"
+          }
+        },
+        {
+          "player": {
+            "id": 51572,
+            "name": "Matías Viña",
+            "number": 17,
+            "pos": "D",
+            "grid": "2:1"
+          }
+        },
+        {
+          "player": {
+            "id": 291780,
+            "name": "Daniel Boloca",
+            "number": 24,
+            "pos": "M",
+            "grid": "3:2"
+          }
+        },
+        {
+          "player": {
+            "id": 10494,
+            "name": "Matheus Henrique",
+            "number": 7,
+            "pos": "M",
+            "grid": "3:1"
+          }
+        },
+        {
+          "player": {
+            "id": 30537,
+            "name": "Domenico Berardi",
+            "number": 10,
+            "pos": "M",
+            "grid": "4:3"
+          }
+        },
+        {
+          "player": {
+            "id": 48577,
+            "name": "Nedim Bajrami",
+            "number": 11,
+            "pos": "M",
+            "grid": "4:2"
+          }
+        },
+        {
+          "player": {
+            "id": 2215,
+            "name": "Armand Laurienté",
+            "number": 45,
+            "pos": "M",
+            "grid": "4:1"
+          }
+        },
+        {
+          "player": {
+            "id": 31094,
+            "name": "Andrea Pinamonti",
+            "number": 9,
+            "pos": "F",
+            "grid": "5:1"
+          }
+        }
+      ],
+      "substitutes": [
+        {
+          "player": {
+            "id": 312485,
+            "name": "Daniel Theiner",
+            "number": 33,
+            "pos": "G",
+            "grid": null
+          }
+        },
+        {
+          "player": {
+            "id": 30517,
+            "name": "Gianluca Pegolo",
+            "number": 25,
+            "pos": "G",
+            "grid": null
+          }
+        },
+        {
+          "player": {
+            "id": 342653,
+            "name": "Filippo Missori",
+            "number": 2,
+            "pos": "D",
+            "grid": null
+          }
+        },
+        {
+          "player": {
+            "id": 39362,
+            "name": "Marcus Pedersen",
+            "number": 3,
+            "pos": "D",
+            "grid": null
+          }
+        },
+        {
+          "player": {
+            "id": 180510,
+            "name": "Mattia Viti",
+            "number": 21,
+            "pos": "D",
+            "grid": null
+          }
+        },
+        {
+          "player": {
+            "id": 30523,
+            "name": "Gian Marco Ferrari",
+            "number": 13,
+            "pos": "D",
+            "grid": null
+          }
+        },
+        {
+          "player": {
+            "id": 18824,
+            "name": "Pedro Obiang",
+            "number": 14,
+            "pos": "M",
+            "grid": null
+          }
+        },
+        {
+          "player": {
+            "id": 39143,
+            "name": "Kristian Thorstvedt",
+            "number": 42,
+            "pos": "M",
+            "grid": null
+          }
+        },
+        {
+          "player": {
+            "id": 47087,
+            "name": "Uroš Račić",
+            "number": 6,
+            "pos": "M",
+            "grid": null
+          }
+        },
+        {
+          "player": {
+            "id": 342035,
+            "name": "Cristian Volpato",
+            "number": 23,
+            "pos": "M",
+            "grid": null
+          }
+        },
+        {
+          "player": {
+            "id": 1641,
+            "name": "Samu Castillejo",
+            "number": 20,
+            "pos": "M",
+            "grid": null
+          }
+        },
+        {
+          "player": {
+            "id": 1189,
+            "name": "Emil Konradsen Ceide",
+            "number": 15,
+            "pos": "F",
+            "grid": null
+          }
+        },
+        {
+          "player": {
+            "id": 91490,
+            "name": "Samuele Mulattieri",
+            "number": 8,
+            "pos": "F",
+            "grid": null
+          }
+        },
+        {
+          "player": {
+            "id": 30461,
+            "name": "Grégoire Defrel",
+            "number": 92,
+            "pos": "F",
+            "grid": null
+          }
+        }
+      ],
+      "coach": {
+        "id": 1612,
+        "name": "A. Dionisi",
+        "photo": "https://media-4.api-sports.io/football/coachs/1612.png"
+      }
+    },
+    {
+      "team": {
+        "id": 496,
+        "name": "Juventus",
+        "logo": "https://media-4.api-sports.io/football/teams/496.png",
+        "colors": {
+          "player": {
+            "primary": "131111",
+            "number": "fffdfa",
+            "border": "131111"
+          },
+          "goalkeeper": {
+            "primary": "64ff39",
+            "number": "000000",
+            "border": "64ff39"
+          }
+        }
+      },
+      "formation": "3-5-2",
+      "startXI": [
+        {
+          "player": {
+            "id": 851,
+            "name": "Wojciech Szczęsny",
+            "number": 1,
+            "pos": "G",
+            "grid": "1:1"
+          }
+        },
+        {
+          "player": {
+            "id": 268341,
+            "name": "Federico Gatti",
+            "number": 4,
+            "pos": "D",
+            "grid": "2:3"
+          }
+        },
+        {
+          "player": {
+            "id": 30497,
+            "name": "Bremer",
+            "number": 3,
+            "pos": "D",
+            "grid": "2:2"
+          }
+        },
+        {
+          "player": {
+            "id": 618,
+            "name": "Danilo",
+            "number": 6,
+            "pos": "D",
+            "grid": "2:1"
+          }
+        },
+        {
+          "player": {
+            "id": 415,
+            "name": "Weston McKennie",
+            "number": 16,
+            "pos": "M",
+            "grid": "3:5"
+          }
+        },
+        {
+          "player": {
+            "id": 181808,
+            "name": "Fabio Miretti",
+            "number": 20,
+            "pos": "M",
+            "grid": "3:4"
+          }
+        },
+        {
+          "player": {
+            "id": 30533,
+            "name": "Manuel Locatelli",
+            "number": 5,
+            "pos": "M",
+            "grid": "3:3"
+          }
+        },
+        {
+          "player": {
+            "id": 272,
+            "name": "Adrien Rabiot",
+            "number": 25,
+            "pos": "M",
+            "grid": "3:2"
+          }
+        },
+        {
+          "player": {
+            "id": 1821,
+            "name": "Filip Kostić",
+            "number": 11,
+            "pos": "M",
+            "grid": "3:1"
+          }
+        },
+        {
+          "player": {
+            "id": 30415,
+            "name": "Dušan Vlahović",
+            "number": 9,
+            "pos": "F",
+            "grid": "4:2"
+          }
+        },
+        {
+          "player": {
+            "id": 30410,
+            "name": "Federico Chiesa",
+            "number": 7,
+            "pos": "F",
+            "grid": "4:1"
+          }
+        }
+      ],
+      "substitutes": [
+        {
+          "player": {
+            "id": 850,
+            "name": "Carlo Pinsoglio",
+            "number": 23,
+            "pos": "G",
+            "grid": null
+          }
+        },
+        {
+          "player": {
+            "id": 849,
+            "name": "Mattia Perin",
+            "number": 36,
+            "pos": "G",
+            "grid": null
+          }
+        },
+        {
+          "player": {
+            "id": 127011,
+            "name": "Andrea Cambiaso",
+            "number": 27,
+            "pos": "D",
+            "grid": null
+          }
+        },
+        {
+          "player": {
+            "id": 361497,
+            "name": "Dean Huijsen",
+            "number": 13,
+            "pos": "D",
+            "grid": null
+          }
+        },
+        {
+          "player": {
+            "id": 861,
+            "name": "Daniele Rugani",
+            "number": 24,
+            "pos": "D",
+            "grid": null
+          }
+        },
+        {
+          "player": {
+            "id": 876,
+            "name": "Nicolò Fagioli",
+            "number": 21,
+            "pos": "M",
+            "grid": null
+          }
+        },
+        {
+          "player": {
+            "id": 881,
+            "name": "Hans Nicolussi Caviglia",
+            "number": 41,
+            "pos": "M",
+            "grid": null
+          }
+        },
+        {
+          "player": {
+            "id": 333,
+            "name": "Arkadiusz Milik",
+            "number": 14,
+            "pos": "F",
+            "grid": null
+          }
+        },
+        {
+          "player": {
+            "id": 1138,
+            "name": "Timothy Weah",
+            "number": 22,
+            "pos": "M",
+            "grid": null
+          }
+        },
+        {
+          "player": {
+            "id": 877,
+            "name": "Moise Kean",
+            "number": 18,
+            "pos": "F",
+            "grid": null
+          }
+        },
+        {
+          "player": {
+            "id": 162173,
+            "name": "Samuel Iling Junior",
+            "number": 17,
+            "pos": "F",
+            "grid": null
+          }
+        }
+      ],
+      "coach": {
+        "id": 3386,
+        "name": "M. Allegri",
+        "photo": "https://media-4.api-sports.io/football/coachs/3386.png"
+      }
+    }
+  ]
+}

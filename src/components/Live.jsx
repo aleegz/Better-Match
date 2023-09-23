@@ -83,7 +83,8 @@ const Live = () => {
               <div className={styles.home}>
                 <div className={styles.homeLogo}>
                   <div>
-                    <TeamImage teamId={match.teams.home.id} />
+                    {/* <TeamImage teamId={match.teams.home.id} /> */}
+                    <img src={match.teams.home.logo} />
                   </div>
 
                   <p translate="no">{match.teams.home.name}</p>
@@ -97,7 +98,8 @@ const Live = () => {
               <div className={styles.away}>
                 <div className={styles.awayLogo}>
                   <div>
-                    <TeamImage teamId={match.teams.away.id} />
+                    {/* <TeamImage teamId={match.teams.away.id} /> */}
+                    <img src={match.teams.away.logo} />
                   </div>
                   <p translate="no">{match.teams.away.name}</p>
                 </div>

@@ -1,7 +1,6 @@
 import styles from "../styles/LineupGrid.module.scss";
 
-const LineupGrid = ({ n, data }) => {
-
+const LineupGrid = ({ n, data, events }) => {
   const formation = data.response[n].formation.split("-").map(Number);
   const startXI = data.response[n].startXI;
 
@@ -39,11 +38,11 @@ const LineupGrid = ({ n, data }) => {
       >
         <div className={styles.gk}>
           {goalkeeperArray.map((player) => (
-            <div key={player.player.id} className={styles.ply}        
-            style={
-                n === 0
-                  ? { margin: '0 0 .7em 0' }
-                  : { margin: '.7em 0 0 0' }
+            <div
+              key={player.player.id}
+              className={styles.ply}
+              style={
+                n === 0 ? { margin: "0 0 .7em 0" } : { margin: ".7em 0 0 0" }
               }
             >
               <div
@@ -52,12 +51,18 @@ const LineupGrid = ({ n, data }) => {
                   background:
                     "#" + data.response[n].team.colors.goalkeeper.primary,
                   color: "#" + data.response[n].team.colors.goalkeeper,
-                  border: '1px solid #' + data.response[n].team.colors.goalkeeper.border,
+                  border:
+                    "1px solid #" +
+                    data.response[n].team.colors.goalkeeper.border,
                 }}
               >
                 {player.player.number}
               </div>
-              <span>{player.player.name.split(" ")[1] ? player.player.name.split(" ")[1] : player.player.name.split(" ")[0]}</span>
+              <span>
+                {player.player.name.split(" ")[1]
+                  ? player.player.name.split(" ")[1]
+                  : player.player.name.split(" ")[0]}
+              </span>
             </div>
           ))}
         </div>
@@ -69,12 +74,18 @@ const LineupGrid = ({ n, data }) => {
                 style={{
                   background: "#" + data.response[n].team.colors.player.primary,
                   color: "#" + data.response[n].team.colors.player.number,
-                  border: '1px solid #' + data.response[n].team.colors.goalkeeper.border,
+                  border:
+                    "1px solid #" +
+                    data.response[n].team.colors.goalkeeper.border,
                 }}
               >
                 {player.player.number}
               </div>
-              <span>{player.player.name.split(" ")[1] ? player.player.name.split(" ")[1] : player.player.name.split(" ")[0]}</span>
+              <span>
+                {player.player.name.split(" ")[1]
+                  ? player.player.name.split(" ")[1]
+                  : player.player.name.split(" ")[0]}
+              </span>
             </div>
           ))}
         </div>
@@ -86,12 +97,18 @@ const LineupGrid = ({ n, data }) => {
                 style={{
                   background: "#" + data.response[n].team.colors.player.primary,
                   color: "#" + data.response[n].team.colors.player.number,
-                  border: '1px solid #' + data.response[n].team.colors.goalkeeper.border,
+                  border:
+                    "1px solid #" +
+                    data.response[n].team.colors.goalkeeper.border,
                 }}
               >
                 {player.player.number}
               </div>
-              <span>{player.player.name.split(" ")[1] ? player.player.name.split(" ")[1] : player.player.name.split(" ")[0]}</span>
+              <span>
+                {player.player.name.split(" ")[1]
+                  ? player.player.name.split(" ")[1]
+                  : player.player.name.split(" ")[0]}
+              </span>
             </div>
           ))}
         </div>
@@ -103,12 +120,18 @@ const LineupGrid = ({ n, data }) => {
                 style={{
                   background: "#" + data.response[n].team.colors.player.primary,
                   color: "#" + data.response[n].team.colors.player.number,
-                  border: '1px solid #' + data.response[n].team.colors.goalkeeper.border,
+                  border:
+                    "1px solid #" +
+                    data.response[n].team.colors.goalkeeper.border,
                 }}
               >
                 {player.player.number}
               </div>
-              <span>{player.player.name.split(" ")[1] ? player.player.name.split(" ")[1] : player.player.name.split(" ")[0]}</span>
+              <span>
+                {player.player.name.split(" ")[1]
+                  ? player.player.name.split(" ")[1]
+                  : player.player.name.split(" ")[0]}
+              </span>
             </div>
           ))}
         </div>
@@ -155,11 +178,11 @@ const LineupGrid = ({ n, data }) => {
       >
         <div className={styles.gk}>
           {goalkeeperArray.map((player) => (
-            <div key={player.player.id} className={styles.ply}
-            style={
-                n === 0
-                  ? { margin: '0 0 .7em 0' }
-                  : { margin: '.7em 0 0 0' }
+            <div
+              key={player.player.id}
+              className={styles.ply}
+              style={
+                n === 0 ? { margin: "0 0 .7em 0" } : { margin: ".7em 0 0 0" }
               }
             >
               <div
@@ -168,12 +191,18 @@ const LineupGrid = ({ n, data }) => {
                   background:
                     "#" + data.response[n].team.colors.goalkeeper.primary,
                   color: "#" + data.response[n].team.colors.goalkeeper,
-                  border: '1px solid #' + data.response[n].team.colors.goalkeeper.border,
+                  border:
+                    "1px solid #" +
+                    data.response[n].team.colors.goalkeeper.border,
                 }}
               >
                 {player.player.number}
               </div>
-              <span>{player.player.name.split(" ")[1] ? player.player.name.split(" ")[1] : player.player.name.split(" ")[0]}</span>
+              <span>
+                {player.player.name.split(" ")[1]
+                  ? player.player.name.split(" ")[1]
+                  : player.player.name.split(" ")[0]}
+              </span>
             </div>
           ))}
         </div>
@@ -185,12 +214,18 @@ const LineupGrid = ({ n, data }) => {
                 style={{
                   background: "#" + data.response[n].team.colors.player.primary,
                   color: "#" + data.response[n].team.colors.player.number,
-                  border: '1px solid #' + data.response[n].team.colors.goalkeeper.border,
+                  border:
+                    "1px solid #" +
+                    data.response[n].team.colors.goalkeeper.border,
                 }}
               >
                 {player.player.number}
               </div>
-              <span>{player.player.name.split(" ")[1] ? player.player.name.split(" ")[1] : player.player.name.split(" ")[0]}</span>
+              <span>
+                {player.player.name.split(" ")[1]
+                  ? player.player.name.split(" ")[1]
+                  : player.player.name.split(" ")[0]}
+              </span>
             </div>
           ))}
         </div>
@@ -202,12 +237,18 @@ const LineupGrid = ({ n, data }) => {
                 style={{
                   background: "#" + data.response[n].team.colors.player.primary,
                   color: "#" + data.response[n].team.colors.player.number,
-                  border: '1px solid #' + data.response[n].team.colors.goalkeeper.border,
+                  border:
+                    "1px solid #" +
+                    data.response[n].team.colors.goalkeeper.border,
                 }}
               >
                 {player.player.number}
               </div>
-              <span>{player.player.name.split(" ")[1] ? player.player.name.split(" ")[1] : player.player.name.split(" ")[0]}</span>
+              <span>
+                {player.player.name.split(" ")[1]
+                  ? player.player.name.split(" ")[1]
+                  : player.player.name.split(" ")[0]}
+              </span>
             </div>
           ))}
         </div>
@@ -219,12 +260,18 @@ const LineupGrid = ({ n, data }) => {
                 style={{
                   background: "#" + data.response[n].team.colors.player.primary,
                   color: "#" + data.response[n].team.colors.player.number,
-                  border: '1px solid #' + data.response[n].team.colors.goalkeeper.border,
+                  border:
+                    "1px solid #" +
+                    data.response[n].team.colors.goalkeeper.border,
                 }}
               >
                 {player.player.number}
               </div>
-              <span>{player.player.name.split(" ")[1] ? player.player.name.split(" ")[1] : player.player.name.split(" ")[0]}</span>
+              <span>
+                {player.player.name.split(" ")[1]
+                  ? player.player.name.split(" ")[1]
+                  : player.player.name.split(" ")[0]}
+              </span>
             </div>
           ))}
         </div>
@@ -236,12 +283,18 @@ const LineupGrid = ({ n, data }) => {
                 style={{
                   background: "#" + data.response[n].team.colors.player.primary,
                   color: "#" + data.response[n].team.colors.player.number,
-                  border: '1px solid #' + data.response[n].team.colors.goalkeeper.border,
+                  border:
+                    "1px solid #" +
+                    data.response[n].team.colors.goalkeeper.border,
                 }}
               >
                 {player.player.number}
               </div>
-              <span>{player.player.name.split(" ")[1] ? player.player.name.split(" ")[1] : player.player.name.split(" ")[0]}</span>
+              <span>
+                {player.player.name.split(" ")[1]
+                  ? player.player.name.split(" ")[1]
+                  : player.player.name.split(" ")[0]}
+              </span>
             </div>
           ))}
         </div>
