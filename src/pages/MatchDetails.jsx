@@ -130,10 +130,10 @@ const MatchDetails = () => {
         {
           events.length === 0 ? (
             <div className={styles.noEvents}>
+              <img src={err} />
               <h3>
                 <b>No event data available yet..</b>
               </h3>
-              <img src={err} />
             </div>
           ) : (
             <div className={styles.events}>

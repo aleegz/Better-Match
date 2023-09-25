@@ -129,8 +129,10 @@ $secondary-color: #1e1e1e;
 }
 
 .error {
-    background: #ccc;
+    background: $primary-color;
+    color: #ccc;
     text-align: center;
     font-family: 'Courier New', Courier, monospace;
+    font-weight: 600;
     padding: 1em 0 1em 0;
 }

@@ -146,13 +146,14 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background: #ccc;
+  background: #0F1419;
+  color: #ccc;
   font-family: "Courier New", Courier, monospace;
   img {
     width: 50%;
     height: 50%;
   }
-  span {
-    font-weight: 700;
+  h2 {
+    text-align: center;
   }
 }

@@ -29,9 +29,8 @@ export const Lineups = ({ events }) => {
     }
     return (
       <div className={styles.error}>
-        <h1>404 Error</h1>
-        <span>No lineup data available..</span>
         <img src={err} alt="" />
+        <h2>No lineup data available..</h2>
       </div>
     );
   }

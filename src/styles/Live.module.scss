@@ -154,10 +154,15 @@ $secondary-color: #1e1e1e;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background: #ccc;
+    background: $primary-color;
+    color: #ccc;
     font-family: 'Courier New', Courier, monospace;
     img {
         width: 50%;
         height: 50%;
+    }
+    p {
+        font-family: 'Courier New', Courier, monospace;
+        font-weight: 600;
     }
 }
