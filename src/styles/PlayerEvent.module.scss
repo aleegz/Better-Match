@@ -18,10 +18,19 @@
   z-index: 2;
   position: absolute;
 }
-.ball, .redBall, .out {
-  width: .7em;
+.ball, .redBall {
+  width: 1em;
+  height: 1em;
+  display: block;
+  z-index: 2;
+  margin-top: .3em;
+  position: absolute;
+}
+.out {
+  width: 1em;
   height: 1em;
   display: block;
   z-index: 2;
   position: absolute;
+  margin-top: -1.3em;
 }
