@@ -1,0 +1,400 @@
+{
+  "fixture": {
+    "id": 1044569,
+    "referee": "B. van Kommer",
+    "timezone": "UTC",
+    "date": "2023-09-25T18:00:00+00:00",
+    "timestamp": 1695664800,
+    "periods": {
+      "first": 1695664800,
+      "second": 1695668400
+    },
+    "venue": {
+      "id": 1135,
+      "name": "Sportpark De Toekomst",
+      "city": "Amsterdam-Duivendrecht"
+    },
+    "status": {
+      "long": "Second Half",
+      "short": "2H",
+      "elapsed": 90
+    }
+  },
+  "league": {
+    "id": 89,
+    "name": "Eerste Divisie",
+    "country": "Netherlands",
+    "logo": "https://media-4.api-sports.io/football/leagues/89.png",
+    "flag": "https://media-4.api-sports.io/flags/nl.svg",
+    "season": 2023,
+    "round": "Regular Season - 7"
+  },
+  "teams": {
+    "home": {
+      "id": 425,
+      "name": "Jong Ajax",
+      "logo": "https://media-4.api-sports.io/football/teams/425.png",
+      "winner": null
+    },
+    "away": {
+      "id": 422,
+      "name": "FC Eindhoven",
+      "logo": "https://media-4.api-sports.io/football/teams/422.png",
+      "winner": null
+    }
+  },
+  "goals": {
+    "home": 1,
+    "away": 1
+  },
+  "score": {
+    "halftime": {
+      "home": 1,
+      "away": 0
+    },
+    "fulltime": {
+      "home": null,
+      "away": null
+    },
+    "extratime": {
+      "home": null,
+      "away": null
+    },
+    "penalty": {
+      "home": null,
+      "away": null
+    }
+  },
+  "events": [
+    {
+      "time": {
+        "elapsed": 38,
+        "extra": null
+      },
+      "team": {
+        "id": 425,
+        "name": "Jong Ajax",
+        "logo": "https://media-4.api-sports.io/football/teams/425.png"
+      },
+      "player": {
+        "id": 336578,
+        "name": "J. Banel"
+      },
+      "assist": {
+        "id": 162451,
+        "name": "A. Salah-Eddine"
+      },
+      "type": "Goal",
+      "detail": "Normal Goal",
+      "comments": null
+    },
+    {
+      "time": {
+        "elapsed": 46,
+        "extra": null
+      },
+      "team": {
+        "id": 425,
+        "name": "Jong Ajax",
+        "logo": "https://media-4.api-sports.io/football/teams/425.png"
+      },
+      "player": {
+        "id": 345816,
+        "name": "N. Chourak"
+      },
+      "assist": {
+        "id": 162451,
+        "name": "A. Salah-Eddine"
+      },
+      "type": "subst",
+      "detail": "Substitution 1",
+      "comments": null
+    },
+    {
+      "time": {
+        "elapsed": 46,
+        "extra": null
+      },
+      "team": {
+        "id": 425,
+        "name": "Jong Ajax",
+        "logo": "https://media-4.api-sports.io/football/teams/425.png"
+      },
+      "player": {
+        "id": 162199,
+        "name": "A. Martha"
+      },
+      "assist": {
+        "id": 386821,
+        "name": "D. Kalokoh"
+      },
+      "type": "subst",
+      "detail": "Substitution 2",
+      "comments": null
+    },
+    {
+      "time": {
+        "elapsed": 46,
+        "extra": null
+      },
+      "team": {
+        "id": 422,
+        "name": "FC Eindhoven",
+        "logo": "https://media-4.api-sports.io/football/teams/422.png"
+      },
+      "player": {
+        "id": 37638,
+        "name": "C. Seedorf"
+      },
+      "assist": {
+        "id": null,
+        "name": null
+      },
+      "type": "Card",
+      "detail": "Yellow Card",
+      "comments": null
+    },
+    {
+      "time": {
+        "elapsed": 61,
+        "extra": null
+      },
+      "team": {
+        "id": 425,
+        "name": "Jong Ajax",
+        "logo": "https://media-4.api-sports.io/football/teams/425.png"
+      },
+      "player": {
+        "id": 412872,
+        "name": "D. Janse"
+      },
+      "assist": {
+        "id": 191879,
+        "name": "K. Hlynsson"
+      },
+      "type": "subst",
+      "detail": "Substitution 3",
+      "comments": null
+    },
+    {
+      "time": {
+        "elapsed": 61,
+        "extra": null
+      },
+      "team": {
+        "id": 425,
+        "name": "Jong Ajax",
+        "logo": "https://media-4.api-sports.io/football/teams/425.png"
+      },
+      "player": {
+        "id": 336678,
+        "name": "O. Agougil"
+      },
+      "assist": {
+        "id": 340153,
+        "name": "M. Godts"
+      },
+      "type": "subst",
+      "detail": "Substitution 4",
+      "comments": null
+    },
+    {
+      "time": {
+        "elapsed": 66,
+        "extra": null
+      },
+      "team": {
+        "id": 422,
+        "name": "FC Eindhoven",
+        "logo": "https://media-4.api-sports.io/football/teams/422.png"
+      },
+      "player": {
+        "id": 36797,
+        "name": "J. Ogenia"
+      },
+      "assist": {
+        "id": 339167,
+        "name": "D. Garden"
+      },
+      "type": "subst",
+      "detail": "Substitution 1",
+      "comments": null
+    },
+    {
+      "time": {
+        "elapsed": 66,
+        "extra": null
+      },
+      "team": {
+        "id": 422,
+        "name": "FC Eindhoven",
+        "logo": "https://media-4.api-sports.io/football/teams/422.png"
+      },
+      "player": {
+        "id": 357051,
+        "name": "S. Simons"
+      },
+      "assist": {
+        "id": 68330,
+        "name": "M. Amevor"
+      },
+      "type": "subst",
+      "detail": "Substitution 2",
+      "comments": null
+    },
+    {
+      "time": {
+        "elapsed": 66,
+        "extra": null
+      },
+      "team": {
+        "id": 422,
+        "name": "FC Eindhoven",
+        "logo": "https://media-4.api-sports.io/football/teams/422.png"
+      },
+      "player": {
+        "id": 162574,
+        "name": "M. van Rosmalen"
+      },
+      "assist": {
+        "id": 428197,
+        "name": "T. Sas"
+      },
+      "type": "subst",
+      "detail": "Substitution 3",
+      "comments": null
+    },
+    {
+      "time": {
+        "elapsed": 67,
+        "extra": null
+      },
+      "team": {
+        "id": 422,
+        "name": "FC Eindhoven",
+        "logo": "https://media-4.api-sports.io/football/teams/422.png"
+      },
+      "player": {
+        "id": 302912,
+        "name": "F. Limouri"
+      },
+      "assist": {
+        "id": null,
+        "name": null
+      },
+      "type": "Card",
+      "detail": "Yellow Card",
+      "comments": null
+    },
+    {
+      "time": {
+        "elapsed": 80,
+        "extra": null
+      },
+      "team": {
+        "id": 422,
+        "name": "FC Eindhoven",
+        "logo": "https://media-4.api-sports.io/football/teams/422.png"
+      },
+      "player": {
+        "id": 357051,
+        "name": "S. Simons"
+      },
+      "assist": {
+        "id": null,
+        "name": null
+      },
+      "type": "Card",
+      "detail": "Yellow Card",
+      "comments": null
+    },
+    {
+      "time": {
+        "elapsed": 84,
+        "extra": null
+      },
+      "team": {
+        "id": 425,
+        "name": "Jong Ajax",
+        "logo": "https://media-4.api-sports.io/football/teams/425.png"
+      },
+      "player": {
+        "id": 396627,
+        "name": "R. Speksnijder"
+      },
+      "assist": {
+        "id": 336579,
+        "name": "R. Sarfo"
+      },
+      "type": "subst",
+      "detail": "Substitution 5",
+      "comments": null
+    },
+    {
+      "time": {
+        "elapsed": 87,
+        "extra": null
+      },
+      "team": {
+        "id": 422,
+        "name": "FC Eindhoven",
+        "logo": "https://media-4.api-sports.io/football/teams/422.png"
+      },
+      "player": {
+        "id": 38696,
+        "name": "Y. Azzagari"
+      },
+      "assist": {
+        "id": 302912,
+        "name": "F. Limouri"
+      },
+      "type": "subst",
+      "detail": "Substitution 4",
+      "comments": null
+    },
+    {
+      "time": {
+        "elapsed": 90,
+        "extra": null
+      },
+      "team": {
+        "id": 425,
+        "name": "Jong Ajax",
+        "logo": "https://media-4.api-sports.io/football/teams/425.png"
+      },
+      "player": {
+        "id": null,
+        "name": null
+      },
+      "assist": {
+        "id": null,
+        "name": null
+      },
+      "type": "Card",
+      "detail": "Yellow Card",
+      "comments": null
+    },
+    {
+      "time": {
+        "elapsed": 90,
+        "extra": 2
+      },
+      "team": {
+        "id": 422,
+        "name": "FC Eindhoven",
+        "logo": "https://media-4.api-sports.io/football/teams/422.png"
+      },
+      "player": {
+        "id": null,
+        "name": null
+      },
+      "assist": {
+        "id": null,
+        "name": null
+      },
+      "type": "Goal",
+      "detail": "Normal Goal",
+      "comments": null
+    }
+  ]
+}

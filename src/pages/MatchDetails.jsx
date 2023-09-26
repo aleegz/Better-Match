@@ -15,6 +15,7 @@ import Lineups from "../components/Lineups.jsx";
 
 const MatchDetails = () => {
   const { id } = useParams();
+  //const id = 1052300;
   const { apiData } = useApiContext();
   const [showSpinner, setShowSpinner] = useState(true);
 

@@ -1,0 +1,414 @@
+{
+  "get": "fixtures/lineups",
+  "parameters": {
+    "fixture": "1044569"
+  },
+  "errors": [],
+  "results": 2,
+  "paging": {
+    "current": 1,
+    "total": 1
+  },
+  "response": [
+    {
+      "team": {
+        "id": 425,
+        "name": "Jong Ajax",
+        "logo": "https://media-4.api-sports.io/football/teams/425.png",
+        "colors": {
+          "player": {
+            "primary": "cc0000",
+            "number": "ffffff",
+            "border": "cc0000"
+          },
+          "goalkeeper": {
+            "primary": "00cc66",
+            "number": "ffffff",
+            "border": "00cc66"
+          }
+        }
+      },
+      "formation": "4-3-3",
+      "startXI": [
+        {
+          "player": {
+            "id": 24894,
+            "name": "Diant Ramaj",
+            "number": 1,
+            "pos": "G",
+            "grid": "1:1"
+          }
+        },
+        {
+          "player": {
+            "id": 336579,
+            "name": "Raphaël Sarfo",
+            "number": 2,
+            "pos": "D",
+            "grid": "2:4"
+          }
+        },
+        {
+          "player": {
+            "id": 271581,
+            "name": "Olivier Aertssen",
+            "number": 3,
+            "pos": "D",
+            "grid": "2:3"
+          }
+        },
+        {
+          "player": {
+            "id": 336582,
+            "name": "Tristan Gooijer",
+            "number": 4,
+            "pos": "D",
+            "grid": "2:2"
+          }
+        },
+        {
+          "player": {
+            "id": 162451,
+            "name": "Anass Salah-Eddine",
+            "number": 5,
+            "pos": "D",
+            "grid": "2:1"
+          }
+        },
+        {
+          "player": {
+            "id": 191879,
+            "name": "Kristian Hlynsson",
+            "number": 10,
+            "pos": "M",
+            "grid": "3:3"
+          }
+        },
+        {
+          "player": {
+            "id": 336581,
+            "name": "Julian Brandes",
+            "number": 6,
+            "pos": "M",
+            "grid": "3:2"
+          }
+        },
+        {
+          "player": {
+            "id": 336674,
+            "name": "Gabriel Misehouy",
+            "number": 8,
+            "pos": "M",
+            "grid": "3:1"
+          }
+        },
+        {
+          "player": {
+            "id": 336578,
+            "name": "Jaydon Banel",
+            "number": 7,
+            "pos": "F",
+            "grid": "4:3"
+          }
+        },
+        {
+          "player": {
+            "id": 386821,
+            "name": "David Kalokoh",
+            "number": 9,
+            "pos": "F",
+            "grid": "4:2"
+          }
+        },
+        {
+          "player": {
+            "id": 340153,
+            "name": "Mika Godts",
+            "number": 11,
+            "pos": "F",
+            "grid": "4:1"
+          }
+        }
+      ],
+      "substitutes": [
+        {
+          "player": {
+            "id": 345816,
+            "name": "Nassef Chourak",
+            "number": 16,
+            "pos": "M",
+            "grid": null
+          }
+        },
+        {
+          "player": {
+            "id": 162199,
+            "name": "ArJany Martha",
+            "number": 15,
+            "pos": "F",
+            "grid": null
+          }
+        },
+        {
+          "player": {
+            "id": 412872,
+            "name": "Dies Janse",
+            "number": 19,
+            "pos": "D",
+            "grid": null
+          }
+        },
+        {
+          "player": {
+            "id": 336678,
+            "name": "Oualid Agougil",
+            "number": 17,
+            "pos": "D",
+            "grid": null
+          }
+        },
+        {
+          "player": {
+            "id": 338499,
+            "name": "Tom de Graaff",
+            "number": 12,
+            "pos": "G",
+            "grid": null
+          }
+        },
+        {
+          "player": {
+            "id": 396627,
+            "name": "Rico Speksnijder",
+            "number": 18,
+            "pos": "M",
+            "grid": null
+          }
+        }
+      ],
+      "coach": {
+        "id": 15638,
+        "name": "D. Vos",
+        "photo": "https://media-4.api-sports.io/football/coachs/15638.png"
+      }
+    },
+    {
+      "team": {
+        "id": 422,
+        "name": "FC Eindhoven",
+        "logo": "https://media-4.api-sports.io/football/teams/422.png",
+        "colors": {
+          "player": {
+            "primary": "808080",
+            "number": "000000",
+            "border": "808080"
+          },
+          "goalkeeper": {
+            "primary": "c7261b",
+            "number": "222226",
+            "border": "c7261b"
+          }
+        }
+      },
+      "formation": "3-4-2-1",
+      "startXI": [
+        {
+          "player": {
+            "id": 36826,
+            "name": "Jorn Brondeel",
+            "number": 26,
+            "pos": "G",
+            "grid": "1:1"
+          }
+        },
+        {
+          "player": {
+            "id": 68330,
+            "name": "Mawouna Amevor",
+            "number": 3,
+            "pos": "D",
+            "grid": "2:3"
+          }
+        },
+        {
+          "player": {
+            "id": 302912,
+            "name": "Farouq Limouri",
+            "number": 18,
+            "pos": "D",
+            "grid": "2:2"
+          }
+        },
+        {
+          "player": {
+            "id": 37638,
+            "name": "Collin Seedorf",
+            "number": 33,
+            "pos": "D",
+            "grid": "2:1"
+          }
+        },
+        {
+          "player": {
+            "id": 428197,
+            "name": "Tom Sas",
+            "number": 25,
+            "pos": "M",
+            "grid": "3:4"
+          }
+        },
+        {
+          "player": {
+            "id": 38802,
+            "name": "Sven Van Doorm",
+            "number": 8,
+            "pos": "M",
+            "grid": "3:3"
+          }
+        },
+        {
+          "player": {
+            "id": 373797,
+            "name": "Dyon Dorenbosch",
+            "number": 6,
+            "pos": "M",
+            "grid": "3:2"
+          }
+        },
+        {
+          "player": {
+            "id": 272317,
+            "name": "Luuk Wouters",
+            "number": 15,
+            "pos": "M",
+            "grid": "3:1"
+          }
+        },
+        {
+          "player": {
+            "id": 62262,
+            "name": "Ozan Kökçü",
+            "number": 10,
+            "pos": "F",
+            "grid": "4:2"
+          }
+        },
+        {
+          "player": {
+            "id": 339167,
+            "name": "David Garden",
+            "number": 19,
+            "pos": "F",
+            "grid": "4:1"
+          }
+        },
+        {
+          "player": {
+            "id": 344816,
+            "name": "August Priske",
+            "number": 9,
+            "pos": "F",
+            "grid": "5:1"
+          }
+        }
+      ],
+      "substitutes": [
+        {
+          "player": {
+            "id": 371660,
+            "name": "Dylan Fancito",
+            "number": 30,
+            "pos": "G",
+            "grid": null
+          }
+        },
+        {
+          "player": {
+            "id": 193295,
+            "name": "Jort Borgmans",
+            "number": 12,
+            "pos": "G",
+            "grid": null
+          }
+        },
+        {
+          "player": {
+            "id": 351142,
+            "name": "Jesse Giebels",
+            "number": 24,
+            "pos": "D",
+            "grid": null
+          }
+        },
+        {
+          "player": {
+            "id": 36797,
+            "name": "Justin Ogenia",
+            "number": 2,
+            "pos": "D",
+            "grid": null
+          }
+        },
+        {
+          "player": {
+            "id": 38696,
+            "name": "Yassine Azzagari",
+            "number": 45,
+            "pos": "M",
+            "grid": null
+          }
+        },
+        {
+          "player": {
+            "id": 357051,
+            "name": "Sven Simons",
+            "number": 23,
+            "pos": "M",
+            "grid": null
+          }
+        },
+        {
+          "player": {
+            "id": 162574,
+            "name": "Mitchel Van Rosmalen",
+            "number": 21,
+            "pos": "M",
+            "grid": null
+          }
+        },
+        {
+          "player": {
+            "id": 428199,
+            "name": "Kwint Erkelens",
+            "number": 28,
+            "pos": "M",
+            "grid": null
+          }
+        },
+        {
+          "player": {
+            "id": 428198,
+            "name": "Nassim Achenteh",
+            "number": 20,
+            "pos": "M",
+            "grid": null
+          }
+        },
+        {
+          "player": {
+            "id": null,
+            "name": "Maarten Swerts",
+            "number": 5,
+            "pos": "M",
+            "grid": null
+          }
+        }
+      ],
+      "coach": {
+        "id": 7479,
+        "name": "W. Weijs",
+        "photo": "https://media-4.api-sports.io/football/coachs/7479.png"
+      }
+    }
+  ]
+}

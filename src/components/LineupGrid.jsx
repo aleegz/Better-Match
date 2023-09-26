@@ -1,4 +1,5 @@
 import styles from "../styles/LineupGrid.module.scss";
+import PlayerEvent from '../components/PlayerEvent.jsx'
 
 const LineupGrid = ({ n, data, events }) => {
   const formation = data.response[n].formation.split("-").map(Number);
@@ -57,8 +58,9 @@ const LineupGrid = ({ n, data, events }) => {
                 }}
               >
                 {player.player.number}
+                <PlayerEvent player={player} events={events} />
               </div>
-              <span>
+              <span className={styles.name}>
                 {player.player.name.split(" ")[1]
                   ? player.player.name.split(" ")[1]
                   : player.player.name.split(" ")[0]}
@@ -68,6 +70,7 @@ const LineupGrid = ({ n, data, events }) => {
         </div>
         <div className={styles.defenders}>
           {defendersArray.map((player) => (
+            
             <div key={player.player.id} className={styles.ply}>
               <div
                 className={styles.point}
@@ -80,8 +83,9 @@ const LineupGrid = ({ n, data, events }) => {
                 }}
               >
                 {player.player.number}
+                <PlayerEvent player={player} events={events} />
               </div>
-              <span>
+              <span className={styles.name}>
                 {player.player.name.split(" ")[1]
                   ? player.player.name.split(" ")[1]
                   : player.player.name.split(" ")[0]}
@@ -103,8 +107,9 @@ const LineupGrid = ({ n, data, events }) => {
                 }}
               >
                 {player.player.number}
+                <PlayerEvent player={player} events={events} />
               </div>
-              <span>
+              <span className={styles.name}>
                 {player.player.name.split(" ")[1]
                   ? player.player.name.split(" ")[1]
                   : player.player.name.split(" ")[0]}
@@ -126,8 +131,9 @@ const LineupGrid = ({ n, data, events }) => {
                 }}
               >
                 {player.player.number}
+                <PlayerEvent player={player} events={events} />
               </div>
-              <span>
+              <span className={styles.name}>
                 {player.player.name.split(" ")[1]
                   ? player.player.name.split(" ")[1]
                   : player.player.name.split(" ")[0]}
@@ -197,8 +203,9 @@ const LineupGrid = ({ n, data, events }) => {
                 }}
               >
                 {player.player.number}
+                <PlayerEvent player={player} events={events} />
               </div>
-              <span>
+              <span className={styles.name}>
                 {player.player.name.split(" ")[1]
                   ? player.player.name.split(" ")[1]
                   : player.player.name.split(" ")[0]}
@@ -220,8 +227,9 @@ const LineupGrid = ({ n, data, events }) => {
                 }}
               >
                 {player.player.number}
+                <PlayerEvent player={player} events={events} />
               </div>
-              <span>
+              <span className={styles.name}>
                 {player.player.name.split(" ")[1]
                   ? player.player.name.split(" ")[1]
                   : player.player.name.split(" ")[0]}
@@ -243,8 +251,9 @@ const LineupGrid = ({ n, data, events }) => {
                 }}
               >
                 {player.player.number}
+                <PlayerEvent player={player} events={events} />
               </div>
-              <span>
+              <span className={styles.name}>
                 {player.player.name.split(" ")[1]
                   ? player.player.name.split(" ")[1]
                   : player.player.name.split(" ")[0]}
@@ -266,8 +275,9 @@ const LineupGrid = ({ n, data, events }) => {
                 }}
               >
                 {player.player.number}
+                <PlayerEvent player={player} events={events} />
               </div>
-              <span>
+              <span className={styles.name}>
                 {player.player.name.split(" ")[1]
                   ? player.player.name.split(" ")[1]
                   : player.player.name.split(" ")[0]}
@@ -289,8 +299,9 @@ const LineupGrid = ({ n, data, events }) => {
                 }}
               >
                 {player.player.number}
+                <PlayerEvent player={player} events={events} />
               </div>
-              <span>
+              <span className={styles.name}>
                 {player.player.name.split(" ")[1]
                   ? player.player.name.split(" ")[1]
                   : player.player.name.split(" ")[0]}

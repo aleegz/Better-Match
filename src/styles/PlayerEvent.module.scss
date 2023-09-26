@@ -1,0 +1,27 @@
+.yellowCard {
+  background-color: #fced1c;
+  width: .7em;
+  height: 1em;
+  border-radius: .3em;
+  border: .1em solid #fff;
+  display: block;
+  z-index: 2;
+  position: absolute;
+}
+.redCard {
+  background-color: #970000;
+  width: .7em;
+  height: 1em;
+  border-radius: .3em;
+  border: .1em solid #fff;
+  display: block;
+  z-index: 2;
+  position: absolute;
+}
+.ball, .redBall, .out {
+  width: .7em;
+  height: 1em;
+  display: block;
+  z-index: 2;
+  position: absolute;
+}
