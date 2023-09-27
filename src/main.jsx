@@ -11,7 +11,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
     <BrowserRouter basename="/Better-Match">
       <DataProvider>
-        <App translate='no' />
+        <App />
       </DataProvider>
     </BrowserRouter>
   </React.StrictMode>,

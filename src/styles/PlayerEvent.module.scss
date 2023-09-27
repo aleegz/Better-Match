@@ -19,12 +19,15 @@
   position: absolute;
 }
 .ball, .redBall {
-  width: 1em;
-  height: 1em;
+  width: .8em;
+  height: .8em;
   display: block;
   z-index: 2;
   margin-top: .3em;
   position: absolute;
+  background: #fff;
+  border-radius: 50%;
+  padding: 0.1em;
 }
 .out {
   width: 1em;

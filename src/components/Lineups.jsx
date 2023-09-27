@@ -2,11 +2,9 @@ import React from "react";
 import styles from "../styles/Lineups.module.scss";
 import { useParams } from "react-router-dom";
 import data from "../data/matches9.json";
-import err from "../assets/images/err.svg";
+import err from "../assets/images/details/err.svg";
 import field from "../assets/images/soccer-field-img.png";
-import field2 from "../assets/images/soccer-field.svg";
-import entry from "../assets/images/substitutes/in.svg";
-import out from "../assets/images/substitutes/out.svg";
+import entry from "../assets/images/events/substitutes/in.svg";
 import useApi from "../services/useApi.js";
 import LineupGrid from "../components/LineupGrid.jsx";
 

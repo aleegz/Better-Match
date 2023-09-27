@@ -10,7 +10,7 @@ $secondary-color: #1e1e1e;
 }
 
 .principalDetails {
-    background: url('../assets/images/banner.svg');
+    background: url('../assets/images/banners/banner.svg');
     background-size: cover;
 
     .time {
@@ -46,7 +46,7 @@ $secondary-color: #1e1e1e;
 }
 
 .league {
-    background: url('../assets/images/banner.svg');
+    background: url('../assets/images/banners/banner.svg');
     background-size: cover;
     color: #fff;
     display: flex;
@@ -67,7 +67,7 @@ $secondary-color: #1e1e1e;
     
 
 .stadium {
-    background: url('../assets/images/banner.svg');
+    background: url('../assets/images/banners/banner.svg');
     background-size: cover;
     color: #fff;
     img {
@@ -212,7 +212,7 @@ $secondary-color: #1e1e1e;
 }
 
 .matchPrediction {
-    background: url('../assets/images/banner.svg');
+    background: url('../assets/images/banners/banner.svg');
     background-size: cover;
     background-position-x: center;
     display: flex;

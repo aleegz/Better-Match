@@ -33,10 +33,3 @@ const useApi = (url) => {
 };
 
 export default useApi;
-
-/*
-      {json.errors.requests == "You have reached the request limit for the day, Go to https://dashboard.api-football.com to upgrade your plan." ? 
-      headers: {
-        "x-apisports-key": "7b8d6498aa4ac5cf539c81e0bd35af7c"
-      }, : null}
-*/

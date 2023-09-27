@@ -341,6 +341,29 @@
           "type": "Card",
           "detail": "Yellow Card",
           "comments": "Delay of game"
+        },
+  
+        {
+          "time": {
+            "elapsed": 46,
+            "extra": null
+          },
+          "team": {
+            "id": 488,
+            "name": "Sassuolo",
+            "logo": "https://media-4.api-sports.io/football/teams/488.png"
+          },
+          "player": {
+            "id": 180510,
+            "name": "M. Viti"
+          },
+          "assist": {
+            "id": 30537,
+            "name": "D. Berardi"
+          },
+          "type": "subst",
+          "detail": "Substitution 2",
+          "comments": null
         }
       ]
     }

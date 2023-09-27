@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import styles from "../styles/ButtonWithSidebar.module.scss";
 import { Link as ScrollLink } from "react-scroll";
-import logo from "../assets/images/better-match-logo-transparent.avif";
+import logo from "../assets/images/logos/better-match-logo-transparent.avif";
 
 const ButtonWithSidebar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
