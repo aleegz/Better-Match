@@ -157,11 +157,16 @@ const LineupGrid = ({ n, data, events }) => {
       .filter((player) => player.player.pos === "M")
       .slice(0, holdingMidfielders);
     const midfieldersArray = startXI
-      .filter((player) => player.player.pos === "M")
+      .filter((player) => player.player.pos === "M" || player.player.pos === "F")
       .slice(holdingMidfielders, midfielders + holdingMidfielders);
+      // * Validar si mid contiene forwards *
     const forwardsArray = startXI
       .filter((player) => player.player.pos === "F")
       .slice(0, forwards);
+      /*.filter((player) => player.player.pos === "F")
+      .slice(0, forwards);
+      midfieldersArray.some((player)=> player.player.pos === "F") ?
+      */ 
 
     const lineup = [
       ...goalkeeperArray,
@@ -299,7 +304,7 @@ const LineupGrid = ({ n, data, events }) => {
                 }}
               >
                 {player.player.number}
-                <PlayerEvent player={player} events={events} />
+                <PlayerEvent player={player} events={events} lineup={lineup} />
               </div>
               <span className={styles.name}>
                 {player.player.name.split(" ")[1]

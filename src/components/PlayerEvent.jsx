@@ -9,26 +9,23 @@ const PlayerEvent = ({ events, player }) => {
     (event) => event.player.id === player.player.id
   );
 
-  const eventElements = playerEvents.map((event) => {
-    if (event.type === "Card") {
-      return event.detail === "Yellow Card" ? (
-        <span className={styles.yellowCard}></span>
-      ) : (
-        <span className={styles.redCard}></span>
-      );
-    } else if (event.type === "Goal") {
+  const eventElements = playerEvents.map((event, index) => {
+    if (event.type === "Goal") {
       return event.detail === "Normal Goal" ? (
-        <img src={ball} className={styles.ball} />
+        <img key={`goal-${index}`} src={ball} className={styles.ball} />
       ) : (
-        <img src={redBall} className={styles.redBall} />
+        <img key={`goal-${index}`} src={redBall} className={styles.redBall} />
+      );
+    } else if (event.type === "Card") {
+      return event.detail === "Yellow Card" ? (
+        <span key={`card-${index}`} className={styles.yellowCard}></span>
+      ) : (
+        <span key={`card-${index}`} className={styles.redCard}></span>
       );
     } else if (event.type === "subst") {
-      return (
       <img src={out} className={styles.out} />
-      );
-    } else {
-      return null;
     }
+    return null;
   });
 
   return <div>{eventElements}</div>;
@@ -77,3 +74,29 @@ export default PlayerEvent;
     </>
   );
 }*/
+
+/* 
+
+const eventElements = lineupEvents.map((event, index) => {
+  if (event.type === "Card") {
+      return event.detail === "Yellow Card" ? (
+        <span key={`card-${index}`} className={styles.yellowCard}></span>
+      ) : (
+        <span key={`card-${index}`} className={styles.redCard}></span>
+      );
+    } else if (event.type === "subst") {
+      return (
+      <img key={`subst-${index}`} src={out} className={styles.out} />
+      );
+    } else if (event.type === "Goal") {
+      return event.detail === "Normal Goal" ? (
+        <img key={`goal-${index}`} src={ball} className={styles.ball} />
+      ) : (
+        <img key={`goal-${index}`} src={redBall} className={styles.redBall} />
+      );
+  } else {
+      return null;
+    }
+  });
+
+*/
