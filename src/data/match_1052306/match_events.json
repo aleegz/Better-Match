@@ -1,0 +1,546 @@
+{
+  "get": "fixtures",
+  "parameters": {
+    "live": "all"
+  },
+  "errors": [],
+  "results": 109,
+  "paging": {
+    "current": 1,
+    "total": 1
+  },
+  "response": [
+    {
+      "fixture": {
+        "id": 1052306,
+        "referee": "Andrea Colombo, Italy",
+        "timezone": "UTC",
+        "date": "2023-09-23T16:00:00+00:00",
+        "timestamp": 1695484800,
+        "periods": {
+          "first": 1695484800,
+          "second": 1695488400
+        },
+        "venue": {
+          "id": 935,
+          "name": "MAPEI Stadium - Città del Tricolore",
+          "city": "Reggio Emilia"
+        },
+        "status": {
+          "long": "Second Half",
+          "short": "2H",
+          "elapsed": 67
+        }
+      },
+      "league": {
+        "id": 135,
+        "name": "Serie A",
+        "country": "Italy",
+        "logo": "https://media-4.api-sports.io/football/leagues/135.png",
+        "flag": "https://media-4.api-sports.io/flags/it.svg",
+        "season": 2023,
+        "round": "Regular Season - 5"
+      },
+      "teams": {
+        "home": {
+          "id": 495,
+          "name": "Genoa",
+          "logo": "https://media-4.api-sports.io/football/teams/495.png",
+          "winner": true
+        },
+        "away": {
+          "id": 497,
+          "name": "AS Roma",
+          "logo": "https://media-4.api-sports.io/football/teams/497.png",
+          "winner": false
+        }
+      },
+      "goals": {
+        "home": 4,
+        "away": 1
+      },
+      "score": {
+        "halftime": {
+          "home": 2,
+          "away": 1
+        },
+        "fulltime": {
+          "home": 4,
+          "away": 1
+        },
+        "extratime": {
+          "home": null,
+          "away": null
+        },
+        "penalty": {
+          "home": null,
+          "away": null
+        }
+      },
+      "events": [
+        {
+          "time": {
+            "elapsed": 5,
+            "extra": null
+          },
+          "team": {
+            "id": 495,
+            "name": "Genoa",
+            "logo": "https://media-4.api-sports.io/football/teams/495.png"
+          },
+          "player": {
+            "id": 2799,
+            "name": "A. Gudmundsson"
+          },
+          "assist": {
+            "id": 1916,
+            "name": "K. Strootman"
+          },
+          "type": "Goal",
+          "detail": "Normal Goal",
+          "comments": null
+        },
+        {
+          "time": {
+            "elapsed": 11,
+            "extra": null
+          },
+          "team": {
+            "id": 495,
+            "name": "Genoa",
+            "logo": "https://media-4.api-sports.io/football/teams/495.png"
+          },
+          "player": {
+            "id": 36980,
+            "name": "M. Thorsby"
+          },
+          "assist": {
+            "id": 1850,
+            "name": "M. Badelj"
+          },
+          "type": "subst",
+          "detail": "Substitution 1",
+          "comments": null
+        },
+        {
+          "time": {
+            "elapsed": 22,
+            "extra": null
+          },
+          "team": {
+            "id": 497,
+            "name": "AS Roma",
+            "logo": "https://media-4.api-sports.io/football/teams/497.png"
+          },
+          "player": {
+            "id": 778,
+            "name": "B. Cristante"
+          },
+          "assist": {
+            "id": 862,
+            "name": "L. Spinazzola"
+          },
+          "type": "Goal",
+          "detail": "Normal Goal",
+          "comments": null
+        },
+        {
+          "time": {
+            "elapsed": 24,
+            "extra": null
+          },
+          "team": {
+            "id": 497,
+            "name": "AS Roma",
+            "logo": "https://media-4.api-sports.io/football/teams/497.png"
+          },
+          "player": {
+            "id": 286475,
+            "name": "E. Bove"
+          },
+          "assist": {
+            "id": 47302,
+            "name": "D. Llorente"
+          },
+          "type": "subst",
+          "detail": "Substitution 1",
+          "comments": null
+        },
+        {
+          "time": {
+            "elapsed": 26,
+            "extra": null
+          },
+          "team": {
+            "id": 495,
+            "name": "Genoa",
+            "logo": "https://media-4.api-sports.io/football/teams/495.png"
+          },
+          "player": {
+            "id": 1916,
+            "name": "K. Strootman"
+          },
+          "assist": {
+            "id": null,
+            "name": null
+          },
+          "type": "Card",
+          "detail": "Yellow Card",
+          "comments": "Roughing"
+        },
+        {
+          "time": {
+            "elapsed": 30,
+            "extra": null
+          },
+          "team": {
+            "id": 495,
+            "name": "Genoa",
+            "logo": "https://media-4.api-sports.io/football/teams/495.png"
+          },
+          "player": {
+            "id": 264627,
+            "name": "B. Kutlu"
+          },
+          "assist": {
+            "id": 1916,
+            "name": "K. Strootman"
+          },
+          "type": "subst",
+          "detail": "Substitution 2",
+          "comments": null
+        },
+        {
+          "time": {
+            "elapsed": 37,
+            "extra": null
+          },
+          "team": {
+            "id": 495,
+            "name": "Genoa",
+            "logo": "https://media-4.api-sports.io/football/teams/495.png"
+          },
+          "player": {
+            "id": 31137,
+            "name": "S. Sabelli"
+          },
+          "assist": {
+            "id": null,
+            "name": null
+          },
+          "type": "Card",
+          "detail": "Yellow Card",
+          "comments": "Unsportsmanlike conduct"
+        },
+        {
+          "time": {
+            "elapsed": 42,
+            "extra": null
+          },
+          "team": {
+            "id": 497,
+            "name": "AS Roma",
+            "logo": "https://media-4.api-sports.io/football/teams/497.png"
+          },
+          "player": {
+            "id": 30425,
+            "name": "G. Mancini"
+          },
+          "assist": {
+            "id": null,
+            "name": null
+          },
+          "type": "Card",
+          "detail": "Yellow Card",
+          "comments": "Elbowing"
+        },
+        {
+          "time": {
+            "elapsed": 45,
+            "extra": null
+          },
+          "team": {
+            "id": 495,
+            "name": "Genoa",
+            "logo": "https://media-4.api-sports.io/football/teams/495.png"
+          },
+          "player": {
+            "id": 6420,
+            "name": "M. Retegui"
+          },
+          "assist": {
+            "id": 36980,
+            "name": "M. Thorsby"
+          },
+          "type": "Goal",
+          "detail": "Normal Goal",
+          "comments": null
+        },
+        {
+          "time": {
+            "elapsed": 46,
+            "extra": null
+          },
+          "team": {
+            "id": 497,
+            "name": "AS Roma",
+            "logo": "https://media-4.api-sports.io/football/teams/497.png"
+          },
+          "player": {
+            "id": 30509,
+            "name": "A. Belotti"
+          },
+          "assist": {
+            "id": 30425,
+            "name": "G. Mancini"
+          },
+          "type": "subst",
+          "detail": "Substitution 2",
+          "comments": null
+        },
+        {
+          "time": {
+            "elapsed": 46,
+            "extra": null
+          },
+          "team": {
+            "id": 495,
+            "name": "Genoa",
+            "logo": "https://media-4.api-sports.io/football/teams/495.png"
+          },
+          "player": {
+            "id": 162141,
+            "name": "K. De Winter"
+          },
+          "assist": {
+            "id": 31137,
+            "name": "S. Sabelli"
+          },
+          "type": "subst",
+          "detail": "Substitution 3",
+          "comments": null
+        },
+        {
+          "time": {
+            "elapsed": 65,
+            "extra": null
+          },
+          "team": {
+            "id": 495,
+            "name": "Genoa",
+            "logo": "https://media-4.api-sports.io/football/teams/495.png"
+          },
+          "player": {
+            "id": 6420,
+            "name": "M. Retegui"
+          },
+          "assist": {
+            "id": null,
+            "name": null
+          },
+          "type": "Card",
+          "detail": "Yellow Card",
+          "comments": "Unsportsmanlike conduct"
+        },
+        {
+          "time": {
+            "elapsed": 74,
+            "extra": null
+          },
+          "team": {
+            "id": 495,
+            "name": "Genoa",
+            "logo": "https://media-4.api-sports.io/football/teams/495.png"
+          },
+          "player": {
+            "id": 36980,
+            "name": "M. Thorsby"
+          },
+          "assist": {
+            "id": 162498,
+            "name": "R. Dragusin"
+          },
+          "type": "Goal",
+          "detail": "Normal Goal",
+          "comments": null
+        },
+        {
+          "time": {
+            "elapsed": 75,
+            "extra": null
+          },
+          "team": {
+            "id": 497,
+            "name": "AS Roma",
+            "logo": "https://media-4.api-sports.io/football/teams/497.png"
+          },
+          "player": {
+            "id": 271,
+            "name": "L. Paredes"
+          },
+          "assist": {
+            "id": null,
+            "name": null
+          },
+          "type": "Card",
+          "detail": "Yellow Card",
+          "comments": "Unsportsmanlike conduct"
+        },
+        {
+          "time": {
+            "elapsed": 75,
+            "extra": null
+          },
+          "team": {
+            "id": 495,
+            "name": "Genoa",
+            "logo": "https://media-4.api-sports.io/football/teams/495.png"
+          },
+          "player": {
+            "id": 30736,
+            "name": "M. Bani"
+          },
+          "assist": {
+            "id": null,
+            "name": null
+          },
+          "type": "Card",
+          "detail": "Yellow Card",
+          "comments": "Unsportsmanlike conduct"
+        },
+        {
+          "time": {
+            "elapsed": 76,
+            "extra": null
+          },
+          "team": {
+            "id": 495,
+            "name": "Genoa",
+            "logo": "https://media-4.api-sports.io/football/teams/495.png"
+          },
+          "player": {
+            "id": 56396,
+            "name": "J. Messias"
+          },
+          "assist": {
+            "id": 316517,
+            "name": "A. Matturro"
+          },
+          "type": "subst",
+          "detail": "Substitution 4",
+          "comments": null
+        },
+        {
+          "time": {
+            "elapsed": 78,
+            "extra": null
+          },
+          "team": {
+            "id": 497,
+            "name": "AS Roma",
+            "logo": "https://media-4.api-sports.io/football/teams/497.png"
+          },
+          "player": {
+            "id": 791,
+            "name": "S. El Shaarawy"
+          },
+          "assist": {
+            "id": 782,
+            "name": "L. Pellegrini"
+          },
+          "type": "subst",
+          "detail": "Substitution 3",
+          "comments": null
+        },
+        {
+          "time": {
+            "elapsed": 78,
+            "extra": null
+          },
+          "team": {
+            "id": 497,
+            "name": "AS Roma",
+            "logo": "https://media-4.api-sports.io/football/teams/497.png"
+          },
+          "player": {
+            "id": 1221,
+            "name": "S. Azmoun"
+          },
+          "assist": {
+            "id": 271,
+            "name": "L. Paredes"
+          },
+          "type": "subst",
+          "detail": "Substitution 4",
+          "comments": null
+        },
+        {
+          "time": {
+            "elapsed": 78,
+            "extra": null
+          },
+          "team": {
+            "id": 497,
+            "name": "AS Roma",
+            "logo": "https://media-4.api-sports.io/football/teams/497.png"
+          },
+          "player": {
+            "id": 658,
+            "name": "H. Aouar"
+          },
+          "assist": {
+            "id": 862,
+            "name": "L. Spinazzola"
+          },
+          "type": "subst",
+          "detail": "Substitution 5",
+          "comments": null
+        },
+        {
+          "time": {
+            "elapsed": 81,
+            "extra": null
+          },
+          "team": {
+            "id": 495,
+            "name": "Genoa",
+            "logo": "https://media-4.api-sports.io/football/teams/495.png"
+          },
+          "player": {
+            "id": 56396,
+            "name": "J. Messias"
+          },
+          "assist": {
+            "id": 15881,
+            "name": "M. Frendrup"
+          },
+          "type": "Goal",
+          "detail": "Normal Goal",
+          "comments": null
+        },
+        {
+          "time": {
+            "elapsed": 89,
+            "extra": null
+          },
+          "team": {
+            "id": 497,
+            "name": "AS Roma",
+            "logo": "https://media-4.api-sports.io/football/teams/497.png"
+          },
+          "player": {
+            "id": 658,
+            "name": "H. Aouar"
+          },
+          "assist": {
+            "id": null,
+            "name": null
+          },
+          "type": "Card",
+          "detail": "Yellow Card",
+          "comments": "Roughing"
+        }
+      ]
+    }
+  ]
+}

@@ -1,7 +1,8 @@
 import React from "react";
 import styles from "../styles/Lineups.module.scss";
 import { useParams } from "react-router-dom";
-import data from "../data/matches9.json";
+//import data from "../data/matches9.json";
+import data from '../data/match_1052306/match_lineups.json';
 import err from "../assets/images/details/err.svg";
 import field from "../assets/images/soccer-field-img.png";
 import entry from "../assets/images/events/substitutes/in.svg";
