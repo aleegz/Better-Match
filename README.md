@@ -2,9 +2,10 @@
 
 App that allows you to visualize match results, team information, players, leagues, and more related to soccer.
 
-![Badge Developing](https://img.shields.io/badge/STATUS-%20DEVELOPING-green?style=flat-square)
-
-![Badge License](https://img.shields.io/badge/LICENSE-%20MIT-violet?style=flat-square)
+<div align="first">
+    <img src="https://img.shields.io/badge/STATUS-%20DEVELOPING-green?style=flat-square" alt="Badge Developing">
+    <img src="https://img.shields.io/badge/LICENSE-%20MIT-violet?style=flat-square" alt="Badge License">
+</div>
 ## Tech Stack
 
 **Client:** 
