@@ -24,6 +24,8 @@ $secondary-color: #006e0f;
 
 .modalContent {
   background-color: $primary-color;
+  background: url('../assets/images/banners/banner-modal.svg');
+  background-size: cover;
   border: 2px #fff solid;
   color: #fff;
   width: 90%;
@@ -36,7 +38,7 @@ $secondary-color: #006e0f;
   align-items: center;
   margin-top: 4em;
   min-width: 80vw;
-  min-height: 70vh;
+  min-height: auto;
   
   .modalButton {
     display: flex;

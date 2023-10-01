@@ -176,7 +176,7 @@ const LineupGrid = ({ n, data, events }) => {
       .slice(0, holdingMidfielders);
     const midfieldersArray = startXI
       .filter((player) => player.player.pos === "M")
-      .slice(0, midfielders);
+      .slice(holdingMidfielders, holdingMidfielders + midfielders);
     const forwardsArray = startXI
       .filter((player) => player.player.pos === "F")
       .slice(0, forwards);

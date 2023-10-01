@@ -2,7 +2,7 @@ import React from "react";
 import styles from "../styles/Lineups.module.scss";
 import { useParams } from "react-router-dom";
 //import data from "../data/matches9.json";
-import data from '../data/match_1052306/match_lineups.json';
+import data from "../data/match_1052306/match_lineups.json";
 import err from "../assets/images/details/err.svg";
 import field from "../assets/images/soccer-field-img.png";
 import entry from "../assets/images/events/substitutes/in.svg";
@@ -261,9 +261,15 @@ export const Lineups = ({ events }) => {
                   {player.player.number}
                 </p>
                 <p className={styles.substitutesPlysHomeName}>
-                  {player.player.name.split(" ")[0][0] +
-                    ". " +
-                    player.player.name.split(" ")[1]}
+                  {player.player.name.split(" ")[1]
+                    ? player.player.name.split(" ")[0][0] + ". "
+                    : player.player.name.split(" ")[0]}
+                  {player.player.name.split(" ")[1] 
+                    ? player.player.name.split(" ")[1].length < "4"
+                    ? player.player.name.split(" ")[1] +
+                      " " +
+                      player.player.name.split(" ")[2]
+                    : player.player.name.split(" ")[1] : null}
                 </p>
                 {substituteIDs.includes(player.player.id) ? (
                   <span>
@@ -282,9 +288,15 @@ export const Lineups = ({ events }) => {
                   </span>
                 ) : null}
                 <p className={styles.substitutesPlysAwayName}>
-                  {player.player.name.split(" ")[0][0] +
-                    ". " +
-                    player.player.name.split(" ")[1]}
+                {player.player.name.split(" ")[1]
+                    ? player.player.name.split(" ")[0][0] + ". "
+                    : player.player.name.split(" ")[0]}
+                  {player.player.name.split(" ")[1] 
+                    ? player.player.name.split(" ")[1].length < "4"
+                    ? player.player.name.split(" ")[1] +
+                      " " +
+                      player.player.name.split(" ")[2]
+                    : player.player.name.split(" ")[1] : null}
                 </p>
                 <p className={styles.substitutesPlysNum}>
                   {player.player.number}
