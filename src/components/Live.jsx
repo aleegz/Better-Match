@@ -3,7 +3,9 @@ import styles from "../styles/Live.module.scss";
 import TeamImage from "../components/img/TeamImg.jsx";
 import Modal from "../components/Modal.jsx";
 import err from "../assets/images/details/err.svg";
-import apiData from "../data/matches5.json";
+//import apiData from "../data/matches5.json";
+//import apiData from '../data/match_1052306/match_events.json';
+import apiData from '../data/match_1126166/match.json';
 import { useApiContext } from "../context/DataContext";
 
 const Live = () => {

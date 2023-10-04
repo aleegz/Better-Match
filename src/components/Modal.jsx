@@ -27,7 +27,7 @@ const Modal = ({ isOpen, onClose, children, selectedMatch }) => {
         <div className={styles.modalOverlay} onClick={onClose}>
           <div
             className={styles.modalContent}
-            style={{ background: "#1e1e1e", width: "60%", height: "55%" }}
+            style={{ background: "#1e1e1e", width: "50%", height: "55%" }}
           >
             <div className={styles.spinContainer}>
               <div className={styles.spinner}></div>

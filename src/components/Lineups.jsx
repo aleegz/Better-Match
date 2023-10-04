@@ -2,10 +2,12 @@ import React from "react";
 import styles from "../styles/Lineups.module.scss";
 import { useParams } from "react-router-dom";
 //import data from "../data/matches9.json";
-import data from "../data/match_1052306/match_lineups.json";
+//import data from "../data/match_1052306/match_lineups.json";
+import data from "../data/match_1126166/match_lineups.json";
 import err from "../assets/images/details/err.svg";
 import field from "../assets/images/soccer-field-img.png";
 import entry from "../assets/images/events/substitutes/in.svg";
+import out from "../assets/images/events/substitutes/out.svg";
 import useApi from "../services/useApi.js";
 import LineupGrid from "../components/LineupGrid.jsx";
 
@@ -35,18 +37,26 @@ export const Lineups = ({ events }) => {
   }
 
   function getSubstituteIds(events) {
-    const substituteIDs = [];
+    const substituteIn = [];
+    const substituteOut = [];
 
     for (const event of events) {
-      if (event.type === "subst" && event.player.id) {
-        substituteIDs.push(event.player.id);
+      if (event.type === "subst") {
+        if (event.player.id) {
+          substituteIn.push(event.player.id); // Jugadores que entran a jugar
+        } 
+        if (event.assist.id) {
+          substituteOut.push(event.assist.id); // Jugadores que van al banco de suplentes
+        }
       }
     }
 
-    return substituteIDs;
+    return { substituteIn, substituteOut };
   }
 
-  const substituteIDs = getSubstituteIds(events);
+  const { substituteIn, substituteOut } = getSubstituteIds(events);
+  console.log("In: " + substituteIn);
+  console.log("Out: " + substituteOut);
 
   const homeFormation = data.response[0].formation;
   //console.log(+homeFormation[0]);
@@ -264,16 +274,22 @@ export const Lineups = ({ events }) => {
                   {player.player.name.split(" ")[1]
                     ? player.player.name.split(" ")[0][0] + ". "
                     : player.player.name.split(" ")[0]}
-                  {player.player.name.split(" ")[1] 
+                  {player.player.name.split(" ")[1]
                     ? player.player.name.split(" ")[1].length < "4"
-                    ? player.player.name.split(" ")[1] +
-                      " " +
-                      player.player.name.split(" ")[2]
-                    : player.player.name.split(" ")[1] : null}
+                      ? player.player.name.split(" ")[1] +
+                        " " +
+                        player.player.name.split(" ")[2]
+                      : player.player.name.split(" ")[1]
+                    : null}
                 </p>
-                {substituteIDs.includes(player.player.id) ? (
+                {substituteIn.includes(player.player.id) ? (
                   <span>
                     <img src={entry} style={{ height: "1em" }} />
+                  </span>
+                ) : null}
+                {substituteOut.includes(player.player.id) ? (
+                  <span>
+                    <img src={out} style={{ height: "1em" }} />
                   </span>
                 ) : null}
               </div>
@@ -282,21 +298,27 @@ export const Lineups = ({ events }) => {
           <div className={styles.substitutesPlysAway}>
             {substitutesPlysAway.map((player, index) => (
               <div key={index}>
-                {substituteIDs.includes(player.player.id) ? (
+                {substituteIn.includes(player.player.id) ? (
                   <span>
                     <img src={entry} style={{ height: "1em" }} />
                   </span>
                 ) : null}
+                {substituteOut.includes(player.player.id) ? (
+                  <span>
+                    <img src={out} style={{ height: "1em" }} />
+                  </span>
+                ) : null}
                 <p className={styles.substitutesPlysAwayName}>
-                {player.player.name.split(" ")[1]
+                  {player.player.name.split(" ")[1]
                     ? player.player.name.split(" ")[0][0] + ". "
                     : player.player.name.split(" ")[0]}
-                  {player.player.name.split(" ")[1] 
+                  {player.player.name.split(" ")[1]
                     ? player.player.name.split(" ")[1].length < "4"
-                    ? player.player.name.split(" ")[1] +
-                      " " +
-                      player.player.name.split(" ")[2]
-                    : player.player.name.split(" ")[1] : null}
+                      ? player.player.name.split(" ")[1] +
+                        " " +
+                        player.player.name.split(" ")[2]
+                      : player.player.name.split(" ")[1]
+                    : null}
                 </p>
                 <p className={styles.substitutesPlysNum}>
                   {player.player.number}
