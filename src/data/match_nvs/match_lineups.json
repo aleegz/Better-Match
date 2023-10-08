@@ -1,0 +1,486 @@
+{
+  "get": "fixtures/lineups",
+  "parameters": {
+    "fixture": "971277"
+  },
+  "errors": [],
+  "results": 2,
+  "paging": {
+    "current": 1,
+    "total": 1
+  },
+  "response": [
+    {
+      "team": {
+        "id": 460,
+        "name": "San Lorenzo",
+        "logo": "https://media-4.api-sports.io/football/teams/460.png",
+        "colors": {
+          "player": {
+            "primary": "ff0000",
+            "number": "ffffff",
+            "border": "ff0000"
+          },
+          "goalkeeper": {
+            "primary": "7cff66",
+            "number": "ffffff",
+            "border": "7cff66"
+          }
+        }
+      },
+      "formation": "3-4-2-1",
+      "startXI": [
+        {
+          "player": {
+            "id": 11379,
+            "name": "Augusto Batalla",
+            "number": 13,
+            "pos": "G",
+            "grid": "1:1"
+          }
+        },
+        {
+          "player": {
+            "id": 306705,
+            "name": "Gonzalo Luján",
+            "number": 35,
+            "pos": "D",
+            "grid": "2:3"
+          }
+        },
+        {
+          "player": {
+            "id": 18827,
+            "name": "Carlos Sánchez",
+            "number": 6,
+            "pos": "D",
+            "grid": "2:2"
+          }
+        },
+        {
+          "player": {
+            "id": 13577,
+            "name": "Rafael Pérez",
+            "number": 2,
+            "pos": "D",
+            "grid": "2:1"
+          }
+        },
+        {
+          "player": {
+            "id": 306706,
+            "name": "Agustín Giay",
+            "number": 47,
+            "pos": "M",
+            "grid": "3:4"
+          }
+        },
+        {
+          "player": {
+            "id": 6310,
+            "name": "Jalil Elias",
+            "number": 5,
+            "pos": "M",
+            "grid": "3:3"
+          }
+        },
+        {
+          "player": {
+            "id": 30455,
+            "name": "Gastón Ramírez",
+            "number": 20,
+            "pos": "M",
+            "grid": "3:2"
+          }
+        },
+        {
+          "player": {
+            "id": 5791,
+            "name": "Malcom Braida",
+            "number": 21,
+            "pos": "M",
+            "grid": "3:1"
+          }
+        },
+        {
+          "player": {
+            "id": 346273,
+            "name": "Ivan Leguizamon",
+            "number": 41,
+            "pos": "F",
+            "grid": "4:2"
+          }
+        },
+        {
+          "player": {
+            "id": 6613,
+            "name": "Nahuel Barrios",
+            "number": 10,
+            "pos": "F",
+            "grid": "4:1"
+          }
+        },
+        {
+          "player": {
+            "id": 35551,
+            "name": "Adam Bareiro",
+            "number": 11,
+            "pos": "F",
+            "grid": "5:1"
+          }
+        }
+      ],
+      "substitutes": [
+        {
+          "player": {
+            "id": 6239,
+            "name": "Gonzalo Maroni",
+            "number": 8,
+            "pos": "M",
+            "grid": null
+          }
+        },
+        {
+          "player": {
+            "id": 311320,
+            "name": "Francisco Perruzzi",
+            "number": 50,
+            "pos": "M",
+            "grid": null
+          }
+        },
+        {
+          "player": {
+            "id": 6363,
+            "name": "Facundo Altamirano",
+            "number": 1,
+            "pos": "G",
+            "grid": null
+          }
+        },
+        {
+          "player": {
+            "id": 51596,
+            "name": "Fabricio Formiliano",
+            "number": 3,
+            "pos": "D",
+            "grid": null
+          }
+        },
+        {
+          "player": {
+            "id": 41409,
+            "name": "Gastón Campi",
+            "number": 22,
+            "pos": "D",
+            "grid": null
+          }
+        },
+        {
+          "player": {
+            "id": 414528,
+            "name": "Elías Baez",
+            "number": 37,
+            "pos": "D",
+            "grid": null
+          }
+        },
+        {
+          "player": {
+            "id": 371635,
+            "name": "Elián Irala",
+            "number": 17,
+            "pos": "M",
+            "grid": null
+          }
+        },
+        {
+          "player": {
+            "id": 6618,
+            "name": "Manuel Insaurralde",
+            "number": 19,
+            "pos": "M",
+            "grid": null
+          }
+        },
+        {
+          "player": {
+            "id": 6187,
+            "name": "Carlos Auzqui",
+            "number": 28,
+            "pos": "F",
+            "grid": null
+          }
+        },
+        {
+          "player": {
+            "id": 6627,
+            "name": "Nicolás Blandi",
+            "number": 9,
+            "pos": "F",
+            "grid": null
+          }
+        },
+        {
+          "player": {
+            "id": 6012,
+            "name": "Federico Girotti",
+            "number": 18,
+            "pos": "F",
+            "grid": null
+          }
+        },
+        {
+          "player": {
+            "id": 414531,
+            "name": "Juan Goyeneche",
+            "number": 55,
+            "pos": "F",
+            "grid": null
+          }
+        }
+      ],
+      "coach": {
+        "id": 7685,
+        "name": "R. Insúa",
+        "photo": "https://media-4.api-sports.io/football/coachs/7685.png"
+      }
+    },
+    {
+      "team": {
+        "id": 457,
+        "name": "Newells Old Boys",
+        "logo": "https://media-4.api-sports.io/football/teams/457.png",
+        "colors": {
+          "player": {
+            "primary": "ffffff",
+            "number": "000000",
+            "border": "ffffff"
+          },
+          "goalkeeper": {
+            "primary": "5f5f5f",
+            "number": "ffffff",
+            "border": "5f5f5f"
+          }
+        }
+      },
+      "formation": "3-5-2",
+      "startXI": [
+        {
+          "player": {
+            "id": 6046,
+            "name": "Lucas Hoyos",
+            "number": 1,
+            "pos": "G",
+            "grid": "1:1"
+          }
+        },
+        {
+          "player": {
+            "id": 35808,
+            "name": "Gustavo Velázquez",
+            "number": 25,
+            "pos": "D",
+            "grid": "2:3"
+          }
+        },
+        {
+          "player": {
+            "id": 5641,
+            "name": "Ángelo Martino",
+            "number": 23,
+            "pos": "D",
+            "grid": "2:2"
+          }
+        },
+        {
+          "player": {
+            "id": 6640,
+            "name": "Guillermo Ortíz",
+            "number": 42,
+            "pos": "D",
+            "grid": "2:1"
+          }
+        },
+        {
+          "player": {
+            "id": 292875,
+            "name": "‪Ignacio Schor",
+            "number": 20,
+            "pos": "M",
+            "grid": "3:5"
+          }
+        },
+        {
+          "player": {
+            "id": 51480,
+            "name": "Armando Méndez",
+            "number": 14,
+            "pos": "M",
+            "grid": "3:4"
+          }
+        },
+        {
+          "player": {
+            "id": 6400,
+            "name": "Ivan Gómez",
+            "number": 7,
+            "pos": "M",
+            "grid": "3:3"
+          }
+        },
+        {
+          "player": {
+            "id": 5998,
+            "name": "Cristian Ferreira",
+            "number": 30,
+            "pos": "M",
+            "grid": "3:2"
+          }
+        },
+        {
+          "player": {
+            "id": 237089,
+            "name": "Juan Sforza",
+            "number": 13,
+            "pos": "M",
+            "grid": "3:1"
+          }
+        },
+        {
+          "player": {
+            "id": 70738,
+            "name": "Jorge Recalde",
+            "number": 28,
+            "pos": "F",
+            "grid": "4:2"
+          }
+        },
+        {
+          "player": {
+            "id": 289465,
+            "name": "Brian Aguirre",
+            "number": 18,
+            "pos": "F",
+            "grid": "4:1"
+          }
+        }
+      ],
+      "substitutes": [
+        {
+          "player": {
+            "id": 289464,
+            "name": "Ramiro Sordo",
+            "number": 26,
+            "pos": "M",
+            "grid": null
+          }
+        },
+        {
+          "player": {
+            "id": 289461,
+            "name": "Williams Barlasina",
+            "number": 31,
+            "pos": "G",
+            "grid": null
+          }
+        },
+        {
+          "player": {
+            "id": 129883,
+            "name": "Augusto Schott",
+            "number": 4,
+            "pos": "D",
+            "grid": null
+          }
+        },
+        {
+          "player": {
+            "id": 6110,
+            "name": "Bruno Pittón",
+            "number": 15,
+            "pos": "D",
+            "grid": null
+          }
+        },
+        {
+          "player": {
+            "id": 290806,
+            "name": "Facundo Mansilla",
+            "number": 19,
+            "pos": "D",
+            "grid": null
+          }
+        },
+        {
+          "player": {
+            "id": 35543,
+            "name": "Leonel Vangioni",
+            "number": 21,
+            "pos": "D",
+            "grid": null
+          }
+        },
+        {
+          "player": {
+            "id": 371499,
+            "name": "Ian Glavinovich",
+            "number": 37,
+            "pos": "D",
+            "grid": null
+          }
+        },
+        {
+          "player": {
+            "id": 6089,
+            "name": "Pablo Pérez",
+            "number": 8,
+            "pos": "M",
+            "grid": null
+          }
+        },
+        {
+          "player": {
+            "id": 349347,
+            "name": "Marcos Portillo",
+            "number": 22,
+            "pos": "M",
+            "grid": null
+          }
+        },
+        {
+          "player": {
+            "id": 311376,
+            "name": "Guillermo Balzi",
+            "number": 47,
+            "pos": "M",
+            "grid": null
+          }
+        },
+        {
+          "player": {
+            "id": 414545,
+            "name": "Giovani Chiaverano",
+            "number": 38,
+            "pos": "M",
+            "grid": null
+          }
+        },
+        {
+          "player": {
+            "id": 311381,
+            "name": "Genaro Rossi",
+            "number": 24,
+            "pos": "F",
+            "grid": null
+          }
+        }
+      ],
+      "coach": {
+        "id": 838,
+        "name": "G. Heinze",
+        "photo": "https://media-4.api-sports.io/football/coachs/838.png"
+      }
+    }
+  ]
+}

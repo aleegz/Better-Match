@@ -66,6 +66,10 @@ $secondary-color: #1e1e1e;
     width: 90vw;
     padding: 10px;
     border: 1px solid #353535;
+    &:hover {
+        background-color: #202020;
+        cursor: pointer;
+    }
 }
 
 .home, .away {

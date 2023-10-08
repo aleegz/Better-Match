@@ -62,7 +62,8 @@ const LineupGrid = ({ n, data, events }) => {
               </div>
               <span className={styles.name}>
                 {player.player.name.split(" ")[1]
-                  ? player.player.name.split(" ")[1].length < "4"
+                  ? player.player.name.split(" ")[1].length < "4" &&
+                    player.player.name.split(" ")[2]
                     ? player.player.name.split(" ")[1] +
                       " " +
                       player.player.name.split(" ")[2]
@@ -96,8 +97,16 @@ const LineupGrid = ({ n, data, events }) => {
                 <PlayerEvent player={player} events={events} />
               </div>
               <span className={styles.name}>
-                {player.player.name.split(" ")[1]
+                {/*player.player.name.split(" ")[1]
                   ? player.player.name.split(" ")[1].length < "4"
+                    ? player.player.name.split(" ")[1] +
+                      " " +
+                      player.player.name.split(" ")[2]
+                    : player.player.name.split(" ")[1]
+              : player.player.name.split(" ")[0]*/}
+                {player.player.name.split(" ")[1]
+                  ? player.player.name.split(" ")[1].length < "4" &&
+                    player.player.name.split(" ")[2]
                     ? player.player.name.split(" ")[1] +
                       " " +
                       player.player.name.split(" ")[2]
@@ -132,7 +141,8 @@ const LineupGrid = ({ n, data, events }) => {
               </div>
               <span className={styles.name}>
                 {player.player.name.split(" ")[1]
-                  ? player.player.name.split(" ")[1].length < "4"
+                  ? player.player.name.split(" ")[1].length < "4" &&
+                    player.player.name.split(" ")[2]
                     ? player.player.name.split(" ")[1] +
                       " " +
                       player.player.name.split(" ")[2]
@@ -167,7 +177,8 @@ const LineupGrid = ({ n, data, events }) => {
               </div>
               <span className={styles.name}>
                 {player.player.name.split(" ")[1]
-                  ? player.player.name.split(" ")[1].length < "4"
+                  ? player.player.name.split(" ")[1].length < "4" &&
+                    player.player.name.split(" ")[2]
                     ? player.player.name.split(" ")[1] +
                       " " +
                       player.player.name.split(" ")[2]
@@ -274,7 +285,8 @@ const LineupGrid = ({ n, data, events }) => {
               </div>
               <span className={styles.name}>
                 {player.player.name.split(" ")[1]
-                  ? player.player.name.split(" ")[1].length < "4"
+                  ? player.player.name.split(" ")[1].length < "4" &&
+                    player.player.name.split(" ")[2]
                     ? player.player.name.split(" ")[1] +
                       " " +
                       player.player.name.split(" ")[2]
@@ -309,7 +321,8 @@ const LineupGrid = ({ n, data, events }) => {
               </div>
               <span className={styles.name}>
                 {player.player.name.split(" ")[1]
-                  ? player.player.name.split(" ")[1].length < "4"
+                  ? player.player.name.split(" ")[1].length < "4" &&
+                    player.player.name.split(" ")[2]
                     ? player.player.name.split(" ")[1] +
                       " " +
                       player.player.name.split(" ")[2]
@@ -344,8 +357,10 @@ const LineupGrid = ({ n, data, events }) => {
               </div>
               <span className={styles.name}>
                 {player.player.name.split(" ")[1]
-                  ? player.player.name.split(" ")[1].length < "4"
+                  ? player.player.name.split(" ")[1].length < "4" &&
+                    player.player.name.split(" ")[2]
                     ? player.player.name.split(" ")[1] +
+                      " " +
                       player.player.name.split(" ")[2]
                     : player.player.name.split(" ")[1]
                   : player.player.name.split(" ")[0]}
@@ -371,7 +386,8 @@ const LineupGrid = ({ n, data, events }) => {
               </div>
               <span className={styles.name}>
                 {player.player.name.split(" ")[1]
-                  ? player.player.name.split(" ")[1].length < "4"
+                  ? player.player.name.split(" ")[1].length < "4" &&
+                    player.player.name.split(" ")[2]
                     ? player.player.name.split(" ")[1] +
                       " " +
                       player.player.name.split(" ")[2]
@@ -449,7 +465,8 @@ const LineupGrid = ({ n, data, events }) => {
               </div>
               <span className={styles.name}>
                 {player.player.name.split(" ")[1]
-                  ? player.player.name.split(" ")[1].length < "4"
+                  ? player.player.name.split(" ")[1].length < "4" &&
+                    player.player.name.split(" ")[2]
                     ? player.player.name.split(" ")[1] +
                       " " +
                       player.player.name.split(" ")[2]
@@ -484,7 +501,8 @@ const LineupGrid = ({ n, data, events }) => {
               </div>
               <span className={styles.name}>
                 {player.player.name.split(" ")[1]
-                  ? player.player.name.split(" ")[1].length < "4"
+                  ? player.player.name.split(" ")[1].length < "4" &&
+                    player.player.name.split(" ")[2]
                     ? player.player.name.split(" ")[1] +
                       " " +
                       player.player.name.split(" ")[2]
@@ -519,7 +537,8 @@ const LineupGrid = ({ n, data, events }) => {
               </div>
               <span className={styles.name}>
                 {player.player.name.split(" ")[1]
-                  ? player.player.name.split(" ")[1].length < "4"
+                  ? player.player.name.split(" ")[1].length < "4" &&
+                    player.player.name.split(" ")[2]
                     ? player.player.name.split(" ")[1] +
                       " " +
                       player.player.name.split(" ")[2]
@@ -554,7 +573,8 @@ const LineupGrid = ({ n, data, events }) => {
               </div>
               <span className={styles.name}>
                 {player.player.name.split(" ")[1]
-                  ? player.player.name.split(" ")[1].length < "4"
+                  ? player.player.name.split(" ")[1].length < "4" &&
+                    player.player.name.split(" ")[2]
                     ? player.player.name.split(" ")[1] +
                       " " +
                       player.player.name.split(" ")[2]
@@ -589,7 +609,8 @@ const LineupGrid = ({ n, data, events }) => {
               </div>
               <span className={styles.name}>
                 {player.player.name.split(" ")[1]
-                  ? player.player.name.split(" ")[1].length < "4"
+                  ? player.player.name.split(" ")[1].length < "4" &&
+                    player.player.name.split(" ")[2]
                     ? player.player.name.split(" ")[1] +
                       " " +
                       player.player.name.split(" ")[2]
@@ -667,7 +688,8 @@ const LineupGrid = ({ n, data, events }) => {
               </div>
               <span className={styles.name}>
                 {player.player.name.split(" ")[1]
-                  ? player.player.name.split(" ")[1].length < "4"
+                  ? player.player.name.split(" ")[1].length < "4" &&
+                    player.player.name.split(" ")[2]
                     ? player.player.name.split(" ")[1] +
                       " " +
                       player.player.name.split(" ")[2]
@@ -702,7 +724,8 @@ const LineupGrid = ({ n, data, events }) => {
               </div>
               <span className={styles.name}>
                 {player.player.name.split(" ")[1]
-                  ? player.player.name.split(" ")[1].length < "4"
+                  ? player.player.name.split(" ")[1].length < "4" &&
+                    player.player.name.split(" ")[2]
                     ? player.player.name.split(" ")[1] +
                       " " +
                       player.player.name.split(" ")[2]
@@ -737,7 +760,8 @@ const LineupGrid = ({ n, data, events }) => {
               </div>
               <span className={styles.name}>
                 {player.player.name.split(" ")[1]
-                  ? player.player.name.split(" ")[1].length < "4"
+                  ? player.player.name.split(" ")[1].length < "4" &&
+                    player.player.name.split(" ")[2]
                     ? player.player.name.split(" ")[1] +
                       " " +
                       player.player.name.split(" ")[2]
@@ -772,7 +796,8 @@ const LineupGrid = ({ n, data, events }) => {
               </div>
               <span className={styles.name}>
                 {player.player.name.split(" ")[1]
-                  ? player.player.name.split(" ")[1].length < "4"
+                  ? player.player.name.split(" ")[1].length < "4" &&
+                    player.player.name.split(" ")[2]
                     ? player.player.name.split(" ")[1] +
                       " " +
                       player.player.name.split(" ")[2]
@@ -807,7 +832,8 @@ const LineupGrid = ({ n, data, events }) => {
               </div>
               <span className={styles.name}>
                 {player.player.name.split(" ")[1]
-                  ? player.player.name.split(" ")[1].length < "4"
+                  ? player.player.name.split(" ")[1].length < "4" &&
+                    player.player.name.split(" ")[2]
                     ? player.player.name.split(" ")[1] +
                       " " +
                       player.player.name.split(" ")[2]

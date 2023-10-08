@@ -44,7 +44,7 @@ export const Lineups = ({ events }) => {
       if (event.type === "subst") {
         if (event.player.id) {
           substituteIn.push(event.player.id); // Jugadores que entran a jugar
-        } 
+        }
         if (event.assist.id) {
           substituteOut.push(event.assist.id); // Jugadores que van al banco de suplentes
         }
@@ -275,7 +275,8 @@ export const Lineups = ({ events }) => {
                     ? player.player.name.split(" ")[0][0] + ". "
                     : player.player.name.split(" ")[0]}
                   {player.player.name.split(" ")[1]
-                    ? player.player.name.split(" ")[1].length < "4"
+                    ? player.player.name.split(" ")[1].length < "4" &&
+                      player.player.name.split(" ")[2]
                       ? player.player.name.split(" ")[1] +
                         " " +
                         player.player.name.split(" ")[2]
@@ -313,7 +314,8 @@ export const Lineups = ({ events }) => {
                     ? player.player.name.split(" ")[0][0] + ". "
                     : player.player.name.split(" ")[0]}
                   {player.player.name.split(" ")[1]
-                    ? player.player.name.split(" ")[1].length < "4"
+                    ? player.player.name.split(" ")[1].length < "4" &&
+                      player.player.name.split(" ")[2]
                       ? player.player.name.split(" ")[1] +
                         " " +
                         player.player.name.split(" ")[2]
