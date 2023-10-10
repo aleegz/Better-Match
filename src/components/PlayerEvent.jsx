@@ -18,7 +18,7 @@ const PlayerEvent = ({ events, player }) => {
         <img key={`goal-${index}`} src={redBall} className={styles.redBall} />
       );
     } else if (event.type === "Card") {
-      return event.detail === "Yellow Card" ? (
+      return event.detail === "Yellow Card" && event.player.id === player.player.id ? ( // No assist event (goal)
         <span key={`card-${index}`} className={styles.yellowCard}></span>
       ) : (
         <span key={`card-${index}`} className={styles.redCard}></span>
