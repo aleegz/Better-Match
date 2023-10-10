@@ -1,14 +1,31 @@
-## ![project_logo_3](https://github.com/7AleGz/Better-Match/assets/92764868/5bdb3979-367f-40a2-8d7c-e4dacab2d4b4)
-
-App that allows you to visualize match results, team information, players, leagues, and more related to soccer.
+# ![project_logo_3](https://github.com/7AleGz/Better-Match/assets/92764868/5bdb3979-367f-40a2-8d7c-e4dacab2d4b4)
 
 <div align="first">
     <img src="https://img.shields.io/badge/STATUS-%20DEVELOPING-green?style=flat-square" alt="Badge Developing">
     <img src="https://img.shields.io/badge/LICENSE-%20MIT-violet?style=flat-square" alt="Badge License">
 </div>
-## Tech Stack
 
-**Client:** 
+## Demo link:
+Access my app at [7alegz.github.io/Better-Match/](https://7alegz.github.io/Better-Match/)
+
+## Table of Content:
+
+- [About The App](#about-the-app)
+- [Screenshots](#screenshots)
+- [Technologies](#technologies)
+- [Setup](#setup)
+- [Approach](#approach)
+- [Status](#status)
+- [License](#license)
+
+## About The App
+Better Match is an app that allows you to visualize match results, team information, players, leagues, and more related to soccer.
+
+## Screenshots
+
+Coming Soon
+
+## Technologies
 
 ![Badge Javascript](https://img.shields.io/badge/JavaScript-F7DF1E.svg?style=for-the-badge&logo=JavaScript&logoColor=black)
 
@@ -22,6 +39,17 @@ App that allows you to visualize match results, team information, players, leagu
 
 ![Badge NPM](https://img.shields.io/badge/npm-CB3837.svg?style=for-the-badge&logo=npm&logoColor=white)
 
-**Server:** (Developing) Node, Express
+## Setup
+- download or clone the repository.
+- run `npm install`
+- run `npm run dev` and open the localhost address in your browser.
 
-**Tools:** https://codebeautify.org/string-to-json-online
+## Approach
+I adopted the `camelCase` naming style for my scss class names.
+
+## Status
+Better Match is still in progress.
+
+## License
+
+[MIT](https://github.com/7AleGz/Better-Match/commit/4071c3a8d39af52a934d72a683b198852ce3f178)
