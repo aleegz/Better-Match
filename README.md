@@ -52,4 +52,4 @@ Better Match is still in progress.
 
 ## License
 
-[MIT](https://github.com/7AleGz/Better-Match/commit/4071c3a8d39af52a934d72a683b198852ce3f178)
+[MIT](https://github.com/7AleGz/Better-Match/blob/master/LICENSE)
