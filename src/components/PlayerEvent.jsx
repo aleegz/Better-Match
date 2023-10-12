@@ -12,11 +12,11 @@ const PlayerEvent = ({ events, player }) => {
 
   const eventElements = playerEvents.map((event, index) => {
     if (event.type === "Goal") {
-      return event.detail === "Normal Goal" ? (
+      return event.detail === "Normal Goal" && event.player.id === player.player.id ? (
         <img key={`goal-${index}`} src={ball} className={styles.ball} />
-      ) : (
+      ) : event.detail === "Own Goal" && event.player.id === player.player.id ? ( // own goal
         <img key={`goal-${index}`} src={redBall} className={styles.redBall} />
-      );
+      ) : null;
     } else if (event.type === "Card") {
       return event.detail === "Yellow Card" && event.player.id === player.player.id ? ( // No assist event (goal)
         <span key={`card-${index}`} className={styles.yellowCard}></span>

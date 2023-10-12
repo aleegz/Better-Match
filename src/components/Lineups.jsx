@@ -36,25 +36,63 @@ export const Lineups = ({ events }) => {
     );
   }
 
-  function getSubstituteIds(events) {
+  /*function getSubstituteIds(events) {
     const substituteIn = [];
     const substituteOut = [];
 
     for (const event of events) {
       if (event.type === "subst") {
         if (event.player.id) {
-          substituteIn.push(event.player.id); // Jugadores que entran a jugar
+          substituteIn.push(event.player.id);
         }
         if (event.assist.id) {
-          substituteOut.push(event.assist.id); // Jugadores que van al banco de suplentes
+          substituteOut.push(event.assist.id);
         }
       }
     }
 
     return { substituteIn, substituteOut };
+  }*/
+
+  //const { substituteIn, substituteOut } = getSubstituteIds(events);
+  //console.log("In: " + substituteIn);
+  //console.log("Out: " + substituteOut);
+
+  function getEventsIds(events) {
+    const goals = [];
+    const yellowCards = [];
+    const redCards = [];
+    const substituteIn = [];
+    const substituteOut = [];
+
+    for (const event of events) {
+      if (event.type === "Goal" && event.player.id) {
+        goals.push(event.player.id);
+      } else if (event.type === "Card" && event.player.id) {
+        if (event.detail === "Yellow Card") {
+          yellowCards.push(event.player.id);
+        } else {
+          redCards.push(event.player.id);
+        }
+      }
+      if (event.type === "subst") {
+        if (event.player.id) {
+          substituteIn.push(event.player.id);
+        }
+        if (event.assist.id) {
+          substituteOut.push(event.assist.id);
+        }
+      }
+    }
+
+    return { goals, yellowCards, redCards, substituteIn, substituteOut };
   }
 
-  const { substituteIn, substituteOut } = getSubstituteIds(events);
+  const { goals, yellowCards, redCards, substituteIn, substituteOut } =
+    getEventsIds(events);
+  console.log("goals: " + goals);
+  console.log("yellowCards: " + yellowCards);
+  console.log("redCards: " + redCards);
   console.log("In: " + substituteIn);
   console.log("Out: " + substituteOut);
 
@@ -283,6 +321,22 @@ export const Lineups = ({ events }) => {
                       : player.player.name.split(" ")[1]
                     : null}
                 </p>
+                {goals.includes(player.player.id) ? (
+                  <img
+                    key={`goal-${index}`}
+                    src={ball}
+                    className={styles.ball}
+                  />
+                ) : null}
+                {yellowCards.includes(player.player.id) ? (
+                  <span
+                    key={`card-${index}`}
+                    className={styles.yellowCard}
+                  ></span>
+                ) : null}
+                {redCards.includes(player.player.id) ? (
+                  <span key={`card-${index}`} className={styles.redCard}></span>
+                ) : null}
                 {substituteIn.includes(player.player.id) ? (
                   <span>
                     <img src={entry} style={{ height: "1em" }} />
@@ -299,6 +353,22 @@ export const Lineups = ({ events }) => {
           <div className={styles.substitutesPlysAway}>
             {substitutesPlysAway.map((player, index) => (
               <div key={index}>
+                {goals.includes(player.player.id) ? (
+                  <img
+                    key={`goal-${index}`}
+                    src={ball}
+                    className={styles.ball}
+                  />
+                ) : null}
+                {yellowCards.includes(player.player.id) ? (
+                  <span
+                    key={`card-${index}`}
+                    className={styles.yellowCard}
+                  ></span>
+                ) : null}
+                {redCards.includes(player.player.id) ? (
+                  <span key={`card-${index}`} className={styles.redCard}></span>
+                ) : null}
                 {substituteIn.includes(player.player.id) ? (
                   <span>
                     <img src={entry} style={{ height: "1em" }} />

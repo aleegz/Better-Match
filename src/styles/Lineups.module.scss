@@ -89,6 +89,27 @@
   background: url('../assets/images/banners/banner-3.svg');
   background-size: cover;
   background-position: center;
+
+  .yellowCard {
+    background-color: #fced1c;
+    width: .7em;
+    height: 1em;
+    border-radius: .3em;
+    border: .1em solid #fff;
+    display: block;
+    z-index: 2;
+    position: absolute;
+  }
+  .redCard {
+    background-color: #970000;
+    width: .7em;
+    height: 1em;
+    border-radius: .3em;
+    border: .1em solid #fff;
+    display: block;
+    z-index: 2;
+    position: absolute;
+  }
   div {
     display: flex;
     align-items: center;
