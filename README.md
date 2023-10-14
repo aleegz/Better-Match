@@ -23,11 +23,11 @@ Better Match is an app that allows you to visualize match results, team informat
 
 ## Screenshots
 
-<img src="https://github.com/7AleGz/Better-Match/blob/master/screenshots/Screenshot_20231008-172230.png" style=height: 100%>
-<img src="https://github.com/7AleGz/Better-Match/blob/master/screenshots/Screenshot_20230930-200514.png" style=height: 100%>
-<img src="https://github.com/7AleGz/Better-Match/blob/master/screenshots/Screenshot_20230930-200532.png" style=height: 100%>
-<img src="https://github.com/7AleGz/Better-Match/blob/master/screenshots/Screenshot_20231005-233157.png" style=height: 100%>
-<img src="https://github.com/7AleGz/Better-Match/blob/master/screenshots/Screenshot_20231007-182642.png" style=height: 100%>
+<img src="https://github.com/7AleGz/Better-Match/blob/master/screenshots/Screenshot_20231008-172230.png">
+<img src="https://github.com/7AleGz/Better-Match/blob/master/screenshots/Screenshot_20230930-200514.png">
+<img src="https://github.com/7AleGz/Better-Match/blob/master/screenshots/Screenshot_20230930-200532.png">
+<img src="https://github.com/7AleGz/Better-Match/blob/master/screenshots/Screenshot_20231005-233157.png">
+<img src="https://github.com/7AleGz/Better-Match/blob/master/screenshots/Screenshot_20231007-182642.png">
 
 ## Technologies
 
