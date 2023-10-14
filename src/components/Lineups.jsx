@@ -8,6 +8,7 @@ import err from "../assets/images/details/err.svg";
 import field from "../assets/images/soccer-field-img.png";
 import entry from "../assets/images/events/substitutes/in.svg";
 import out from "../assets/images/events/substitutes/out.svg";
+import ball from '../assets/images/events/ball.svg';
 import useApi from "../services/useApi.js";
 import LineupGrid from "../components/LineupGrid.jsx";
 
@@ -35,28 +36,6 @@ export const Lineups = ({ events }) => {
       </div>
     );
   }
-
-  /*function getSubstituteIds(events) {
-    const substituteIn = [];
-    const substituteOut = [];
-
-    for (const event of events) {
-      if (event.type === "subst") {
-        if (event.player.id) {
-          substituteIn.push(event.player.id);
-        }
-        if (event.assist.id) {
-          substituteOut.push(event.assist.id);
-        }
-      }
-    }
-
-    return { substituteIn, substituteOut };
-  }*/
-
-  //const { substituteIn, substituteOut } = getSubstituteIds(events);
-  //console.log("In: " + substituteIn);
-  //console.log("Out: " + substituteOut);
 
   function getEventsIds(events) {
     const goals = [];
@@ -90,9 +69,9 @@ export const Lineups = ({ events }) => {
 
   const { goals, yellowCards, redCards, substituteIn, substituteOut } =
     getEventsIds(events);
-  console.log("goals: " + goals);
-  console.log("yellowCards: " + yellowCards);
-  console.log("redCards: " + redCards);
+  console.log("Goals: " + goals);
+  console.log("Yellow Cards: " + yellowCards);
+  console.log("Red Cards: " + redCards);
   console.log("In: " + substituteIn);
   console.log("Out: " + substituteOut);
 
