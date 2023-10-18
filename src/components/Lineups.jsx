@@ -25,7 +25,7 @@ export const Lineups = ({ events }) => {
       </div>
     );
 
-  if (data.results === 0) {
+  if (data.results === 0 || !data.response[0].formation) {
     {
       console.error(data.errors.requests);
     }

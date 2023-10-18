@@ -120,6 +120,12 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    .ball {
+      width: 0.9em;
+      background: #fff;
+      border-radius: 50%;
+      margin-bottom: auto;
+    }
     .substitutesPlysNum {
       width: 1em;
       text-align: center;
