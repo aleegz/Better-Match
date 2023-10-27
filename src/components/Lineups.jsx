@@ -8,9 +8,10 @@ import err from "../assets/images/details/err.svg";
 import field from "../assets/images/soccer-field-img.png";
 import entry from "../assets/images/events/substitutes/in.svg";
 import out from "../assets/images/events/substitutes/out.svg";
-import ball from '../assets/images/events/ball.svg';
+import ball from "../assets/images/events/ball.svg";
 import useApi from "../services/useApi.js";
 import LineupGrid from "../components/LineupGrid.jsx";
+import PlayerName from "./PlayerName.jsx";
 
 export const Lineups = ({ events }) => {
   const { id } = useParams();
@@ -79,6 +80,7 @@ export const Lineups = ({ events }) => {
   //console.log(+homeFormation[0]);
   const substitutesPlysHome = data.response[0].substitutes;
   const substitutesPlysAway = data.response[1].substitutes;
+  let pn;
 
   return (
     <>
@@ -288,17 +290,18 @@ export const Lineups = ({ events }) => {
                   {player.player.number}
                 </p>
                 <p className={styles.substitutesPlysHomeName}>
-                  {player.player.name.split(" ")[1]
+                  {/* {player.player.name.split(" ")[1]
                     ? player.player.name.split(" ")[0][0] + ". "
                     : player.player.name.split(" ")[0]}
-                  {player.player.name.split(" ")[1]
+                    {player.player.name.split(" ")[1]
                     ? player.player.name.split(" ")[1].length < "4" &&
                       player.player.name.split(" ")[2]
                       ? player.player.name.split(" ")[1] +
-                        " " +
+                      " " +
                         player.player.name.split(" ")[2]
-                      : player.player.name.split(" ")[1]
-                    : null}
+                        : player.player.name.split(" ")[1]
+                      : null} */}
+                  {PlayerName(player.player.name)}
                 </p>
                 {goals.includes(player.player.id) ? (
                   <img
@@ -359,7 +362,7 @@ export const Lineups = ({ events }) => {
                   </span>
                 ) : null}
                 <p className={styles.substitutesPlysAwayName}>
-                  {player.player.name.split(" ")[1]
+                  {/* {player.player.name.split(" ")[1]
                     ? player.player.name.split(" ")[0][0] + ". "
                     : player.player.name.split(" ")[0]}
                   {player.player.name.split(" ")[1]
@@ -369,7 +372,8 @@ export const Lineups = ({ events }) => {
                         " " +
                         player.player.name.split(" ")[2]
                       : player.player.name.split(" ")[1]
-                    : null}
+                    : null} */}
+                  {PlayerName(player.player.name)}
                 </p>
                 <p className={styles.substitutesPlysNum}>
                   {player.player.number}
