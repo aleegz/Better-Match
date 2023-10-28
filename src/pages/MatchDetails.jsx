@@ -139,7 +139,6 @@ const MatchDetails = () => {
             </div>
           ) : (
             <div className={styles.events}>
-              {/* <span className={styles.line}></span> */}
               {events.map((event, index) => (
                 <div key={index}>
                   <div

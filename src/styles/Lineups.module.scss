@@ -1,4 +1,5 @@
-.homeHeader, .awayHeader {
+.homeHeader,
+.awayHeader {
   background-color: #7fff00;
   display: flex;
   justify-content: space-between;
@@ -76,37 +77,39 @@
   }
 }
 
-.def, .mid, .for {
+.def,
+.mid,
+.for {
   display: flex;
   justify-content: space-around;
 }
 
 .substitutes {
-  background: #0F1419;
+  background: #0f1419;
   color: #fff;
   padding: 1em 0.3em;
   background: #507a00;
-  background: url('../assets/images/banners/banner-3.svg');
+  background: url("../assets/images/banners/banner-3.svg");
   background-size: cover;
   background-position: center;
 
   .yellowCard {
     background-color: #fced1c;
-    width: .7em;
+    width: 0.7em;
     height: 1em;
-    border-radius: .3em;
-    border: .1em solid #fff;
+    border-radius: 0.3em;
+    border: 0.1em solid #fff;
     display: block;
-    margin: 0 .3em;
+    margin: 0 0.3em;
   }
   .redCard {
     background-color: #970000;
-    width: .7em;
+    width: 0.7em;
     height: 1em;
-    border-radius: .3em;
-    border: .1em solid #fff;
+    border-radius: 0.3em;
+    border: 0.1em solid #fff;
     display: block;
-    margin: 0 .3em;
+    margin: 0 0.3em;
   }
   div {
     display: flex;
@@ -114,7 +117,8 @@
     justify-content: space-between;
   }
   h2 {
-    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+      "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
   }
   .substitutesPlys {
     display: flex;
@@ -140,8 +144,8 @@
         justify-content: space-between;
         margin-bottom: 0.3em;
         .substitutesPlysHomeName {
-          margin-left: 0.5em;
-          font-family: 'Poppins', sans-serif;
+          margin: 0 0.3em 0 0.5em;
+          font-family: "Poppins", sans-serif;
           font-weight: 200;
         }
       }
@@ -156,11 +160,26 @@
         justify-content: space-between;
         margin-bottom: 0.3em;
         .substitutesPlysAwayName {
-          margin-right: .5em;
-          font-family: 'Poppins', sans-serif;
+          margin: 0 0.5em 0 0.3em;
+          font-family: "Poppins", sans-serif;
           font-weight: 200;
         }
       }
+    }
+  }
+}
+
+.coachs {
+  flex-direction: column;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  .matchCoachs {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    p {
+      font-family: "Poppins", sans-serif;
+      font-weight: 200;
     }
   }
 }
@@ -171,7 +190,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background: #0F1419;
+  background: #0f1419;
   color: #ccc;
   font-family: "Courier New", Courier, monospace;
   img {

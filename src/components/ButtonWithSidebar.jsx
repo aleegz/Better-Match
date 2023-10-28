@@ -32,6 +32,7 @@ const ButtonWithSidebar = () => {
       </button>
       <div className={`${styles.menu} ${isMenuOpen ? styles.open : ""}`}>
         <ul className={styles.menuList}>
+          
           <li>
             <ScrollLink to="homeSection" smooth={true} duration={500}>
               <button onClick={toggleMenu}>

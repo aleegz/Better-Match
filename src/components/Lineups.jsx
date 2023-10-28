@@ -80,7 +80,6 @@ export const Lineups = ({ events }) => {
   //console.log(+homeFormation[0]);
   const substitutesPlysHome = data.response[0].substitutes;
   const substitutesPlysAway = data.response[1].substitutes;
-  let pn;
 
   return (
     <>
@@ -107,153 +106,6 @@ export const Lineups = ({ events }) => {
           <div className={styles.awayLineup}>
             <LineupGrid n={1} data={data} events={events} />
           </div>
-
-          {/* <div className={styles.homeLineup}>
-
-            <div className={styles.gk}>
-              <div
-                className={styles.point}
-                style={{
-                  background: "#" + homeGkColors.primary,
-                  color: homeNumColors,
-                }}
-              >
-                {homePlayers[0].player.number}
-              </div>
-              <span>{homePlayers[0].player.name.split(" ")[1]}</span>
-            </div>
-
-            <div className={styles.def}>
-              {homePlayers.map((player, index) =>
-                player.player.pos === "D" ? (
-                  <div key={index} className={styles.ply}>
-                    <div
-                      className={styles.point}
-                      style={{
-                        background: "#" + homePlyColors.primary,
-                        color: homeNumColors,
-                      }}
-                    >
-                      {player.player.number}
-                    </div>
-
-                    <span>{player.player.name.split(" ")[1] ? player.player.name.split(" ")[1] : player.player.name.split(" ")[0]}</span>
-
-                  </div>
-                ) : null
-              )}
-            </div>
-
-            <div className={styles.mid}>
-              {homePlayers.map((player, index) =>
-                player.player.pos === "M" ? (
-                  <div key={index} className={styles.ply}>
-                    <div
-                      className={styles.point}
-                      style={{
-                        background: "#" + homePlyColors.primary,
-                        color: homeNumColors,
-                      }}
-                    >
-                      {player.player.number}
-                    </div>
-                    <span>{player.player.name.split(" ")[1] ? player.player.name.split(" ")[1] : player.player.name.split(" ")[0]}</span>
-                  </div>
-                ) : null
-              )}
-            </div>
-
-            <div className={styles.for}>
-              {homePlayers.map((player, index) =>
-                player.player.pos === "F" ? (
-                  <div key={index} className={styles.ply}>
-                    <div
-                      className={styles.point}
-                      style={{
-                        background: "#" + homePlyColors.primary,
-                        color: homeNumColors,
-                      }}
-                    >
-                      {player.player.number}
-                    </div>
-                    <span>{player.player.name.split(" ")[1] ? player.player.name.split(" ")[1] : player.player.name.split(" ")[0]}</span>
-                  </div>
-                ) : null
-              )}
-            </div>
-          </div>
-
-          <div className={styles.awayLineup}>
-            <div className={styles.for}>
-              {awayPlayers.map((player, index) =>
-                player.player.pos === "F" ? (
-                  <div key={index} className={styles.ply}>
-                    <div
-                      className={styles.point}
-                      style={{
-                        background: "#" + awayPlyColors.primary,
-                        color: awayNumColors,
-                      }}
-                    >
-                      {player.player.number}
-                    </div>
-                    <span>{player.player.name.split(" ")[1] ? player.player.name.split(" ")[1] : player.player.name.split(" ")[0]}</span>
-                  </div>
-                ) : null
-              )}
-            </div>
-
-            <div className={styles.mid}>
-              {awayPlayers.map((player, index) =>
-                player.player.pos === "M" ? (
-                  <div key={index} className={styles.ply}>
-                    <div
-                      className={styles.point}
-                      style={{
-                        background: "#" + awayPlyColors.primary,
-                        color: awayNumColors,
-                      }}
-                    >
-                      {player.player.number}
-                    </div>
-                    <span>{player.player.name.split(" ")[1] ? player.player.name.split(" ")[1] : player.player.name.split(" ")[0]}</span>
-                  </div>
-                ) : null
-              )}
-            </div>
-
-            <div className={styles.def}>
-              {awayPlayers.map((player, index) =>
-                player.player.pos === "D" ? (
-                  <div key={index} className={styles.ply}>
-                    <div
-                      className={styles.point}
-                      style={{
-                        background: "#" + awayPlyColors.primary,
-                        color: awayNumColors,
-                      }}
-                    >
-                      {player.player.number}
-                    </div>
-                    <span>{player.player.name.split(" ")[1] ? player.player.name.split(" ")[1] : player.player.name.split(" ")[0]}</span>
-                  </div>
-                ) : null
-              )}
-            </div>
-
-            <div className={styles.gk}>
-              <div
-                className={styles.point}
-                style={{
-                  background: "#" + awayGkColors.primary,
-                  color: awayNumColors,
-                }}
-              >
-                {awayPlayers[1].player.number}
-              </div>
-              <span>{awayPlayers[0].player.name.split(" ")[1]}</span>
-            </div>
-          </div> */}
         </div>
 
         <div className={styles.awayHeader}>
@@ -290,17 +142,6 @@ export const Lineups = ({ events }) => {
                   {player.player.number}
                 </p>
                 <p className={styles.substitutesPlysHomeName}>
-                  {/* {player.player.name.split(" ")[1]
-                    ? player.player.name.split(" ")[0][0] + ". "
-                    : player.player.name.split(" ")[0]}
-                    {player.player.name.split(" ")[1]
-                    ? player.player.name.split(" ")[1].length < "4" &&
-                      player.player.name.split(" ")[2]
-                      ? player.player.name.split(" ")[1] +
-                      " " +
-                        player.player.name.split(" ")[2]
-                        : player.player.name.split(" ")[1]
-                      : null} */}
                   {PlayerName(player.player.name)}
                 </p>
                 {goals.includes(player.player.id) ? (
@@ -362,17 +203,6 @@ export const Lineups = ({ events }) => {
                   </span>
                 ) : null}
                 <p className={styles.substitutesPlysAwayName}>
-                  {/* {player.player.name.split(" ")[1]
-                    ? player.player.name.split(" ")[0][0] + ". "
-                    : player.player.name.split(" ")[0]}
-                  {player.player.name.split(" ")[1]
-                    ? player.player.name.split(" ")[1].length < "4" &&
-                      player.player.name.split(" ")[2]
-                      ? player.player.name.split(" ")[1] +
-                        " " +
-                        player.player.name.split(" ")[2]
-                      : player.player.name.split(" ")[1]
-                    : null} */}
                   {PlayerName(player.player.name)}
                 </p>
                 <p className={styles.substitutesPlysNum}>
@@ -380,6 +210,14 @@ export const Lineups = ({ events }) => {
                 </p>
               </div>
             ))}
+          </div>
+        </div>
+
+        <div className={styles.coachs}>
+          <h2>Coachs</h2>
+          <div className={styles.matchCoachs}>
+            <p>{data.response[0].coach.name}</p>
+            <p>{data.response[1].coach.name}</p>
           </div>
         </div>
       </div>
