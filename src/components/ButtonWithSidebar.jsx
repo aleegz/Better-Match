@@ -34,7 +34,7 @@ const ButtonWithSidebar = () => {
         <ul className={styles.menuList}>
           
           <li>
-            <a href="/">
+            <Link to={`/`}>
               <button onClick={toggleMenu}>
                 <div className={styles.btnTxt}>
                   <span className="material-symbols-outlined" translate="no">
@@ -46,7 +46,7 @@ const ButtonWithSidebar = () => {
                   arrow_forward_ios
                 </span>
               </button>
-            </a>
+            </Link>
           </li>
 
           <li>
