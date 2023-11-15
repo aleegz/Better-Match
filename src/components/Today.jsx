@@ -4,6 +4,7 @@ import TeamImage from "../components/img/TeamImg.jsx";
 import dateHour from './dateHour.js';
 import xdate from './xdate.js';
 import data from "../data/matches3.json";
+import NavBar from './NavBar.jsx';
 import useApi from '../services/useApi.js';
 
 const Today = () => {

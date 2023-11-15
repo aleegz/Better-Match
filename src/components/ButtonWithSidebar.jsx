@@ -34,7 +34,7 @@ const ButtonWithSidebar = () => {
         <ul className={styles.menuList}>
           
           <li>
-            <ScrollLink to="homeSection" smooth={true} duration={500}>
+            <a href="/">
               <button onClick={toggleMenu}>
                 <div className={styles.btnTxt}>
                   <span className="material-symbols-outlined" translate="no">
@@ -46,7 +46,7 @@ const ButtonWithSidebar = () => {
                   arrow_forward_ios
                 </span>
               </button>
-            </ScrollLink>
+            </a>
           </li>
 
           <li>

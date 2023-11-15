@@ -1,0 +1,47 @@
+{
+  "fixture": {
+    "id": 1137544,
+    "referee": "Wilmar Roldan, Colombia",
+    "timezone": "UTC",
+    "date": "2023-11-04T20:00:00+00:00",
+    "timestamp": 1699128000,
+    "periods": { "first": 1699128000, "second": 1699131600 },
+    "venue": {
+      "id": null,
+      "name": "Estádio do Maracanã",
+      "city": "Rio de Janeiro"
+    },
+    "status": { "long": "Extra Time", "short": "ET", "elapsed": 111 }
+  },
+  "league": {
+    "id": 13,
+    "name": "CONMEBOL Libertadores",
+    "country": "World",
+    "logo": "https://media-4.api-sports.io/football/leagues/13.png",
+    "flag": null,
+    "season": 2023,
+    "round": "Final"
+  },
+  "teams": {
+    "home": {
+      "id": 451,
+      "name": "Boca Juniors",
+      "logo": "https://media-4.api-sports.io/football/teams/451.png",
+      "winner": false
+    },
+    "away": {
+      "id": 124,
+      "name": "Fluminense",
+      "logo": "https://media-4.api-sports.io/football/teams/124.png",
+      "winner": true
+    }
+  },
+  "goals": { "home": 1, "away": 2 },
+  "score": {
+    "halftime": { "home": 0, "away": 1 },
+    "fulltime": { "home": 1, "away": 1 },
+    "extratime": { "home": 0, "away": 1 },
+    "penalty": { "home": null, "away": null }
+  },
+  "events": []
+}

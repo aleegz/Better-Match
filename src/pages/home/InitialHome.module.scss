@@ -1,0 +1,105 @@
+@import url("https://fonts.googleapis.com/css2?family=REM:ital,wght@1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@600&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap');
+
+$primary-color: #5bff04;
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  height: 100vh;
+  background-image: url("https://www.aljazeera.com/wp-content/uploads/2022/11/2022-11-26T195844Z_745320325_UP1EIBQ1JHTRI_RTRMADP_3_SOCCER-WORLDCUP-ARG-MEX-REPORT.jpg?resize=1170%2C780&quality=80");
+  //https://www.aljazeera.com/wp-content/uploads/2022/11/AP22330711560268.jpg?fit=1170%2C780&quality=80
+  background-size: cover;
+  //background-position: center;
+  //width: 100%;
+  //height: 100vh;
+
+  h1 {
+    margin: 1.5em 10px 0 10px;
+    color: #ccc;
+    text-align: center;
+    font-family: "REM", sans-serif;
+    font-size: 3em;
+  }
+  a {
+    scroll-behavior: smooth;
+    transition: background-color 1s ease-in-out;
+  }
+}
+
+.button {
+  display: inline-block;
+  background-color: $primary-color;
+  width: fit-content;
+  color: #fff;
+  font-size: 1.5em;
+  border: #000 2px solid;
+  border-radius: 8px;
+  cursor: pointer;
+  padding: 5px 10px;
+
+  &:hover {
+    background-color: #83cf3b;
+  }
+}
+
+// ----------------------------------------------------------------------------------
+
+.info {
+  background: #000;
+  color: #fff;
+  margin: 0;
+  font-family: 'Roboto Condensed', sans-serif;
+  h3 {
+    margin: 0;
+    padding: 4em 1em 1em 1em;
+  }
+  p {
+    padding: 1em .7em 2em .7em;
+  }
+  img {
+    width: 50%;
+    height: auto;
+  }
+  .useApp {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background: url("../../assets/images/banners/banner-4.svg");
+    background-repeat: round;
+    background-size: cover;
+    padding: 1em .3em 1em 0;
+    div {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+    h4 {
+      font-family: "Noto Sans JP", sans-serif;
+      font-size: 2em;
+    }
+    a {
+      background-color: $primary-color;
+      color: #000;
+      width: 8.5em;
+      height: 2.5em;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-decoration: none;
+      font-family: 'Rubik', sans-serif;
+      border: .2em solid #fff;
+
+      &:hover {
+        background-color: #000;
+        color: #fff;
+        border: .2em solid $primary-color;
+      }
+    }
+  }
+}
