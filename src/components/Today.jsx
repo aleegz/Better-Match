@@ -20,7 +20,7 @@ const Today = () => {
     const today = (days[date.getDay()] + ", " + date.getDate() + " " + months[date.getMonth()] + " " + date.getFullYear());
     const today2 = (days[date.getDay()] + ", " + date.getDate() + " de " + months[date.getMonth()] + " de " + date.getFullYear());
 
-  const { loading, data } = useApi(`https://v3.football.api-sports.io/fixtures?date=${xdate().date}&status=NS&timezone=America/Argentina/Buenos_Aires`);
+  /*const { loading, data } = useApi(`https://v3.football.api-sports.io/fixtures?date=${xdate().date}&status=NS&timezone=America/Argentina/Buenos_Aires`);
 
   if(loading) 
     return (
@@ -28,7 +28,7 @@ const Today = () => {
         <div className={styles.spinner}></div>
       </div>
         
-    )
+    )*/
 
   if (data.response.length === 0) {
       {console.error(data.errors.requests)}

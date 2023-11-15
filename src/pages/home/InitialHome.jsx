@@ -1,6 +1,7 @@
 import React from 'react';
 import styles from "../home/InitialHome.module.scss";
-import { Link as ScrollLink } from "react-scroll";
+import { ScrollLink } from "react-scroll";
+import { Link } from "react-router-dom";
 import smartphone from "../../../screenshots/smartphone_2.png";
 
 const initialHome = () => {
@@ -37,7 +38,8 @@ const initialHome = () => {
           <div className={styles.useApp}>
             <div>
               <h4>DON'T MISS A RESULT</h4>
-              <a href="home">GET STARTED!</a>
+              {/* <a href="/home">GET STARTED!</a> */}
+              <Link to={`/home`}>GET STARTED!</Link>
             </div>
             <img src={smartphone} />
           </div>
