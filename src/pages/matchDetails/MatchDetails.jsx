@@ -1,19 +1,20 @@
 import React, { useEffect, useState } from "react";
-import styles from "../styles/MatchDetails.module.scss";
+import styles from "./MatchDetails.module.scss";
 import { useParams } from "react-router-dom";
-import VenueImg from "../components/img/VenueImg";
-import ball from "../assets/images/events/ball.svg";
-import redBall from "../assets/images/events/redBall.svg";
-import substitution from "../assets/images/events/substitution.svg";
-import stadium from "../assets/images/details/stadium.svg";
-import map from "../assets/images/details/map.svg";
-import referee from "../assets/images/details/referee.svg";
-import err from "../assets/images/details/err.svg";
-import Lineups from "../components/Lineups.jsx";
-import apiData from "../data/matches8.json";
+import VenueImg from "../../components/img/VenueImg.jsx";
+import ball from "../../assets/images/events/ball.svg";
+import redBall from "../../assets/images/events/redBall.svg";
+import substitution from "../../assets/images/events/substitution.svg";
+import stadium from "../../assets/images/details/stadium.svg";
+import map from "../../assets/images/details/map.svg";
+import referee from "../../assets/images/details/referee.svg";
+import err from "../../assets/images/details/err.svg";
+import Lineups from "../../components/Lineups.jsx";
+import apiData from "../../data/matches8.json";
 //import apiData from '../data/match_1052306/match_events.json';
 //import apiData from '../data/match_1126166/match.json';
-import { useApiContext } from "../context/DataContext";
+import { useApiContext } from "../../context/DataContext.jsx";
+
 
 const MatchDetails = () => {
   const { id } = useParams();

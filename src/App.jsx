@@ -3,7 +3,8 @@ import { Routes, Route } from "react-router-dom";
 import NavBar from "./components/NavBar";
 import Live from "./components/Live";
 import Today from "./components/Today";
-import MatchDetails from "./pages/MatchDetails";
+import MatchDetails from "./pages/matchDetails/MatchDetails";
+import Details from './pages/Details';
 import Landing from "./pages/Landing";
 import Initial from "./pages/Initial";
 
@@ -16,7 +17,7 @@ function App() {
         <Route path="/home" element={<Landing />} />
         <Route path="/live" element={<Live />} />
         <Route path="/today" element={<Today />} />
-        <Route path="/matchdetails/:id" element={<MatchDetails />} />
+        <Route path="/matchdetails/:id" element={<Details />} />
       </Routes>
     </div>
   );
