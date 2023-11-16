@@ -1,12 +1,14 @@
 import React from 'react';
-import InitialHome from './home/InitialHome';
+import Home from './home/Home';
+import Introduction from './home/Introduction';
 import Footer from '../components/Footer';
 //import Intro from '../pages/home/Intro'; developing
 
 const initial = () => {
   return (
     <>
-      <InitialHome />
+      <Home />
+      <Introduction />
       <Footer />
       {/* <Intro /> developing*/}
     </>

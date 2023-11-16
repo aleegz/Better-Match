@@ -5,8 +5,6 @@ import './index.css';
 import { BrowserRouter } from 'react-router-dom';
 import { DataProvider } from './context/DataContext';
 
-import MatchDetails from '../src/pages/MatchDetails.jsx';
-
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
     <BrowserRouter basename="/Better-Match">
@@ -14,6 +12,5 @@ ReactDOM.createRoot(document.getElementById('root')).render(
         <App />
       </DataProvider>
     </BrowserRouter>
-    {/* <MatchDetails></MatchDetails> */}
   </React.StrictMode>,
 )

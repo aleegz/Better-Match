@@ -7,11 +7,11 @@ import apiData from "../data/matches2.json";
 //import apiData from "../data/matches5.json";
 //import apiData from '../data/match_1052306/match_events.json';
 //import apiData from '../data/match_1126166/match.json';
-//import { useApiContext } from "../context/DataContext";
+import { useApiContext } from "../context/DataContext";
 
 const Live = () => {
   const [selectedMatch, setSelectedMatch] = useState(null);
-  //const { apiData } = useApiContext();
+  const { apiData } = useApiContext();
 
   useEffect(() => {
     window.scrollTo(0, 0);

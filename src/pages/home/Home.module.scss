@@ -1,0 +1,45 @@
+@import url("https://fonts.googleapis.com/css2?family=REM:ital,wght@1,700&display=swap");
+
+$primary-color: #5bff04;
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  height: 100vh;
+  background-image: url("https://www.aljazeera.com/wp-content/uploads/2022/11/2022-11-26T195844Z_745320325_UP1EIBQ1JHTRI_RTRMADP_3_SOCCER-WORLDCUP-ARG-MEX-REPORT.jpg?resize=1170%2C780&quality=80");
+  //https://www.aljazeera.com/wp-content/uploads/2022/11/AP22330711560268.jpg?fit=1170%2C780&quality=80
+  background-size: cover;
+  //background-position: center;
+  //width: 100%;
+  //height: 100vh;
+
+  h1 {
+    margin: 1.5em 10px 0 10px;
+    color: #ccc;
+    text-align: center;
+    font-family: "REM", sans-serif;
+    font-size: 3em;
+  }
+  a {
+    scroll-behavior: smooth;
+    transition: background-color 1s ease-in-out;
+  }
+}
+
+.button {
+  display: inline-block;
+  background-color: $primary-color;
+  width: fit-content;
+  color: #fff;
+  font-size: 1.5em;
+  border: #000 2px solid;
+  border-radius: 8px;
+  cursor: pointer;
+  padding: 5px 10px;
+
+  &:hover {
+    background-color: #83cf3b;
+  }
+}

@@ -13,11 +13,11 @@ import Lineups from "../components/Lineups.jsx";
 import apiData from "../data/matches8.json";
 //import apiData from '../data/match_1052306/match_events.json';
 //import apiData from '../data/match_1126166/match.json';
-//import { useApiContext } from "../context/DataContext";
+import { useApiContext } from "../context/DataContext";
 
 const MatchDetails = () => {
   const { id } = useParams();
-  //const { apiData } = useApiContext();
+  const { apiData } = useApiContext();
   const [showSpinner, setShowSpinner] = useState(true);
 
   useEffect(() => {

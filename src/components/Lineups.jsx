@@ -9,9 +9,9 @@ import field from "../assets/images/soccer-field-img.png";
 import entry from "../assets/images/events/substitutes/in.svg";
 import out from "../assets/images/events/substitutes/out.svg";
 import ball from "../assets/images/events/ball.svg";
-import useApi from "../services/useApi.js";
 import LineupGrid from "../components/LineupGrid.jsx";
 import PlayerName from "./PlayerName.jsx";
+import useApi from "../services/useApi.js";
 
 export const Lineups = ({ events }) => {
   const { id } = useParams();
