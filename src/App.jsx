@@ -7,6 +7,7 @@ import MatchDetails from "./pages/matchDetails/MatchDetails";
 import Details from './pages/Details';
 import Landing from "./pages/Landing";
 import Initial from "./pages/Initial";
+import Welcome from "./components/Welcome";
 
 function App() {
   return (
