@@ -1,6 +1,7 @@
 import styles from "../styles/Register.module.scss";
 import { Link } from "react-router-dom";
 import logo from "../assets/images/logos/better-match-logo-black.avif";
+import A from "../assets/images/logos/A-VA_02.png";
 
 const Register = () => {
   return (
@@ -22,6 +23,7 @@ const Register = () => {
             </p>
           </form>
         </div>
+        <img src={A} alt="Alejandro Gómez logo" className={styles.a} />
       </div>
     </>
   );

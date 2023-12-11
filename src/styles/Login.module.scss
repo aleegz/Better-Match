@@ -7,6 +7,7 @@ $font-family: "Roboto", sans-serif;
   display: flex;
   align-items: center;
   flex-direction: column;
+  justify-content: space-between;
 }
 
 .logo {
@@ -23,6 +24,11 @@ $font-family: "Roboto", sans-serif;
     font-size: 1.7em;
     color: #000;
   }
+}
+
+.a {
+  height: 3em;
+  margin-bottom: 1em;
 }
 
 @mixin btn($fontcolor: #fff) {

@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import styles from "../styles/Login.module.scss";
 import { Link, useNavigate } from "react-router-dom";
 import logo from "../assets/images/logos/better-match-logo-black.avif";
+import A from "../assets/images/logos/A-VA_02.png";
 
 const Login = () => {
   const [email, setEmail] = useState("");
@@ -62,6 +63,7 @@ const Login = () => {
             </p>
           </form>
         </div>
+        <img src={A} alt="Alejandro Gómez logo" className={styles.a} />
       </div>
     </>
   );
