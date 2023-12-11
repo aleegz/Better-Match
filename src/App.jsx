@@ -7,7 +7,8 @@ import MatchDetails from "./pages/matchDetails/MatchDetails";
 import Details from './pages/Details';
 import Landing from "./pages/Landing";
 import Initial from "./pages/Initial";
-import Welcome from "./components/Welcome";
+import Login from "./pages/Login";
+import Register from "./pages/Register";
 
 function App() {
   return (
@@ -15,6 +16,8 @@ function App() {
       <NavBar />
       <Routes>
         <Route path="/" element={<Initial />} />
+        <Route path="/login" element={<Login />} />
+        <Route path="/register" element={<Register />} />
         <Route path="/home" element={<Landing />} />
         <Route path="/live" element={<Live />} />
         <Route path="/today" element={<Today />} />

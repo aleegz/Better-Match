@@ -31,7 +31,8 @@ const Live = () => {
     return (
       <div className={styles.error} id="titleSection">
         <h1>404 Error</h1>
-        <p>Not found..</p>
+        {/* <p>Not found..</p> */}
+        <p>{apiData.errors}</p>
         <img src={err} alt="" />
       </div>
     );

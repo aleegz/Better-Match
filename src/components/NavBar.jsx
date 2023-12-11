@@ -8,7 +8,7 @@ import { useLocation } from "react-router-dom";
 const NavBar = () => {
   const currentPath = useLocation();
 
-  return currentPath.pathname == "/" ? null : (
+  return currentPath.pathname == "/" || "/login" || "/register" ? null : (
     <div>
       <nav className={styles.navbar}>
         <div className={styles.logo}>
