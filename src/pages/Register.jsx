@@ -23,7 +23,12 @@ const Register = () => {
             </p>
           </form>
         </div>
-        <img src={A} alt="Alejandro Gómez logo" className={styles.a} />
+        <div className={styles.footer}>
+          <img src={A} alt="Alejandro Gómez logo" className={styles.a} />
+          <span translate="no">
+            Developed by <a href="https://github.com/7AleGz">Alejandro Gómez</a>
+          </span>
+        </div>
       </div>
     </>
   );
