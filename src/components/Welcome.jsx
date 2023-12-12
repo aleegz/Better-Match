@@ -16,7 +16,7 @@ const Welcome = () => {
   return (
     <>
       <div className={styles.container}>
-        <h2>Welcome User!</h2>
+        <h2>Welcome!</h2>
         <p>Live matches: {matches}</p>
       </div>
     </>

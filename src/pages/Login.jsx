@@ -14,7 +14,6 @@ const Login = () => {
     e.preventDefault();
 
     if (email === "x" && password === "x") {
-      console.log("Login exitoso");
       navigate("/home");
     } else {
       setError("Wrong email or password");
