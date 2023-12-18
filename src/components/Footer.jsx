@@ -14,7 +14,7 @@ const Footer = () => {
         rel="stylesheet"
         href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"
       />
-      <div className={styles.footer}>
+      <div className={styles.footer} translate="no">
         <div className={styles.logo}>
           <img src={logo} alt="Logo" />
           <p translate="no">BETTER MATCH</p>

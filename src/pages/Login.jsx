@@ -3,17 +3,20 @@ import styles from "../styles/Login.module.scss";
 import { Link, useNavigate } from "react-router-dom";
 import logo from "../assets/images/logos/better-match-logo-black.avif";
 import A from "../assets/images/logos/A-VA_02.png";
+import { useAuth } from '../context/AuthContext';
 
 const Login = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [error, setError] = useState("");
   const navigate = useNavigate();
+  const { setLoggedInUser } = useAuth();
 
   const handleSubmit = (e) => {
     e.preventDefault();
 
     if (email === "x" && password === "x") {
+      setLoggedInUser(email);
       navigate("/home");
     } else {
       setError("Wrong email or password");

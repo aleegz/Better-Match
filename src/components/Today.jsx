@@ -37,7 +37,7 @@ const Today = () => {
       );
   };
 
-  const matches = data.response;
+  const matches = data.response.slice(0, 20);
 
   return (
     <div id="todaySection">
