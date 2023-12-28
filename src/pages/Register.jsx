@@ -11,7 +11,7 @@ const Register = () => {
           <img src={logo} alt="Logo" />
           <span translate="no">BETTER MATCH</span>
         </div>
-        <div className={styles.form}>
+        {/* <div className={styles.form}>
           <form action="#" className={styles.registerForm}>
             <input type="text" name="email" placeholder="Email" />
             <input type="text" name="password" placeholder="Password" />
@@ -22,7 +22,8 @@ const Register = () => {
               Already registered? <Link to={`/login`}> Sign in</Link>
             </p>
           </form>
-        </div>
+        </div> */}
+        <h1 style={{ fontFamily: "Arial", textAlign: "center"}}>Closed beta for now.. <br /> :(</h1>
         <div className={styles.footer}>
           <img src={A} alt="Alejandro Gómez logo" className={styles.a} />
           <span translate="no">

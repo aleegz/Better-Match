@@ -24,6 +24,10 @@ const ButtonWithSidebar = () => {
         rel="stylesheet"
         href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0"
       />
+      {/* <link
+        rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+      /> */}
       <button
         className={`${styles.toggleButton} ${isMenuOpen ? styles.open : ""}`}
         onClick={toggleMenu}
@@ -32,7 +36,6 @@ const ButtonWithSidebar = () => {
       </button>
       <div className={`${styles.menu} ${isMenuOpen ? styles.open : ""}`}>
         <ul className={styles.menuList}>
-
           <li>
             <Link to={"/"}>
               <button onClick={toggleMenu}>
@@ -80,6 +83,22 @@ const ButtonWithSidebar = () => {
               </button>
             </Link>
           </li>
+
+          {/* <li>
+            <Link to={`/account`}>
+              <button onClick={toggleMenu}>
+                <div className={styles.btnTxt}>
+                  <span className="material-symbols-outlined">
+                    account_circle
+                  </span>
+                  Account
+                </div>
+                <span className="material-symbols-outlined" translate="no">
+                  arrow_forward_ios
+                </span>
+              </button>
+            </Link>
+          </li> */}
         </ul>
         <div className={styles.menuLogo}>
           <img src={logo} alt="Logo" />

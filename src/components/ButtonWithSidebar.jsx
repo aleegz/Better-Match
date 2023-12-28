@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import styles from "../styles/ButtonWithSidebar.module.scss";
 import { Link as ScrollLink } from "react-scroll";
-import { Link } from 'react-router-dom'
+import { Link } from "react-router-dom";
 import logo from "../assets/images/logos/better-match-logo-transparent.avif";
 
 const ButtonWithSidebar = () => {
@@ -25,6 +25,10 @@ const ButtonWithSidebar = () => {
         rel="stylesheet"
         href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0"
       />
+      {/* <link
+        rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+      /> */}
       <button
         className={`${styles.toggleButton} ${isMenuOpen ? styles.open : ""}`}
         onClick={toggleMenu}
@@ -33,7 +37,6 @@ const ButtonWithSidebar = () => {
       </button>
       <div className={`${styles.menu} ${isMenuOpen ? styles.open : ""}`}>
         <ul className={styles.menuList}>
-          
           <li>
             <Link to={`/`}>
               <button onClick={toggleMenu}>
@@ -81,6 +84,20 @@ const ButtonWithSidebar = () => {
               </button>
             </ScrollLink>
           </li>
+
+          {/* <li>
+            <Link to={`/account`}>
+              <button onClick={toggleMenu}>
+                <div className={styles.btnTxt}>
+                  <span className="material-symbols-outlined">account_circle</span>
+                  Account
+                </div>
+                <span className="material-symbols-outlined" translate="no">
+                  arrow_forward_ios
+                </span>
+              </button>
+            </Link>
+          </li> */}
         </ul>
         <div className={styles.menuLogo}>
           <img src={logo} alt="Logo" />
