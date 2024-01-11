@@ -9,6 +9,7 @@ import Landing from "./pages/Landing";
 import Initial from "./pages/Initial";
 import Login from "./pages/Login";
 import Register from "./pages/Register";
+import Account from './pages/Account';
 import { AuthProvider } from "./context/AuthContext";
 
 function App() {
@@ -23,6 +24,7 @@ function App() {
           <Route path="/home" element={<Landing />} />
           <Route path="/live" element={<Live />} />
           <Route path="/today" element={<Today />} />
+          <Route path="/account" element={<Account />} />
           <Route path="/matchdetails/:id" element={<Details />} />
         </Routes>
       </AuthProvider>
