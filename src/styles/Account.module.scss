@@ -1,6 +1,13 @@
 $font-family: "Roboto", sans-serif;
 
 .container {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.data {
   margin-top: 5em;
   font-family: $font-family;
   text-align: center;
