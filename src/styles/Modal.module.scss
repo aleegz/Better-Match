@@ -96,6 +96,7 @@ $secondary-color: #006e0f;
       display: flex;
       flex-direction: column;
       align-items: center;
+  
     }
   }
   a {
@@ -144,6 +145,11 @@ $secondary-color: #006e0f;
   font-size: 1em;
   padding: 2px 7px 1px 7px;
   color: $secondary-color;
+  padding-left: .7em;
+  p {
+    margin: 0;
+    padding: 0;
+  }
 }
 
 p {
