@@ -5,7 +5,7 @@ import A from "../assets/images/logos/A-VA_02.png";
 
 const Account = () => {
   const { username } = useAuth();
-  const email = "x@gmail.com";
+  const email = "you@gmail.com";
   return (
     <>
       <link
@@ -25,7 +25,7 @@ const Account = () => {
           <h3>Your account</h3>
           <h5>
             <span className="material-symbols-outlined">account_circle</span>
-            Username: {username}
+            Username: {username} 
           </h5>
           <h5>
             <span className="material-symbols-outlined">mail</span>Email:{" "}

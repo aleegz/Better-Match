@@ -22,7 +22,7 @@ const Footer = () => {
         <h2>About Project</h2>
         <div>
           <span className="material-symbols-outlined">arrow_right_alt</span>
-          <a href="https://github.com/7AleGz/Better-Match" target="_blank">
+          <a href="https://github.com/aleegz/Better-Match" target="_blank">
             Github <i className="fa fa-github"></i>
           </a>
         </div>

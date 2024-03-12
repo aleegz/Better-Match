@@ -24,7 +24,8 @@ const introduction = () => {
             <div>
               <h4>DON'T MISS A RESULT</h4>
               {/* <a href="/home">GET STARTED!</a> */}
-              <Link to={`/login`}>GET STARTED!</Link>
+              <Link className={styles.gsBtn} to={`/login`}>GET STARTED!</Link>
+              <Link className={styles.trBtn} to={`/home`}>Technical Review</Link>
             </div>
             <img src={smartphone} />
           </div>

@@ -1,4 +1,4 @@
-import styles from "../styles/Register.module.scss";
+import styles from "../styles/Login.module.scss";
 import { Link } from "react-router-dom";
 import logo from "../assets/images/logos/better-match-logo-black.avif";
 import A from "../assets/images/logos/A-VA_02.png";

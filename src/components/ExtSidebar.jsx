@@ -53,7 +53,7 @@ const ButtonWithSidebar = () => {
           </li>
 
           <li>
-            <Link to={"/live"}>
+            <Link to={"/home"}> {/* /live */}
               <button onClick={toggleMenu}>
                 <div className={styles.btnTxt}>
                   <span className="material-symbols-outlined" translate="no">
