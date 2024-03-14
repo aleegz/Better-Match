@@ -4,8 +4,10 @@ import { useAuth } from "../context/AuthContext";
 import A from "../assets/images/logos/A-VA_02.png";
 
 const Account = () => {
-  const { username } = useAuth();
+  const username = "your username";
   const email = "you@gmail.com";
+  const { logout } = useAuth();
+
   return (
     <>
       <link
@@ -32,7 +34,7 @@ const Account = () => {
             {email}
           </h5>
           <Link to={`/login`}>
-            <button type="submit" className={styles.btn}>
+            <button type="submit" className={styles.btn} onClick={logout}>
               Log out <span className="material-symbols-outlined">logout</span>
             </button>
           </Link>

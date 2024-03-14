@@ -21,9 +21,9 @@ Access my app at [7alegz.github.io/Better-Match/](https://7alegz.github.io/Bette
 ## About The App
 Better Match is an app that allows you to visualize match results, team information, players, leagues, and more related to soccer.
 
-It was mainly developed for mobile phones so it is not very well optimized for PC.
+It was mainly developed for <b>mobile phones</b> so it is not very well optimized for PC.
 
-You can enter the app without registration from the "Technical review" button. 
+You can enter the app <b>without registration</b> from the "Technical review" button. 
 (Example photo below)
 
 <img src="https://github.com/7AleGz/Better-Match/blob/master/screenshots/Screenshot_20240312-124240.png">
