@@ -6,7 +6,7 @@
 </div>
 
 ## Demo link:
-Access my app at [7alegz.github.io/Better-Match/](https://7alegz.github.io/Better-Match/)
+Access my app at [aleegz.github.io/Better-Match/](https://aleegz.github.io/Better-Match/)
 
 ## Table of Content:
 
