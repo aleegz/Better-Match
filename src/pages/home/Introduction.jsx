@@ -25,7 +25,7 @@ const introduction = () => {
               <h4>DON'T MISS A RESULT</h4>
               {/* <a href="/home">GET STARTED!</a> */}
               <Link className={styles.gsBtn} to={`/login`}>GET STARTED!</Link>
-              <Link className={styles.trBtn} to={`/home`}>Technical Review</Link>
+              <Link className={styles.trBtn} to={`/home`}>Use app as guest</Link>
             </div>
             <img src={smartphone} />
           </div>
