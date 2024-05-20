@@ -26,7 +26,7 @@ const Live = () => {
 
   if (!apiData.results || apiData.length === 0) {
     {
-      console.error(apiData.errors.requests);
+      console.error("Error:" + apiData.errors.requests || apiData.errors.rateLimit);
     }
     return (
       <div className={styles.error} id="titleSection">
@@ -102,8 +102,8 @@ const Live = () => {
               <div className={styles.away}>
                 <div className={styles.awayLogo}>
                   <div>
-                    {/* <TeamImage teamId={match.teams.away.id} /> */}
-                    <img src={match.teams.away.logo} />
+                    <TeamImage teamId={match.teams.away.id} />
+                    {/* <img src={match.teams.away.logo} /> */}
                   </div>
                   <p translate="no">{match.teams.away.name}</p>
                 </div>

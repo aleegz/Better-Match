@@ -47,7 +47,8 @@ $secondary-color: #1e1e1e;
 }
 
 .league {
-    background: url('../../assets/images/banners/banner.svg');
+    //background: url('../../assets/images/banners/banner.svg');
+    background-color: #0F1419;
     background-size: cover;
     color: #fff;
     display: flex;
@@ -68,8 +69,10 @@ $secondary-color: #1e1e1e;
     
 
 .stadium {
-    background: url('../../assets/images/banners/banner.svg');
-    background-size: cover;
+    //background: url('../../assets/images/banners/banner.svg');
+    //background-size: cover;
+    background: url('../../assets/images/banners/banner-4.jpg');
+    background-size: auto;
     color: #fff;
     img {
         width: 100%;

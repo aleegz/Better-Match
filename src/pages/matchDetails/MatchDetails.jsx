@@ -15,7 +15,6 @@ import apiData from "../../data/matches8.json";
 //import apiData from '../data/match_1126166/match.json';
 import { useApiContext } from "../../context/DataContext.jsx";
 
-
 const MatchDetails = () => {
   const { id } = useParams();
   const { apiData } = useApiContext();
@@ -45,7 +44,7 @@ const MatchDetails = () => {
 
   if (!apiData.results || apiData.length === 0) {
     {
-      console.error(apiData.errors.requests);
+      console.error("Error:" + apiData.errors.requests || apiData.errors.token);
     }
     return (
       <div className={styles.error}>
@@ -59,7 +58,7 @@ const MatchDetails = () => {
   const matches = apiData.response;
   const selectedMatch = matches.find((match) => match.fixture.id == id);
   const events = selectedMatch.events;
-  console.log(events);
+  //console.log(events);
 
   if (!selectedMatch) {
     return (

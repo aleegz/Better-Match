@@ -28,7 +28,7 @@ export const Lineups = ({ events }) => {
 
   if (data.results === 0 || !data.response[0].formation) {
     {
-      console.error(data.errors.requests);
+      console.error("There is no alignment data available provided by the API.")
     }
     return (
       <div className={styles.error}>
