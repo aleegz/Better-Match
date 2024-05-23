@@ -26,7 +26,7 @@ const Live = () => {
 
   if (!apiData.results || apiData.length === 0) {
     {
-      console.error("Error:" + apiData.errors.requests || apiData.errors.rateLimit);
+      console.error("Error: " + apiData.errors);
     }
     return (
       <div className={styles.error} id="titleSection">
